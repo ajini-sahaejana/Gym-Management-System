@@ -119,5 +119,8 @@
   <ItemGroup>
     <None Include="Photos\angryimg %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\angryimg %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

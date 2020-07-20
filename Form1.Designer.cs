@@ -38,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.picPword = new System.Windows.Forms.PictureBox();
             this.picEmail = new System.Windows.Forms.PictureBox();
             this.picUser = new System.Windows.Forms.PictureBox();
@@ -149,15 +148,6 @@
             this.panel5.Size = new System.Drawing.Size(10, 450);
             this.panel5.TabIndex = 13;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = global::Gym_Management_System.Properties.Resources.angryimg;
-            this.panel4.Location = new System.Drawing.Point(-1, 440);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(303, 10);
-            this.panel4.TabIndex = 12;
-            // 
             // picPword
             // 
             this.picPword.BackColor = System.Drawing.Color.Transparent;
@@ -213,7 +203,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(300, 450);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
@@ -254,7 +243,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
     }
 }
