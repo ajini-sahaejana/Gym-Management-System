@@ -1,6 +1,6 @@
 ﻿namespace Gym_Management_System
 {
-    partial class Form1
+    partial class SignIn
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.username = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
             this.pword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.register = new System.Windows.Forms.Label();
+            this.signin = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.picPword = new System.Windows.Forms.PictureBox();
             this.picEmail = new System.Windows.Forms.PictureBox();
@@ -111,33 +111,33 @@
             this.panel3.Size = new System.Drawing.Size(230, 1);
             this.panel3.TabIndex = 9;
             // 
-            // label1
+            // register
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(120, 368);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 15);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Register";
+            this.register.AutoSize = true;
+            this.register.BackColor = System.Drawing.Color.Transparent;
+            this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.register.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.register.ForeColor = System.Drawing.Color.White;
+            this.register.Location = new System.Drawing.Point(120, 368);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(54, 15);
+            this.register.TabIndex = 11;
+            this.register.Text = "Register";
             // 
-            // button1
+            // signin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(33, 330);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 35);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Sign In";
-            this.button1.UseVisualStyleBackColor = false;
+            this.signin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.signin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.signin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.signin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signin.ForeColor = System.Drawing.Color.White;
+            this.signin.Location = new System.Drawing.Point(33, 330);
+            this.signin.Name = "signin";
+            this.signin.Size = new System.Drawing.Size(231, 35);
+            this.signin.TabIndex = 10;
+            this.signin.Text = "Sign In";
+            this.signin.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -203,8 +203,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(300, 450);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.register);
+            this.Controls.Add(this.signin);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -241,8 +241,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button signin;
+        private System.Windows.Forms.Label register;
         private System.Windows.Forms.Panel panel5;
     }
 }
