@@ -16,5 +16,16 @@ namespace Gym_Management_System
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panel1.Width += 2;
+            if (panel1.Width>=300)
+            {
+                timer1.Stop();
+                panel1.Hide();
+            }
+            
+        }
     }
 }
