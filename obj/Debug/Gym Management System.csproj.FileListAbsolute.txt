@@ -1,0 +1,10 @@
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\bin\Debug\Gym Management System.exe.config
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\bin\Debug\Gym Management System.exe
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\bin\Debug\Gym Management System.pdb
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.csprojAssemblyReference.cache
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.Form1.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.Properties.Resources.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.csproj.GenerateResource.cache
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.csproj.CoreCompileInputs.cache
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.exe
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.pdb
