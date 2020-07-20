@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\email1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\email2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\pword1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\pword3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\user4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\pword2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\signin.BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\register.BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\angryimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\angryimg %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
