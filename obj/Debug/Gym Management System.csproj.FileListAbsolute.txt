@@ -8,3 +8,4 @@ C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Managem
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.exe
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.pdb
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.signinform.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.initform.resources

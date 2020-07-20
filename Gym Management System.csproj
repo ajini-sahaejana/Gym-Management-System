@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="initform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="initform.Designer.cs">
+      <DependentUpon>initform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="initform.resx">
+      <DependentUpon>initform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signinform.resx">
       <DependentUpon>signinform.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Photos\angryimg %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\logo\logo\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
