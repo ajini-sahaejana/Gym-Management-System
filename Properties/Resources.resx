@@ -121,6 +121,18 @@
   <data name="email1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\email1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="email2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\email2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="register1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\register.BackgroundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angryimg (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\angryimg (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pword1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\pword1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,16 +160,19 @@
   <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="email2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Photos\email2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="signin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\signin.BackgroundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="register.BackgroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\register.BackgroundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="angryimg (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\angryimg (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="angryimg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\angryimg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="angryimg (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Photos\angryimg (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="angryimg (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\angryimg (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

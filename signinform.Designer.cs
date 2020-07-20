@@ -1,6 +1,6 @@
 ﻿namespace Gym_Management_System
 {
-    partial class SignIn
+    partial class signinform
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signinform));
             this.username = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
             this.pword = new System.Windows.Forms.TextBox();
@@ -36,6 +36,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.register = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.signin = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.picPword = new System.Windows.Forms.PictureBox();
@@ -52,11 +53,11 @@
             // 
             this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.username.Font = new System.Drawing.Font("Arial", 11.5F);
+            this.username.Font = new System.Drawing.Font("Arial", 11F);
             this.username.ForeColor = System.Drawing.Color.White;
-            this.username.Location = new System.Drawing.Point(63, 170);
+            this.username.Location = new System.Drawing.Point(63, 190);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(200, 18);
+            this.username.Size = new System.Drawing.Size(200, 17);
             this.username.TabIndex = 4;
             this.username.TabStop = false;
             this.username.Text = "Username";
@@ -65,11 +66,11 @@
             // 
             this.email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.email.Font = new System.Drawing.Font("Arial", 11.5F);
+            this.email.Font = new System.Drawing.Font("Arial", 11F);
             this.email.ForeColor = System.Drawing.Color.White;
-            this.email.Location = new System.Drawing.Point(63, 220);
+            this.email.Location = new System.Drawing.Point(63, 240);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(200, 18);
+            this.email.Size = new System.Drawing.Size(200, 17);
             this.email.TabIndex = 5;
             this.email.TabStop = false;
             this.email.Text = "Email";
@@ -78,11 +79,11 @@
             // 
             this.pword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.pword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pword.Font = new System.Drawing.Font("Arial", 11.5F);
+            this.pword.Font = new System.Drawing.Font("Arial", 11F);
             this.pword.ForeColor = System.Drawing.Color.White;
-            this.pword.Location = new System.Drawing.Point(63, 270);
+            this.pword.Location = new System.Drawing.Point(63, 290);
             this.pword.Name = "pword";
-            this.pword.Size = new System.Drawing.Size(200, 18);
+            this.pword.Size = new System.Drawing.Size(200, 17);
             this.pword.TabIndex = 6;
             this.pword.TabStop = false;
             this.pword.Text = "Password";
@@ -90,7 +91,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(33, 194);
+            this.panel1.Location = new System.Drawing.Point(33, 214);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 1);
             this.panel1.TabIndex = 7;
@@ -98,7 +99,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(34, 244);
+            this.panel2.Location = new System.Drawing.Point(34, 264);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 1);
             this.panel2.TabIndex = 8;
@@ -106,7 +107,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(34, 294);
+            this.panel3.Location = new System.Drawing.Point(34, 314);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 1);
             this.panel3.TabIndex = 9;
@@ -118,24 +119,35 @@
             this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.register.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register.ForeColor = System.Drawing.Color.White;
-            this.register.Location = new System.Drawing.Point(120, 368);
+            this.register.Location = new System.Drawing.Point(121, 395);
             this.register.Name = "register";
             this.register.Size = new System.Drawing.Size(54, 15);
             this.register.TabIndex = 11;
             this.register.Text = "Register";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(128, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 24);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "GMS";
+            // 
             // signin
             // 
-            this.signin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.signin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.signin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signin.BackColor = System.Drawing.Color.DodgerBlue;
             this.signin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.signin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signin.ForeColor = System.Drawing.Color.White;
-            this.signin.Location = new System.Drawing.Point(33, 330);
+            this.signin.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signin.ForeColor = System.Drawing.Color.Transparent;
+            this.signin.Location = new System.Drawing.Point(33, 359);
+            this.signin.Margin = new System.Windows.Forms.Padding(1);
             this.signin.Name = "signin";
-            this.signin.Size = new System.Drawing.Size(231, 35);
-            this.signin.TabIndex = 10;
+            this.signin.Size = new System.Drawing.Size(230, 35);
+            this.signin.TabIndex = 14;
+            this.signin.TabStop = false;
             this.signin.Text = "Sign In";
             this.signin.UseVisualStyleBackColor = false;
             // 
@@ -152,7 +164,7 @@
             // 
             this.picPword.BackColor = System.Drawing.Color.Transparent;
             this.picPword.Image = global::Gym_Management_System.Properties.Resources.pword2;
-            this.picPword.Location = new System.Drawing.Point(34, 265);
+            this.picPword.Location = new System.Drawing.Point(34, 285);
             this.picPword.Margin = new System.Windows.Forms.Padding(1);
             this.picPword.Name = "picPword";
             this.picPword.Size = new System.Drawing.Size(25, 25);
@@ -164,7 +176,7 @@
             // 
             this.picEmail.BackColor = System.Drawing.Color.Transparent;
             this.picEmail.Image = global::Gym_Management_System.Properties.Resources.email1;
-            this.picEmail.Location = new System.Drawing.Point(34, 215);
+            this.picEmail.Location = new System.Drawing.Point(34, 235);
             this.picEmail.Margin = new System.Windows.Forms.Padding(1);
             this.picEmail.Name = "picEmail";
             this.picEmail.Size = new System.Drawing.Size(25, 25);
@@ -176,7 +188,7 @@
             // 
             this.picUser.BackColor = System.Drawing.Color.Transparent;
             this.picUser.Image = global::Gym_Management_System.Properties.Resources.user4;
-            this.picUser.Location = new System.Drawing.Point(34, 165);
+            this.picUser.Location = new System.Drawing.Point(34, 185);
             this.picUser.Margin = new System.Windows.Forms.Padding(1);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(25, 25);
@@ -188,23 +200,24 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(75, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // signinform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(300, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.signin);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.register);
-            this.Controls.Add(this.signin);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -216,7 +229,7 @@
             this.Controls.Add(this.picUser);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "signinform";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "  ";
@@ -241,9 +254,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button signin;
         private System.Windows.Forms.Label register;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button signin;
+        private System.Windows.Forms.Label label1;
     }
 }
 

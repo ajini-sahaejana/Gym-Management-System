@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SignIn.cs">
+    <Compile Include="signinform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignIn.Designer.cs">
-      <DependentUpon>SignIn.cs</DependentUpon>
+    <Compile Include="signinform.Designer.cs">
+      <DependentUpon>signinform.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SignIn.resx">
-      <DependentUpon>SignIn.cs</DependentUpon>
+    <EmbeddedResource Include="signinform.resx">
+      <DependentUpon>signinform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Photos\angryimg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\angryimg %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\angryimg %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
