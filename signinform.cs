@@ -66,19 +66,19 @@ namespace Gym_Management_System
             email.ForeColor = Color.WhiteSmoke;
         }
 
+        private void register_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please Log In with a current Staff Member in order to create a new Staff Account.");
+        }
+
         private void signin_MouseHover(object sender, EventArgs e)
         {
-            signin.BackColor = Color.FromArgb(0, 171, 255);
+            signin.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 171, 255);
         }
 
         private void signin_MouseLeave(object sender, EventArgs e)
         {
-            signin.BackColor = Color.FromArgb(50,50,50);
-        }
-
-        private void register_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Please Log In with a current Staff Member in order to create a new Staff Account.");
+            signin.BackColor = Color.Transparent;   
         }
     }
 }

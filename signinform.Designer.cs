@@ -122,7 +122,7 @@
             this.register.Cursor = System.Windows.Forms.Cursors.Hand;
             this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.register.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register.ForeColor = System.Drawing.Color.White;
+            this.register.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.register.Location = new System.Drawing.Point(119, 395);
             this.register.Name = "register";
             this.register.Size = new System.Drawing.Size(54, 15);
@@ -146,11 +146,14 @@
             this.signin.BackColor = System.Drawing.Color.Transparent;
             this.signin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.signin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signin.FlatAppearance.BorderColor = System.Drawing.Color.DarkTurquoise;
+            this.signin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signin.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signin.ForeColor = System.Drawing.Color.Transparent;
+            this.signin.ForeColor = System.Drawing.Color.White;
             this.signin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.signin.Location = new System.Drawing.Point(33, 359);
+            this.signin.Location = new System.Drawing.Point(33, 350);
             this.signin.Margin = new System.Windows.Forms.Padding(1);
             this.signin.Name = "signin";
             this.signin.Size = new System.Drawing.Size(230, 35);
