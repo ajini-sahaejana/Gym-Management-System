@@ -143,5 +143,11 @@ namespace Gym_Management_System
             panel3.BackColor = Color.WhiteSmoke;
             pword.ForeColor = Color.WhiteSmoke;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Close();
+            initform.ActiveForm.Close();
+        }
     }
 }

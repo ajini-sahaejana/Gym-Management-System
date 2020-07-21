@@ -28,7 +28,6 @@ namespace Gym_Management_System
                 panel1.BackColor = Color.DarkTurquoise;
                 timerSlide1.Start();
             }
-            
         }
 
         private void timerSlide1_Tick(object sender, EventArgs e)
@@ -43,7 +42,6 @@ namespace Gym_Management_System
             {
                 timerSlide1.Stop();
             }
-
         }
 
         private void initform_Load(object sender, EventArgs e)

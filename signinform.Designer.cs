@@ -44,6 +44,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picPword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -236,6 +237,19 @@
             this.panel5.Size = new System.Drawing.Size(300, 5);
             this.panel5.TabIndex = 17;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.label2.Location = new System.Drawing.Point(272, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(17, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // signinform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,6 +258,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(300, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label1);
@@ -290,6 +305,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label2;
     }
 }
 
