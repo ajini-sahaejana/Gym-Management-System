@@ -154,6 +154,7 @@
             this.signin.BackColor = System.Drawing.Color.Transparent;
             this.signin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.signin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.signin.FlatAppearance.BorderColor = System.Drawing.Color.DarkTurquoise;
             this.signin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -253,6 +254,7 @@
             // 
             // signinform
             // 
+            this.AcceptButton = this.signin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
