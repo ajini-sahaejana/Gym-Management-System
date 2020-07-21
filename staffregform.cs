@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Gym_Management_System
 {
-    public partial class mainform : Form
+    public partial class staffregform : Form
     {
-        public mainform()
+        public staffregform()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            staffregform srf1 = new staffregform();
-            srf1.Show();
         }
     }
 }

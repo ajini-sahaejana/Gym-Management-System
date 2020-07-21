@@ -148,7 +148,7 @@ namespace Gym_Management_System
         private void label2_Click(object sender, EventArgs e)
         {
             Close();
-            initform.ActiveForm.Close();
+            ActiveForm.Close();
         }
                         
         //---------------------------------------SQL---------------------------------------------//
