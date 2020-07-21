@@ -34,20 +34,22 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pword = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.TextBox();
-            this.picPword = new System.Windows.Forms.PictureBox();
-            this.picEmail = new System.Windows.Forms.PictureBox();
             this.picUser = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.picEmail = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.picPword = new System.Windows.Forms.PictureBox();
+            this.pword = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPword)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -105,14 +107,27 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Location = new System.Drawing.Point(41, 92);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox1.Location = new System.Drawing.Point(50, 100);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
             this.groupBox1.Size = new System.Drawing.Size(300, 200);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sign In:";
+            this.groupBox1.Text = "       Sign In:";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Gym_Management_System.Properties.Resources.login;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox4.Location = new System.Drawing.Point(60, 96);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 30;
+            this.pictureBox4.TabStop = false;
             // 
             // panel3
             // 
@@ -122,6 +137,18 @@
             this.panel3.Size = new System.Drawing.Size(230, 1);
             this.panel3.TabIndex = 28;
             // 
+            // picUser
+            // 
+            this.picUser.BackColor = System.Drawing.Color.Transparent;
+            this.picUser.Image = global::Gym_Management_System.Properties.Resources.user1;
+            this.picUser.Location = new System.Drawing.Point(35, 35);
+            this.picUser.Margin = new System.Windows.Forms.Padding(1);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(25, 25);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 23;
+            this.picUser.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -130,6 +157,18 @@
             this.panel2.Size = new System.Drawing.Size(230, 1);
             this.panel2.TabIndex = 27;
             // 
+            // picEmail
+            // 
+            this.picEmail.BackColor = System.Drawing.Color.Transparent;
+            this.picEmail.Image = ((System.Drawing.Image)(resources.GetObject("picEmail.Image")));
+            this.picEmail.Location = new System.Drawing.Point(35, 85);
+            this.picEmail.Margin = new System.Windows.Forms.Padding(1);
+            this.picEmail.Name = "picEmail";
+            this.picEmail.Size = new System.Drawing.Size(25, 25);
+            this.picEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picEmail.TabIndex = 24;
+            this.picEmail.TabStop = false;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
@@ -137,6 +176,18 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(230, 1);
             this.panel6.TabIndex = 26;
+            // 
+            // picPword
+            // 
+            this.picPword.BackColor = System.Drawing.Color.Transparent;
+            this.picPword.Image = ((System.Drawing.Image)(resources.GetObject("picPword.Image")));
+            this.picPword.Location = new System.Drawing.Point(35, 135);
+            this.picPword.Margin = new System.Windows.Forms.Padding(1);
+            this.picPword.Name = "picPword";
+            this.picPword.Size = new System.Drawing.Size(25, 25);
+            this.picPword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPword.TabIndex = 25;
+            this.picPword.TabStop = false;
             // 
             // pword
             // 
@@ -151,19 +202,6 @@
             this.pword.TabStop = false;
             this.pword.Text = "Password";
             // 
-            // email
-            // 
-            this.email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.email.Font = new System.Drawing.Font("Arial", 11F);
-            this.email.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.email.Location = new System.Drawing.Point(64, 90);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(200, 17);
-            this.email.TabIndex = 21;
-            this.email.TabStop = false;
-            this.email.Text = "Email";
-            // 
             // username
             // 
             this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
@@ -177,41 +215,18 @@
             this.username.TabStop = false;
             this.username.Text = "Username";
             // 
-            // picPword
+            // email
             // 
-            this.picPword.BackColor = System.Drawing.Color.Transparent;
-            this.picPword.Image = ((System.Drawing.Image)(resources.GetObject("picPword.Image")));
-            this.picPword.Location = new System.Drawing.Point(35, 135);
-            this.picPword.Margin = new System.Windows.Forms.Padding(1);
-            this.picPword.Name = "picPword";
-            this.picPword.Size = new System.Drawing.Size(25, 25);
-            this.picPword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPword.TabIndex = 25;
-            this.picPword.TabStop = false;
-            // 
-            // picEmail
-            // 
-            this.picEmail.BackColor = System.Drawing.Color.Transparent;
-            this.picEmail.Image = ((System.Drawing.Image)(resources.GetObject("picEmail.Image")));
-            this.picEmail.Location = new System.Drawing.Point(35, 85);
-            this.picEmail.Margin = new System.Windows.Forms.Padding(1);
-            this.picEmail.Name = "picEmail";
-            this.picEmail.Size = new System.Drawing.Size(25, 25);
-            this.picEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEmail.TabIndex = 24;
-            this.picEmail.TabStop = false;
-            // 
-            // picUser
-            // 
-            this.picUser.BackColor = System.Drawing.Color.Transparent;
-            this.picUser.Image = global::Gym_Management_System.Properties.Resources.user1;
-            this.picUser.Location = new System.Drawing.Point(35, 35);
-            this.picUser.Margin = new System.Windows.Forms.Padding(1);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(25, 25);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUser.TabIndex = 23;
-            this.picUser.TabStop = false;
+            this.email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email.Font = new System.Drawing.Font("Arial", 11F);
+            this.email.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.email.Location = new System.Drawing.Point(64, 90);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(200, 17);
+            this.email.TabIndex = 21;
+            this.email.TabStop = false;
+            this.email.Text = "Email";
             // 
             // staffregform
             // 
@@ -219,27 +234,33 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1316, 768);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(50, 0);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "staffregform";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "staffregform";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPword)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -259,5 +280,6 @@
         private System.Windows.Forms.TextBox pword;
         private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
