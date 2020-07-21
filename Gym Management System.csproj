@@ -74,6 +74,9 @@
     <EmbeddedResource Include="initform.resx">
       <DependentUpon>initform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signinform.resx">
       <DependentUpon>signinform.cs</DependentUpon>
     </EmbeddedResource>

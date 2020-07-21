@@ -150,7 +150,7 @@ namespace Gym_Management_System
             Close();
             initform.ActiveForm.Close();
         }
-
+                        
         //---------------------------------------SQL---------------------------------------------//
         private void signin_Click(object sender, EventArgs e)
         {
@@ -163,7 +163,7 @@ namespace Gym_Management_System
             {
                 mainform mf1 = new mainform();
                 this.Hide();
-                initform.ActiveForm.Hide();
+                ActiveForm.Hide();
                 mf1.Show();
             }
             else
