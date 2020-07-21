@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Gym_Management_System
 {
@@ -148,6 +149,27 @@ namespace Gym_Management_System
         {
             Close();
             initform.ActiveForm.Close();
+        }
+
+        //---------------------------------------SQL---------------------------------------------//
+        private void signin_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * FROM Staff WHERE s_name = '" + username.Text.Trim() + "' AND s_email='" + email.Text.Trim() + "' AND s_pword='" + pword.Text.Trim() + "'";
+            SqlDataAdapter s1 = new SqlDataAdapter(query, con);
+            DataTable dtbl1 = new DataTable();
+            s1.Fill(dtbl1);
+            if (dtbl1.Rows.Count == 1)
+            {
+                mainform mf1 = new mainform();
+                this.Hide();
+                initform.ActiveForm.Hide();
+                mf1.Show();
+            }
+            else
+            {
+                MessageBox.Show("The details you have entered is not a match. Please try again.");
+            }
         }
     }
 }

@@ -169,6 +169,7 @@
             this.signin.TabStop = false;
             this.signin.Text = "Sign In";
             this.signin.UseVisualStyleBackColor = false;
+            this.signin.Click += new System.EventHandler(this.signin_Click);
             this.signin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.signin_MouseDown);
             this.signin.MouseLeave += new System.EventHandler(this.signin_MouseLeave);
             this.signin.MouseHover += new System.EventHandler(this.signin_MouseHover);
