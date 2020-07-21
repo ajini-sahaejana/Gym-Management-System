@@ -17,15 +17,38 @@ namespace Gym_Management_System
             InitializeComponent();
         }
 
+        private signinform s1 = new signinform();
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             panel1.Width += 2;
             if (panel1.Width>=300)
             {
-                timer1.Stop();
-                panel1.Hide();
+                timerLoad.Stop();
+                panel1.BackColor = Color.DarkTurquoise;
+                timerSlide1.Start();
             }
             
+        }
+
+        private void timerSlide1_Tick(object sender, EventArgs e)
+        {
+            s1.Left += 10;
+            if (s1.Left > 680)
+            {
+                timerSlide1.Stop();
+            }
+            this.Left -= 10;
+            if (this.Left > 680)
+            {
+                timerSlide1.Stop();
+            }
+
+        }
+
+        private void initform_Load(object sender, EventArgs e)
+        {
+            s1.Show();
         }
     }
 }

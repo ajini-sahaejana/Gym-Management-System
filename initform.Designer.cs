@@ -30,22 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerLoad = new System.Windows.Forms.Timer(this.components);
+            this.timerSlide1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel1.Location = new System.Drawing.Point(0, 445);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(20, 5);
             this.panel1.TabIndex = 0;
             // 
-            // timer1
+            // timerLoad
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timerLoad.Enabled = true;
+            this.timerLoad.Interval = 10;
+            this.timerLoad.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timerSlide1
+            // 
+            this.timerSlide1.Interval = 10;
+            this.timerSlide1.Tick += new System.EventHandler(this.timerSlide1_Tick);
             // 
             // initform
             // 
@@ -56,11 +62,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(300, 450);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "initform";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.TopMost = true;
+            this.Load += new System.EventHandler(this.initform_Load);
             this.ResumeLayout(false);
 
         }
@@ -68,6 +75,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerLoad;
+        private System.Windows.Forms.Timer timerSlide1;
     }
 }

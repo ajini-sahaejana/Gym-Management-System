@@ -19,10 +19,9 @@ namespace Gym_Management_System
 
         private void username_Click(object sender, EventArgs e)
         {
-            username.Clear();
             picUser.BackgroundImage = Properties.Resources.user2;
-            panel1.BackColor = Color.FromArgb(0, 171, 255);
-            username.ForeColor = Color.FromArgb(0, 171, 255);
+            panel1.BackColor = Color.DarkTurquoise;
+            username.ForeColor = Color.DarkTurquoise;
 
             picEmail.BackgroundImage = Properties.Resources.email1;
             panel2.BackColor = Color.WhiteSmoke;
@@ -31,14 +30,29 @@ namespace Gym_Management_System
             picPword.BackgroundImage = Properties.Resources.pword2;
             panel3.BackColor = Color.WhiteSmoke;
             pword.ForeColor = Color.WhiteSmoke;
+        }
+
+        private void username_Enter(object sender, EventArgs e)
+        {
+            if (username.Text == "Username")
+            {
+                username.Text = "";
+            }
+        }
+
+        private void username_Leave(object sender, EventArgs e)
+        {
+            if (username.Text == "")
+            {
+                username.Text = "Username";
+            }
         }
 
         private void email_Click(object sender, EventArgs e)
         {
-            email.Clear();
             picEmail.BackgroundImage = Properties.Resources.email2;
-            panel2.BackColor = Color.FromArgb(0, 171, 255);
-            email.ForeColor = Color.FromArgb(0, 171, 255);
+            panel2.BackColor = Color.DarkTurquoise;
+            email.ForeColor = Color.DarkTurquoise;
 
             picUser.BackgroundImage = Properties.Resources.user1;
             panel1.BackColor = Color.WhiteSmoke;
@@ -49,13 +63,27 @@ namespace Gym_Management_System
             pword.ForeColor = Color.WhiteSmoke;
         }
 
+        private void email_Enter(object sender, EventArgs e)
+        {
+            if (email.Text == "Email")
+            {
+                email.Text = "";
+            }
+        }
+
+        private void email_Leave(object sender, EventArgs e)
+        {
+            if (email.Text == "")
+            {
+                email.Text = "Email";
+            }
+        }
+
         private void password_Click(object sender, EventArgs e)
         {
-            pword.Clear();
-            pword.PasswordChar = '*';
             picPword.BackgroundImage = Properties.Resources.pword3;
-            panel3.BackColor = Color.FromArgb(0, 171, 255);
-            pword.ForeColor = Color.FromArgb(0, 171, 255);
+            panel3.BackColor = Color.DarkTurquoise;
+            pword.ForeColor = Color.DarkTurquoise;
 
             picUser.BackgroundImage = Properties.Resources.user1;
             panel1.BackColor = Color.WhiteSmoke;
@@ -65,20 +93,55 @@ namespace Gym_Management_System
             panel2.BackColor = Color.WhiteSmoke;
             email.ForeColor = Color.WhiteSmoke;
         }
+
+        private void pword_Enter(object sender, EventArgs e)
+        {
+            if (pword.Text == "Password")
+            {
+                pword.Text = "";
+                pword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void pword_Leave(object sender, EventArgs e)
+        {
+            if (pword.Text == "")
+            {
+                pword.Text = "Password";
+                pword.UseSystemPasswordChar = false;
+            }
+        }
+        
 
         private void register_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Please Log In with a current Staff Member in order to create a new Staff Account.");
         }
 
+        //Sign In Button 
         private void signin_MouseHover(object sender, EventArgs e)
         {
-            signin.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 171, 255);
+            signin.FlatAppearance.MouseOverBackColor = Color.DarkSlateGray;
         }
 
         private void signin_MouseLeave(object sender, EventArgs e)
         {
-            signin.BackColor = Color.Transparent;   
+            signin.BackColor = Color.Transparent;
+        }
+
+        private void signin_MouseDown(object sender, MouseEventArgs e)
+        {
+            picUser.BackgroundImage = Properties.Resources.user1;
+            panel1.BackColor = Color.WhiteSmoke;
+            username.ForeColor = Color.WhiteSmoke;
+
+            picEmail.BackgroundImage = Properties.Resources.email1;
+            panel2.BackColor = Color.WhiteSmoke;
+            email.ForeColor = Color.WhiteSmoke;
+
+            picPword.BackgroundImage = Properties.Resources.pword2;
+            panel3.BackColor = Color.WhiteSmoke;
+            pword.ForeColor = Color.WhiteSmoke;
         }
     }
 }
