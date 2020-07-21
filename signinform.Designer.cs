@@ -178,7 +178,7 @@
             // picPword
             // 
             this.picPword.BackColor = System.Drawing.Color.Transparent;
-            this.picPword.Image = ((System.Drawing.Image)(resources.GetObject("picPword.Image")));
+            this.picPword.Image = global::Gym_Management_System.Properties.Resources.pword1;
             this.picPword.Location = new System.Drawing.Point(29, 285);
             this.picPword.Margin = new System.Windows.Forms.Padding(1);
             this.picPword.Name = "picPword";
@@ -190,7 +190,7 @@
             // picEmail
             // 
             this.picEmail.BackColor = System.Drawing.Color.Transparent;
-            this.picEmail.Image = ((System.Drawing.Image)(resources.GetObject("picEmail.Image")));
+            this.picEmail.Image = global::Gym_Management_System.Properties.Resources.email1;
             this.picEmail.Location = new System.Drawing.Point(29, 235);
             this.picEmail.Margin = new System.Windows.Forms.Padding(1);
             this.picEmail.Name = "picEmail";
@@ -202,7 +202,7 @@
             // picUser
             // 
             this.picUser.BackColor = System.Drawing.Color.Transparent;
-            this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
+            this.picUser.Image = global::Gym_Management_System.Properties.Resources.user1;
             this.picUser.Location = new System.Drawing.Point(29, 185);
             this.picUser.Margin = new System.Windows.Forms.Padding(1);
             this.picUser.Name = "picUser";

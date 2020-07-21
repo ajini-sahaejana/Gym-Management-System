@@ -161,5 +161,89 @@
   <ItemGroup>
     <None Include="Photos\pics\init1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\hiredate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\age.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\dob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\ContactDetails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\conpword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\pword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\color.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\pictureBox1.BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\logo_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\logo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

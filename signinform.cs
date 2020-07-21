@@ -20,7 +20,7 @@ namespace Gym_Management_System
 
         private void username_Click(object sender, EventArgs e)
         {
-            picUser.BackgroundImage = Properties.Resources.user2;
+            picUser.BackgroundImage = Properties.Resources.user;
             panel1.BackColor = Color.DarkTurquoise;
             username.ForeColor = Color.DarkTurquoise;
 
@@ -28,7 +28,7 @@ namespace Gym_Management_System
             panel2.BackColor = Color.WhiteSmoke;
             email.ForeColor = Color.WhiteSmoke;
 
-            picPword.BackgroundImage = Properties.Resources.pword2;
+            picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
             pword.ForeColor = Color.WhiteSmoke;
         }
@@ -51,7 +51,7 @@ namespace Gym_Management_System
 
         private void email_Click(object sender, EventArgs e)
         {
-            picEmail.BackgroundImage = Properties.Resources.email2;
+            picEmail.BackgroundImage = Properties.Resources.email;
             panel2.BackColor = Color.DarkTurquoise;
             email.ForeColor = Color.DarkTurquoise;
 
@@ -59,7 +59,7 @@ namespace Gym_Management_System
             panel1.BackColor = Color.WhiteSmoke;
             username.ForeColor = Color.WhiteSmoke;
 
-            picPword.BackgroundImage = Properties.Resources.pword2;
+            picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
             pword.ForeColor = Color.WhiteSmoke;
         }
@@ -82,7 +82,7 @@ namespace Gym_Management_System
 
         private void password_Click(object sender, EventArgs e)
         {
-            picPword.BackgroundImage = Properties.Resources.pword3;
+            picPword.BackgroundImage = Properties.Resources.pword;
             panel3.BackColor = Color.DarkTurquoise;
             pword.ForeColor = Color.DarkTurquoise;
 
@@ -140,7 +140,7 @@ namespace Gym_Management_System
             panel2.BackColor = Color.WhiteSmoke;
             email.ForeColor = Color.WhiteSmoke;
 
-            picPword.BackgroundImage = Properties.Resources.pword2;
+            picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
             pword.ForeColor = Color.WhiteSmoke;
         }
