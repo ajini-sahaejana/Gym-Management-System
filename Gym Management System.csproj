@@ -248,5 +248,8 @@
   <ItemGroup>
     <None Include="Photos\gender.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\management.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
