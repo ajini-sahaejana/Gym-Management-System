@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signinform));
-            this.username = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.pword = new System.Windows.Forms.TextBox();
+            this.loginusername = new System.Windows.Forms.TextBox();
+            this.loginemail = new System.Windows.Forms.TextBox();
+            this.loginpword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,60 +44,60 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picPword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // username
+            // loginusername
             // 
-            this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.username.Font = new System.Drawing.Font("Arial", 11F);
-            this.username.ForeColor = System.Drawing.Color.White;
-            this.username.Location = new System.Drawing.Point(58, 190);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(200, 17);
-            this.username.TabIndex = 0;
-            this.username.TabStop = false;
-            this.username.Text = "Username";
-            this.username.Click += new System.EventHandler(this.username_Click);
-            this.username.Enter += new System.EventHandler(this.username_Enter);
-            this.username.Leave += new System.EventHandler(this.username_Leave);
+            this.loginusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.loginusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loginusername.Font = new System.Drawing.Font("Arial", 11F);
+            this.loginusername.ForeColor = System.Drawing.Color.White;
+            this.loginusername.Location = new System.Drawing.Point(58, 190);
+            this.loginusername.Name = "loginusername";
+            this.loginusername.Size = new System.Drawing.Size(200, 17);
+            this.loginusername.TabIndex = 0;
+            this.loginusername.TabStop = false;
+            this.loginusername.Text = "Username";
+            this.loginusername.Click += new System.EventHandler(this.username_Click);
+            this.loginusername.Enter += new System.EventHandler(this.username_Enter);
+            this.loginusername.Leave += new System.EventHandler(this.username_Leave);
             // 
-            // email
+            // loginemail
             // 
-            this.email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.email.Font = new System.Drawing.Font("Arial", 11F);
-            this.email.ForeColor = System.Drawing.Color.White;
-            this.email.Location = new System.Drawing.Point(58, 240);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(200, 17);
-            this.email.TabIndex = 0;
-            this.email.TabStop = false;
-            this.email.Text = "Email";
-            this.email.Click += new System.EventHandler(this.email_Click);
-            this.email.Enter += new System.EventHandler(this.email_Enter);
-            this.email.Leave += new System.EventHandler(this.email_Leave);
+            this.loginemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.loginemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loginemail.Font = new System.Drawing.Font("Arial", 11F);
+            this.loginemail.ForeColor = System.Drawing.Color.White;
+            this.loginemail.Location = new System.Drawing.Point(58, 240);
+            this.loginemail.Name = "loginemail";
+            this.loginemail.Size = new System.Drawing.Size(200, 17);
+            this.loginemail.TabIndex = 0;
+            this.loginemail.TabStop = false;
+            this.loginemail.Text = "Email";
+            this.loginemail.Click += new System.EventHandler(this.email_Click);
+            this.loginemail.Enter += new System.EventHandler(this.email_Enter);
+            this.loginemail.Leave += new System.EventHandler(this.email_Leave);
             // 
-            // pword
+            // loginpword
             // 
-            this.pword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.pword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pword.Font = new System.Drawing.Font("Arial", 11F);
-            this.pword.ForeColor = System.Drawing.Color.White;
-            this.pword.Location = new System.Drawing.Point(58, 290);
-            this.pword.Name = "pword";
-            this.pword.Size = new System.Drawing.Size(200, 17);
-            this.pword.TabIndex = 0;
-            this.pword.TabStop = false;
-            this.pword.Text = "Password";
-            this.pword.Click += new System.EventHandler(this.password_Click);
-            this.pword.Enter += new System.EventHandler(this.pword_Enter);
-            this.pword.Leave += new System.EventHandler(this.pword_Leave);
+            this.loginpword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.loginpword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loginpword.Font = new System.Drawing.Font("Arial", 11F);
+            this.loginpword.ForeColor = System.Drawing.Color.White;
+            this.loginpword.Location = new System.Drawing.Point(58, 290);
+            this.loginpword.Name = "loginpword";
+            this.loginpword.Size = new System.Drawing.Size(200, 17);
+            this.loginpword.TabIndex = 0;
+            this.loginpword.TabStop = false;
+            this.loginpword.Text = "Password";
+            this.loginpword.Click += new System.EventHandler(this.password_Click);
+            this.loginpword.Enter += new System.EventHandler(this.pword_Enter);
+            this.loginpword.Leave += new System.EventHandler(this.pword_Leave);
             // 
             // panel1
             // 
@@ -239,18 +239,18 @@
             this.panel5.Size = new System.Drawing.Size(300, 5);
             this.panel5.TabIndex = 17;
             // 
-            // label2
+            // close
             // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label2.Location = new System.Drawing.Point(272, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.close.AutoSize = true;
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.close.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.close.Location = new System.Drawing.Point(272, 9);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(17, 16);
+            this.close.TabIndex = 0;
+            this.close.Text = "X";
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // signinform
             // 
@@ -261,7 +261,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(300, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label1);
@@ -270,9 +270,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pword);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.username);
+            this.Controls.Add(this.loginpword);
+            this.Controls.Add(this.loginemail);
+            this.Controls.Add(this.loginusername);
             this.Controls.Add(this.picPword);
             this.Controls.Add(this.picEmail);
             this.Controls.Add(this.picUser);
@@ -297,9 +297,9 @@
         private System.Windows.Forms.PictureBox picUser;
         private System.Windows.Forms.PictureBox picEmail;
         private System.Windows.Forms.PictureBox picPword;
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox pword;
+        private System.Windows.Forms.TextBox loginusername;
+        private System.Windows.Forms.TextBox loginemail;
+        private System.Windows.Forms.TextBox loginpword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -308,7 +308,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label close;
     }
 }
 

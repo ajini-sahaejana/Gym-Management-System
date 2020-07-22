@@ -22,30 +22,30 @@ namespace Gym_Management_System
         {
             picUser.BackgroundImage = Properties.Resources.user;
             panel1.BackColor = Color.DarkTurquoise;
-            username.ForeColor = Color.DarkTurquoise;
+            loginusername.ForeColor = Color.DarkTurquoise;
 
             picEmail.BackgroundImage = Properties.Resources.email1;
             panel2.BackColor = Color.WhiteSmoke;
-            email.ForeColor = Color.WhiteSmoke;
+            loginemail.ForeColor = Color.WhiteSmoke;
 
             picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
-            pword.ForeColor = Color.WhiteSmoke;
+            loginpword.ForeColor = Color.WhiteSmoke;
         }
 
         private void username_Enter(object sender, EventArgs e)
         {
-            if (username.Text == "Username")
+            if (loginusername.Text == "Username")
             {
-                username.Text = "";
+                loginusername.Text = "";
             }
         }
 
         private void username_Leave(object sender, EventArgs e)
         {
-            if (username.Text == "")
+            if (loginusername.Text == "")
             {
-                username.Text = "Username";
+                loginusername.Text = "Username";
             }
         }
 
@@ -53,30 +53,30 @@ namespace Gym_Management_System
         {
             picEmail.BackgroundImage = Properties.Resources.email;
             panel2.BackColor = Color.DarkTurquoise;
-            email.ForeColor = Color.DarkTurquoise;
+            loginemail.ForeColor = Color.DarkTurquoise;
 
             picUser.BackgroundImage = Properties.Resources.user1;
             panel1.BackColor = Color.WhiteSmoke;
-            username.ForeColor = Color.WhiteSmoke;
+            loginusername.ForeColor = Color.WhiteSmoke;
 
             picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
-            pword.ForeColor = Color.WhiteSmoke;
+            loginpword.ForeColor = Color.WhiteSmoke;
         }
 
         private void email_Enter(object sender, EventArgs e)
         {
-            if (email.Text == "Email")
+            if (loginemail.Text == "Email")
             {
-                email.Text = "";
+                loginemail.Text = "";
             }
         }
 
         private void email_Leave(object sender, EventArgs e)
         {
-            if (email.Text == "")
+            if (loginemail.Text == "")
             {
-                email.Text = "Email";
+                loginemail.Text = "Email";
             }
         }
 
@@ -84,32 +84,32 @@ namespace Gym_Management_System
         {
             picPword.BackgroundImage = Properties.Resources.pword;
             panel3.BackColor = Color.DarkTurquoise;
-            pword.ForeColor = Color.DarkTurquoise;
+            loginpword.ForeColor = Color.DarkTurquoise;
 
             picUser.BackgroundImage = Properties.Resources.user1;
             panel1.BackColor = Color.WhiteSmoke;
-            username.ForeColor = Color.WhiteSmoke;
+            loginusername.ForeColor = Color.WhiteSmoke;
 
             picEmail.BackgroundImage = Properties.Resources.email1;
             panel2.BackColor = Color.WhiteSmoke;
-            email.ForeColor = Color.WhiteSmoke;
+            loginemail.ForeColor = Color.WhiteSmoke;
         }
 
         private void pword_Enter(object sender, EventArgs e)
         {
-            if (pword.Text == "Password")
+            if (loginpword.Text == "Password")
             {
-                pword.Text = "";
-                pword.UseSystemPasswordChar = true;
+                loginpword.Text = "";
+                loginpword.UseSystemPasswordChar = true;
             }
         }
 
         private void pword_Leave(object sender, EventArgs e)
         {
-            if (pword.Text == "")
+            if (loginpword.Text == "")
             {
-                pword.Text = "Password";
-                pword.UseSystemPasswordChar = false;
+                loginpword.Text = "Password";
+                loginpword.UseSystemPasswordChar = false;
             }
         }
         
@@ -134,18 +134,18 @@ namespace Gym_Management_System
         {
             picUser.BackgroundImage = Properties.Resources.user1;
             panel1.BackColor = Color.WhiteSmoke;
-            username.ForeColor = Color.WhiteSmoke;
+            loginusername.ForeColor = Color.WhiteSmoke;
 
             picEmail.BackgroundImage = Properties.Resources.email1;
             panel2.BackColor = Color.WhiteSmoke;
-            email.ForeColor = Color.WhiteSmoke;
+            loginemail.ForeColor = Color.WhiteSmoke;
 
             picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
-            pword.ForeColor = Color.WhiteSmoke;
+            loginpword.ForeColor = Color.WhiteSmoke;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void close_Click(object sender, EventArgs e)
         {
             Close();
             ActiveForm.Close();
@@ -155,7 +155,7 @@ namespace Gym_Management_System
         private void signin_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * FROM Staff WHERE s_name = '" + username.Text.Trim() + "' AND s_email='" + email.Text.Trim() + "' AND s_pword='" + pword.Text.Trim() + "'";
+            string query = "SELECT * FROM Staff WHERE s_name = '" + loginusername.Text.Trim() + "' AND s_email='" + loginemail.Text.Trim() + "' AND s_pword='" + loginpword.Text.Trim() + "'";
             SqlDataAdapter s1 = new SqlDataAdapter(query, con);
             DataTable dtbl1 = new DataTable();
             s1.Fill(dtbl1);
