@@ -587,9 +587,9 @@
             this.dob.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
             this.dob.CalendarTrailingForeColor = System.Drawing.Color.Gray;
             this.dob.Checked = false;
-            this.dob.CustomFormat = "";
+            this.dob.CustomFormat = "dd/MM/yyyy";
             this.dob.Font = new System.Drawing.Font("Arial", 10F);
-            this.dob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dob.Location = new System.Drawing.Point(190, 95);
             this.dob.Name = "dob";
             this.dob.Size = new System.Drawing.Size(85, 23);
@@ -1050,8 +1050,9 @@
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Gray;
             this.dateTimePicker1.Checked = false;
-            this.dateTimePicker1.CustomFormat = "";
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Arial", 10F);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(190, 98);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(230, 23);
