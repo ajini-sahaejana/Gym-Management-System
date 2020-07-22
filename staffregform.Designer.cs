@@ -117,7 +117,6 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.panel18 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -1237,14 +1236,13 @@
             // 
             this.notes.AllowDrop = true;
             this.notes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.notes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.notes.Font = new System.Drawing.Font("Arial", 10F);
             this.notes.ForeColor = System.Drawing.Color.DodgerBlue;
             this.notes.Location = new System.Drawing.Point(190, 150);
             this.notes.Margin = new System.Windows.Forms.Padding(0);
             this.notes.Multiline = true;
             this.notes.Name = "notes";
-            this.notes.Size = new System.Drawing.Size(230, 60);
+            this.notes.Size = new System.Drawing.Size(230, 69);
             this.notes.TabIndex = 0;
             this.notes.TabStop = false;
             // 
@@ -1293,16 +1291,6 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 23;
             this.pictureBox15.TabStop = false;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel18.Location = new System.Drawing.Point(190, 215);
-            this.panel18.Margin = new System.Windows.Forms.Padding(0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(230, 1);
-            this.panel18.TabIndex = 28;
             // 
             // label19
             // 
@@ -1362,7 +1350,6 @@
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.panel18);
             this.groupBox4.Controls.Add(this.pictureBox15);
             this.groupBox4.Controls.Add(this.pictureBox16);
             this.groupBox4.Controls.Add(this.panel20);
@@ -1827,7 +1814,6 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
