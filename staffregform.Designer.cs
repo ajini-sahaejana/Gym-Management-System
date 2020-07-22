@@ -53,19 +53,18 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dob = new System.Windows.Forms.DateTimePicker();
+            this.other = new System.Windows.Forms.RadioButton();
+            this.female = new System.Windows.Forms.RadioButton();
+            this.male = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.age = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.name = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -85,9 +84,13 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.other = new System.Windows.Forms.RadioButton();
-            this.female = new System.Windows.Forms.RadioButton();
-            this.male = new System.Windows.Forms.RadioButton();
+            this.dob = new System.Windows.Forms.DateTimePicker();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.age = new System.Windows.Forms.TextBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -106,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -392,22 +396,25 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.panel9);
+            this.groupBox2.Controls.Add(this.age);
             this.groupBox2.Controls.Add(this.other);
             this.groupBox2.Controls.Add(this.female);
             this.groupBox2.Controls.Add(this.male);
             this.groupBox2.Controls.Add(this.dob);
+            this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.panel8);
-            this.groupBox2.Controls.Add(this.panel9);
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.panel10);
             this.groupBox2.Controls.Add(this.pictureBox5);
             this.groupBox2.Controls.Add(this.panel11);
+            this.groupBox2.Controls.Add(this.pictureBox12);
             this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.age);
             this.groupBox2.Controls.Add(this.pictureBox7);
             this.groupBox2.Controls.Add(this.name);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -422,21 +429,41 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Personal Details";
             // 
-            // dob
+            // other
             // 
-            this.dob.CalendarFont = new System.Drawing.Font("Arial", 10F);
-            this.dob.CalendarForeColor = System.Drawing.Color.White;
-            this.dob.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.dob.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.dob.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.dob.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.dob.Checked = false;
-            this.dob.CustomFormat = "22/07/2020";
-            this.dob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dob.Location = new System.Drawing.Point(190, 94);
-            this.dob.Name = "dob";
-            this.dob.Size = new System.Drawing.Size(230, 23);
-            this.dob.TabIndex = 33;
+            this.other.AutoSize = true;
+            this.other.Font = new System.Drawing.Font("Arial", 10F);
+            this.other.Location = new System.Drawing.Point(354, 150);
+            this.other.Name = "other";
+            this.other.Size = new System.Drawing.Size(62, 20);
+            this.other.TabIndex = 39;
+            this.other.TabStop = true;
+            this.other.Text = "Other";
+            this.other.UseVisualStyleBackColor = true;
+            // 
+            // female
+            // 
+            this.female.AutoSize = true;
+            this.female.Font = new System.Drawing.Font("Arial", 10F);
+            this.female.Location = new System.Drawing.Point(265, 150);
+            this.female.Name = "female";
+            this.female.Size = new System.Drawing.Size(73, 20);
+            this.female.TabIndex = 38;
+            this.female.TabStop = true;
+            this.female.Text = "Female";
+            this.female.UseVisualStyleBackColor = true;
+            // 
+            // male
+            // 
+            this.male.AutoSize = true;
+            this.male.Font = new System.Drawing.Font("Arial", 10F);
+            this.male.Location = new System.Drawing.Point(193, 150);
+            this.male.Name = "male";
+            this.male.Size = new System.Drawing.Size(56, 20);
+            this.male.TabIndex = 37;
+            this.male.TabStop = true;
+            this.male.Text = "Male";
+            this.male.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -445,16 +472,16 @@
             this.label6.Font = new System.Drawing.Font("Arial", 10F);
             this.label6.Location = new System.Drawing.Point(60, 200);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 16);
+            this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 29;
-            this.label6.Text = "Gender:";
+            this.label6.Text = "Address:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Arial", 10F);
-            this.label7.Location = new System.Drawing.Point(60, 150);
+            this.label7.Location = new System.Drawing.Point(330, 100);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 16);
             this.label7.TabIndex = 29;
@@ -482,26 +509,6 @@
             this.label9.TabIndex = 29;
             this.label9.Text = "Full Name:";
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel8.Location = new System.Drawing.Point(190, 217);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(230, 1);
-            this.panel8.TabIndex = 28;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel9.Location = new System.Drawing.Point(190, 167);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(230, 1);
-            this.panel9.TabIndex = 28;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -518,10 +525,10 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel10.Location = new System.Drawing.Point(190, 117);
+            this.panel10.Location = new System.Drawing.Point(370, 117);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(230, 1);
+            this.panel10.Size = new System.Drawing.Size(50, 1);
             this.panel10.TabIndex = 27;
             // 
             // pictureBox5
@@ -549,7 +556,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.gender;
+            this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.address;
             this.pictureBox6.Location = new System.Drawing.Point(31, 193);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox6.Name = "pictureBox6";
@@ -558,24 +565,11 @@
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
             // 
-            // age
-            // 
-            this.age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.age.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.age.Font = new System.Drawing.Font("Arial", 10F);
-            this.age.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.age.Location = new System.Drawing.Point(190, 150);
-            this.age.Margin = new System.Windows.Forms.Padding(0);
-            this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(230, 16);
-            this.age.TabIndex = 20;
-            this.age.TabStop = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::Gym_Management_System.Properties.Resources.age;
-            this.pictureBox7.Location = new System.Drawing.Point(31, 144);
+            this.pictureBox7.Location = new System.Drawing.Point(301, 94);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
@@ -811,38 +805,91 @@
             this.textBox8.TabIndex = 21;
             this.textBox8.TabStop = false;
             // 
-            // other
+            // dob
             // 
-            this.other.AutoSize = true;
-            this.other.Location = new System.Drawing.Point(350, 196);
-            this.other.Name = "other";
-            this.other.Size = new System.Drawing.Size(66, 20);
-            this.other.TabIndex = 39;
-            this.other.TabStop = true;
-            this.other.Text = "Other";
-            this.other.UseVisualStyleBackColor = true;
+            this.dob.CalendarFont = new System.Drawing.Font("Arial", 10F);
+            this.dob.CalendarForeColor = System.Drawing.Color.White;
+            this.dob.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.dob.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            this.dob.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dob.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.dob.Checked = false;
+            this.dob.CustomFormat = "22/07/2020";
+            this.dob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dob.Location = new System.Drawing.Point(190, 96);
+            this.dob.Name = "dob";
+            this.dob.Size = new System.Drawing.Size(85, 23);
+            this.dob.TabIndex = 33;
             // 
-            // female
+            // panel8
             // 
-            this.female.AutoSize = true;
-            this.female.Location = new System.Drawing.Point(263, 196);
-            this.female.Name = "female";
-            this.female.Size = new System.Drawing.Size(77, 20);
-            this.female.TabIndex = 38;
-            this.female.TabStop = true;
-            this.female.Text = "Female";
-            this.female.UseVisualStyleBackColor = true;
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel8.Location = new System.Drawing.Point(190, 217);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(230, 1);
+            this.panel8.TabIndex = 28;
             // 
-            // male
+            // age
             // 
-            this.male.AutoSize = true;
-            this.male.Location = new System.Drawing.Point(193, 196);
-            this.male.Name = "male";
-            this.male.Size = new System.Drawing.Size(60, 20);
-            this.male.TabIndex = 37;
-            this.male.TabStop = true;
-            this.male.Text = "Male";
-            this.male.UseVisualStyleBackColor = true;
+            this.age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.age.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.age.Font = new System.Drawing.Font("Arial", 10F);
+            this.age.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.age.Location = new System.Drawing.Point(370, 100);
+            this.age.Margin = new System.Windows.Forms.Padding(0);
+            this.age.Name = "age";
+            this.age.Size = new System.Drawing.Size(50, 16);
+            this.age.TabIndex = 20;
+            this.age.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.Image = global::Gym_Management_System.Properties.Resources.gender;
+            this.pictureBox12.Location = new System.Drawing.Point(31, 143);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 25;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Font = new System.Drawing.Font("Arial", 10F);
+            this.label14.Location = new System.Drawing.Point(60, 150);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 16);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Gender:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Arial", 10F);
+            this.textBox2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBox2.Location = new System.Drawing.Point(190, 200);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBox2.Size = new System.Drawing.Size(230, 16);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.TabStop = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel9.Location = new System.Drawing.Point(190, 170);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(230, 1);
+            this.panel9.TabIndex = 29;
             // 
             // staffregform
             // 
@@ -890,6 +937,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -921,19 +969,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dob;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox age;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -956,5 +1000,12 @@
         private System.Windows.Forms.RadioButton other;
         private System.Windows.Forms.RadioButton female;
         private System.Windows.Forms.RadioButton male;
+        private System.Windows.Forms.TextBox age;
+        private System.Windows.Forms.DateTimePicker dob;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
