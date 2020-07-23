@@ -58,7 +58,24 @@ namespace Gym_Management_System
                 return s_othertext.Text;
             }
         }
-        
+
+        //Clear text after saving
+        private void cleartext()
+        {
+            s_idtext.Text = "";
+            s_usernametext.Text = "";
+            s_emailtext.Text = "";
+            s_pwordtext.Text = "";
+            s_conpwordtext.Text = "";
+            s_fullnametext.Text = "";
+            s_dobtext.Value = DateTime.Now;
+            s_agetext.Text = "";
+            radiobuttoncheck();
+            s_addresstext.Text = "";
+            s_contactnotext.Text = "";
+            s_hireddatetext.Value = DateTime.Now;
+            s_notestext.Text = "";
+        }
 
         //---------------------------------------------SQL---------------------------------------------------
 
@@ -98,6 +115,11 @@ namespace Gym_Management_System
 
             con.Close();
 
+            cleartext();
+        }
+
+        private void s_cancel_Click(object sender, EventArgs e)
+        {
             cleartext();
         }
     }

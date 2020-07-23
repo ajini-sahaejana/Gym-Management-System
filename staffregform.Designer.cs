@@ -1456,6 +1456,7 @@
             this.s_cancel.TabStop = false;
             this.s_cancel.Text = "     Cancel";
             this.s_cancel.UseVisualStyleBackColor = true;
+            this.s_cancel.Click += new System.EventHandler(this.s_cancel_Click);
             // 
             // s_delete
             // 
