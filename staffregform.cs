@@ -122,5 +122,25 @@ namespace Gym_Management_System
         {
             cleartext();
         }
+
+        private void s_conpwordtext_TextChanged(object sender, EventArgs e)
+        {
+            /*if (s_pwordtext.Text.Equals(s_conpwordtext.Text))
+            {
+                label16.ForeColor = Color.Tomato;
+            }*/
+        }
+
+        private void s_conpwordtext_Leave(object sender, EventArgs e)
+        {
+            if (!(s_pwordtext.Text.Equals(s_conpwordtext.Text)))
+            {
+                label16.ForeColor = Color.Tomato;
+            }
+            else
+            {
+                label16.ForeColor = Color.FromArgb(36, 41, 46);
+            }
+        }
     }
 }
