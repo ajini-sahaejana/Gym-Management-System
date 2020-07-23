@@ -45,6 +45,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Label();
+            this.showpword = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -156,7 +157,7 @@
             this.signin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.signin.FlatAppearance.BorderColor = System.Drawing.Color.DarkTurquoise;
-            this.signin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.signin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
             this.signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signin.Font = new System.Drawing.Font("Arial", 15F);
@@ -252,6 +253,26 @@
             this.close.Text = "X";
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
+            // showpword
+            // 
+            this.showpword.BackColor = System.Drawing.Color.Transparent;
+            this.showpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose1;
+            this.showpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.showpword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showpword.FlatAppearance.BorderSize = 0;
+            this.showpword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.showpword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.showpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showpword.Font = new System.Drawing.Font("Arial", 10F);
+            this.showpword.Location = new System.Drawing.Point(238, 290);
+            this.showpword.Name = "showpword";
+            this.showpword.Size = new System.Drawing.Size(20, 20);
+            this.showpword.TabIndex = 31;
+            this.showpword.TabStop = false;
+            this.showpword.UseVisualStyleBackColor = false;
+            this.showpword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.showpword_MouseDown);
+            this.showpword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.showpword_MouseUp);
+            // 
             // signinform
             // 
             this.AcceptButton = this.signin;
@@ -261,6 +282,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(300, 450);
+            this.Controls.Add(this.showpword);
             this.Controls.Add(this.close);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -309,6 +331,7 @@
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label close;
+        private System.Windows.Forms.Button showpword;
     }
 }
 

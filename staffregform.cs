@@ -16,5 +16,29 @@ namespace Gym_Management_System
         {
             InitializeComponent();
         }
+
+        private void s_showpword_MouseDown(object sender, MouseEventArgs e)
+        {
+            s_pwordtext.UseSystemPasswordChar = false;
+            s_showpword.BackgroundImage = Properties.Resources.eyeopen;
+        }
+
+        private void s_showpword_MouseUp(object sender, MouseEventArgs e)
+        {
+            s_pwordtext.UseSystemPasswordChar = true;
+            s_showpword.BackgroundImage = Properties.Resources.eyeclose;
+        }
+
+        private void s_showconpword_MouseDown(object sender, MouseEventArgs e)
+        {
+            s_conpwordtext.UseSystemPasswordChar = false;
+            s_showconpword.BackgroundImage = Properties.Resources.eyeopen;
+        }
+
+        private void s_showconpword_MouseUp(object sender, MouseEventArgs e)
+        {
+            s_conpwordtext.UseSystemPasswordChar = true;
+            s_showconpword.BackgroundImage = Properties.Resources.eyeclose;
+        }
     }
 }

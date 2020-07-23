@@ -243,9 +243,29 @@ namespace Gym_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eyeclose1 {
+            get {
+                object obj = ResourceManager.GetObject("eyeclose1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eyeopen {
             get {
                 object obj = ResourceManager.GetObject("eyeopen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eyeopen1 {
+            get {
+                object obj = ResourceManager.GetObject("eyeopen1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

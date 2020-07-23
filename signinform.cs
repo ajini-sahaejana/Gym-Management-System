@@ -31,6 +31,8 @@ namespace Gym_Management_System
             picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
             loginpword.ForeColor = Color.WhiteSmoke;
+
+            showpword.BackgroundImage = Properties.Resources.eyeclose1;
         }
 
         private void username_Enter(object sender, EventArgs e)
@@ -62,6 +64,8 @@ namespace Gym_Management_System
             picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
             loginpword.ForeColor = Color.WhiteSmoke;
+
+            showpword.BackgroundImage = Properties.Resources.eyeclose1;
         }
 
         private void email_Enter(object sender, EventArgs e)
@@ -143,6 +147,8 @@ namespace Gym_Management_System
             picPword.BackgroundImage = Properties.Resources.pword1;
             panel3.BackColor = Color.WhiteSmoke;
             loginpword.ForeColor = Color.WhiteSmoke;
+
+            showpword.BackgroundImage = Properties.Resources.eyeclose1;
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -171,5 +177,17 @@ namespace Gym_Management_System
                 MessageBox.Show("The details you have entered is not a match. Please try again.");
             }
         }
+
+        private void showpword_MouseDown(object sender, MouseEventArgs e)
+        {
+            loginpword.UseSystemPasswordChar = false;
+            showpword.BackgroundImage = Properties.Resources.eyeopen;
+        }
+        private void showpword_MouseUp(object sender, MouseEventArgs e)
+        {
+            loginpword.UseSystemPasswordChar = true;
+            showpword.BackgroundImage = Properties.Resources.eyeclose;
+        }
+
     }
 }

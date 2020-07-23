@@ -257,5 +257,11 @@
   <ItemGroup>
     <None Include="Photos\eyeopen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\eyeopen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\eyeclose1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

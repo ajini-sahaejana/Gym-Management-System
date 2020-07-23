@@ -78,6 +78,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.s_fullnametext = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.s_showconpword = new System.Windows.Forms.Button();
             this.s_showpword = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.s_pwordtext = new System.Windows.Forms.TextBox();
@@ -509,7 +510,7 @@
             this.s_contactnotext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_contactnotext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_contactnotext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_contactnotext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_contactnotext.ForeColor = System.Drawing.Color.White;
             this.s_contactnotext.Location = new System.Drawing.Point(190, 250);
             this.s_contactnotext.Margin = new System.Windows.Forms.Padding(0);
             this.s_contactnotext.Name = "s_contactnotext";
@@ -523,7 +524,7 @@
             this.s_addresstext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_addresstext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_addresstext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_addresstext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_addresstext.ForeColor = System.Drawing.Color.White;
             this.s_addresstext.Location = new System.Drawing.Point(190, 200);
             this.s_addresstext.Margin = new System.Windows.Forms.Padding(0);
             this.s_addresstext.Name = "s_addresstext";
@@ -537,7 +538,7 @@
             this.s_agetext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_agetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_agetext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_agetext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_agetext.ForeColor = System.Drawing.Color.White;
             this.s_agetext.Location = new System.Drawing.Point(370, 100);
             this.s_agetext.Margin = new System.Windows.Forms.Padding(0);
             this.s_agetext.Name = "s_agetext";
@@ -601,6 +602,7 @@
             this.label15.AutoSize = true;
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Arial", 10F);
+            this.label15.ForeColor = System.Drawing.Color.Turquoise;
             this.label15.Location = new System.Drawing.Point(60, 250);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(114, 16);
@@ -612,6 +614,7 @@
             this.label14.AutoSize = true;
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("Arial", 10F);
+            this.label14.ForeColor = System.Drawing.Color.Turquoise;
             this.label14.Location = new System.Drawing.Point(60, 150);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(60, 16);
@@ -623,6 +626,7 @@
             this.label6.AutoSize = true;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Arial", 10F);
+            this.label6.ForeColor = System.Drawing.Color.Turquoise;
             this.label6.Location = new System.Drawing.Point(60, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 16);
@@ -634,6 +638,7 @@
             this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Arial", 10F);
+            this.label7.ForeColor = System.Drawing.Color.Turquoise;
             this.label7.Location = new System.Drawing.Point(330, 100);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 16);
@@ -645,6 +650,7 @@
             this.label8.AutoSize = true;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Arial", 10F);
+            this.label8.ForeColor = System.Drawing.Color.Turquoise;
             this.label8.Location = new System.Drawing.Point(60, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(91, 16);
@@ -666,6 +672,7 @@
             this.label9.AutoSize = true;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Arial", 10F);
+            this.label9.ForeColor = System.Drawing.Color.Turquoise;
             this.label9.Location = new System.Drawing.Point(60, 50);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(75, 16);
@@ -779,7 +786,7 @@
             this.s_fullnametext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_fullnametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_fullnametext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_fullnametext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_fullnametext.ForeColor = System.Drawing.Color.White;
             this.s_fullnametext.Location = new System.Drawing.Point(190, 50);
             this.s_fullnametext.Margin = new System.Windows.Forms.Padding(0);
             this.s_fullnametext.Name = "s_fullnametext";
@@ -790,6 +797,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.s_showconpword);
             this.groupBox3.Controls.Add(this.s_showpword);
             this.groupBox3.Controls.Add(this.panel13);
             this.groupBox3.Controls.Add(this.s_pwordtext);
@@ -809,7 +817,7 @@
             this.groupBox3.Controls.Add(this.s_emailtext);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.groupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(65, 95);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox3.Name = "groupBox3";
@@ -818,6 +826,26 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "       Sign In";
+            // 
+            // s_showconpword
+            // 
+            this.s_showconpword.BackColor = System.Drawing.Color.Transparent;
+            this.s_showconpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose;
+            this.s_showconpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.s_showconpword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.s_showconpword.FlatAppearance.BorderSize = 0;
+            this.s_showconpword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.s_showconpword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.s_showconpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.s_showconpword.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_showconpword.Location = new System.Drawing.Point(395, 192);
+            this.s_showconpword.Name = "s_showconpword";
+            this.s_showconpword.Size = new System.Drawing.Size(25, 25);
+            this.s_showconpword.TabIndex = 30;
+            this.s_showconpword.TabStop = false;
+            this.s_showconpword.UseVisualStyleBackColor = false;
+            this.s_showconpword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.s_showconpword_MouseDown);
+            this.s_showconpword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.s_showconpword_MouseUp);
             // 
             // s_showpword
             // 
@@ -836,11 +864,14 @@
             this.s_showpword.TabIndex = 0;
             this.s_showpword.TabStop = false;
             this.s_showpword.UseVisualStyleBackColor = false;
+            this.s_showpword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.s_showpword_MouseDown);
+            this.s_showpword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.s_showpword_MouseUp);
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
             this.panel13.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel13.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel13.Location = new System.Drawing.Point(190, 167);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
@@ -852,7 +883,7 @@
             this.s_pwordtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_pwordtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_pwordtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_pwordtext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_pwordtext.ForeColor = System.Drawing.Color.White;
             this.s_pwordtext.Location = new System.Drawing.Point(190, 150);
             this.s_pwordtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_pwordtext.Name = "s_pwordtext";
@@ -866,6 +897,7 @@
             this.label10.AutoSize = true;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Arial", 10F);
+            this.label10.ForeColor = System.Drawing.Color.Turquoise;
             this.label10.Location = new System.Drawing.Point(60, 200);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(126, 16);
@@ -877,6 +909,7 @@
             this.label11.AutoSize = true;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Arial", 10F);
+            this.label11.ForeColor = System.Drawing.Color.Turquoise;
             this.label11.Location = new System.Drawing.Point(60, 150);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 16);
@@ -888,6 +921,7 @@
             this.label12.AutoSize = true;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Arial", 10F);
+            this.label12.ForeColor = System.Drawing.Color.Turquoise;
             this.label12.Location = new System.Drawing.Point(60, 100);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(46, 16);
@@ -899,6 +933,7 @@
             this.label13.AutoSize = true;
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Arial", 10F);
+            this.label13.ForeColor = System.Drawing.Color.Turquoise;
             this.label13.Location = new System.Drawing.Point(60, 50);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(76, 16);
@@ -909,6 +944,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel12.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel12.Location = new System.Drawing.Point(190, 217);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
@@ -931,6 +967,7 @@
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel14.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel14.Location = new System.Drawing.Point(190, 117);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
@@ -953,6 +990,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.White;
             this.panel15.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel15.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel15.Location = new System.Drawing.Point(190, 67);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
@@ -976,7 +1014,7 @@
             this.s_conpwordtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_conpwordtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_conpwordtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_conpwordtext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_conpwordtext.ForeColor = System.Drawing.Color.White;
             this.s_conpwordtext.Location = new System.Drawing.Point(190, 200);
             this.s_conpwordtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_conpwordtext.Name = "s_conpwordtext";
@@ -1002,7 +1040,7 @@
             this.s_usernametext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_usernametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_usernametext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_usernametext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_usernametext.ForeColor = System.Drawing.Color.White;
             this.s_usernametext.Location = new System.Drawing.Point(190, 50);
             this.s_usernametext.Margin = new System.Windows.Forms.Padding(0);
             this.s_usernametext.Name = "s_usernametext";
@@ -1015,7 +1053,7 @@
             this.s_emailtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_emailtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_emailtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_emailtext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_emailtext.ForeColor = System.Drawing.Color.White;
             this.s_emailtext.Location = new System.Drawing.Point(190, 100);
             this.s_emailtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_emailtext.Name = "s_emailtext";
@@ -1243,7 +1281,7 @@
             this.s_idtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_idtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_idtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_idtext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_idtext.ForeColor = System.Drawing.Color.White;
             this.s_idtext.Location = new System.Drawing.Point(190, 50);
             this.s_idtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_idtext.Name = "s_idtext";
@@ -1257,7 +1295,7 @@
             this.s_notestext.AllowDrop = true;
             this.s_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_notestext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_notestext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.s_notestext.Location = new System.Drawing.Point(190, 150);
             this.s_notestext.Margin = new System.Windows.Forms.Padding(0);
             this.s_notestext.Multiline = true;
@@ -1317,6 +1355,7 @@
             this.label19.AutoSize = true;
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label19.Font = new System.Drawing.Font("Arial", 10F);
+            this.label19.ForeColor = System.Drawing.Color.Turquoise;
             this.label19.Location = new System.Drawing.Point(60, 50);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(58, 16);
@@ -1328,6 +1367,7 @@
             this.label18.AutoSize = true;
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label18.Font = new System.Drawing.Font("Arial", 10F);
+            this.label18.ForeColor = System.Drawing.Color.Turquoise;
             this.label18.Location = new System.Drawing.Point(60, 100);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(79, 16);
@@ -1339,6 +1379,7 @@
             this.label17.AutoSize = true;
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("Arial", 10F);
+            this.label17.ForeColor = System.Drawing.Color.Turquoise;
             this.label17.Location = new System.Drawing.Point(60, 150);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(48, 16);
@@ -1410,6 +1451,7 @@
             this.s_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.s_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_save.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_save.ForeColor = System.Drawing.Color.White;
             this.s_save.Location = new System.Drawing.Point(25, 45);
             this.s_save.Name = "s_save";
             this.s_save.Size = new System.Drawing.Size(105, 28);
@@ -1427,6 +1469,7 @@
             this.s_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.s_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_update.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_update.ForeColor = System.Drawing.Color.White;
             this.s_update.Location = new System.Drawing.Point(25, 93);
             this.s_update.Name = "s_update";
             this.s_update.Size = new System.Drawing.Size(105, 28);
@@ -1444,6 +1487,7 @@
             this.s_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.s_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_cancel.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_cancel.ForeColor = System.Drawing.Color.White;
             this.s_cancel.Location = new System.Drawing.Point(25, 143);
             this.s_cancel.Name = "s_cancel";
             this.s_cancel.Size = new System.Drawing.Size(105, 28);
@@ -1461,6 +1505,7 @@
             this.s_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.s_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_delete.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_delete.ForeColor = System.Drawing.Color.White;
             this.s_delete.Location = new System.Drawing.Point(25, 191);
             this.s_delete.Name = "s_delete";
             this.s_delete.Size = new System.Drawing.Size(105, 28);
@@ -1562,6 +1607,7 @@
             this.s_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.s_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_search.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_search.ForeColor = System.Drawing.Color.White;
             this.s_search.Location = new System.Drawing.Point(34, 39);
             this.s_search.Name = "s_search";
             this.s_search.Size = new System.Drawing.Size(105, 28);
@@ -1587,7 +1633,7 @@
             this.s_searchtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_searchtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_searchtext.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.s_searchtext.ForeColor = System.Drawing.Color.Turquoise;
             this.s_searchtext.Location = new System.Drawing.Point(145, 44);
             this.s_searchtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_searchtext.Name = "s_searchtext";
@@ -1858,6 +1904,7 @@
         private System.Windows.Forms.ListBox s_records;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.Button s_showconpword;
         private System.Windows.Forms.Button s_showpword;
     }
 }
