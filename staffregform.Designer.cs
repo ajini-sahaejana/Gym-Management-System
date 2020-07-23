@@ -821,7 +821,6 @@
             // 
             // s_showpword
             // 
-            this.s_showpword.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.s_showpword.BackColor = System.Drawing.Color.Transparent;
             this.s_showpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose;
             this.s_showpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
