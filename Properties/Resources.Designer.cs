@@ -163,16 +163,6 @@ namespace Gym_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap color {
-            get {
-                object obj = ResourceManager.GetObject("color", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap conpword {
             get {
                 object obj = ResourceManager.GetObject("conpword", resourceCulture);
@@ -326,16 +316,6 @@ namespace Gym_Management_System.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo__2_ {
-            get {
-                object obj = ResourceManager.GetObject("logo__2_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
