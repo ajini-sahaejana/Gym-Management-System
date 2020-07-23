@@ -78,6 +78,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.s_fullnametext = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.s_showpword = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.s_pwordtext = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -789,6 +790,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.s_showpword);
             this.groupBox3.Controls.Add(this.panel13);
             this.groupBox3.Controls.Add(this.s_pwordtext);
             this.groupBox3.Controls.Add(this.label10);
@@ -816,6 +818,25 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "       Sign In";
+            // 
+            // s_showpword
+            // 
+            this.s_showpword.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
+            this.s_showpword.BackColor = System.Drawing.Color.Transparent;
+            this.s_showpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose;
+            this.s_showpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.s_showpword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.s_showpword.FlatAppearance.BorderSize = 0;
+            this.s_showpword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.s_showpword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.s_showpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.s_showpword.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_showpword.Location = new System.Drawing.Point(395, 142);
+            this.s_showpword.Name = "s_showpword";
+            this.s_showpword.Size = new System.Drawing.Size(25, 25);
+            this.s_showpword.TabIndex = 0;
+            this.s_showpword.TabStop = false;
+            this.s_showpword.UseVisualStyleBackColor = false;
             // 
             // panel13
             // 
@@ -1838,5 +1859,6 @@
         private System.Windows.Forms.ListBox s_records;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.Button s_showpword;
     }
 }
