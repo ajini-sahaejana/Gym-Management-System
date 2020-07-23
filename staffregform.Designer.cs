@@ -78,8 +78,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.s_fullnametext = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.s_showconpword = new System.Windows.Forms.Button();
-            this.s_showpword = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.s_pwordtext = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -143,6 +141,8 @@
             this.s_records = new System.Windows.Forms.ListBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.s_showpword = new System.Windows.Forms.Button();
+            this.s_showconpword = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -826,46 +826,6 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "       Sign In";
-            // 
-            // s_showconpword
-            // 
-            this.s_showconpword.BackColor = System.Drawing.Color.Transparent;
-            this.s_showconpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose;
-            this.s_showconpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.s_showconpword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_showconpword.FlatAppearance.BorderSize = 0;
-            this.s_showconpword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.s_showconpword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_showconpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_showconpword.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_showconpword.Location = new System.Drawing.Point(395, 192);
-            this.s_showconpword.Name = "s_showconpword";
-            this.s_showconpword.Size = new System.Drawing.Size(25, 25);
-            this.s_showconpword.TabIndex = 30;
-            this.s_showconpword.TabStop = false;
-            this.s_showconpword.UseVisualStyleBackColor = false;
-            this.s_showconpword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.s_showconpword_MouseDown);
-            this.s_showconpword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.s_showconpword_MouseUp);
-            // 
-            // s_showpword
-            // 
-            this.s_showpword.BackColor = System.Drawing.Color.Transparent;
-            this.s_showpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose;
-            this.s_showpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.s_showpword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_showpword.FlatAppearance.BorderSize = 0;
-            this.s_showpword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.s_showpword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_showpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_showpword.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_showpword.Location = new System.Drawing.Point(395, 142);
-            this.s_showpword.Name = "s_showpword";
-            this.s_showpword.Size = new System.Drawing.Size(25, 25);
-            this.s_showpword.TabIndex = 0;
-            this.s_showpword.TabStop = false;
-            this.s_showpword.UseVisualStyleBackColor = false;
-            this.s_showpword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.s_showpword_MouseDown);
-            this.s_showpword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.s_showpword_MouseUp);
             // 
             // panel13
             // 
@@ -1707,6 +1667,46 @@
             this.pictureBox25.TabIndex = 39;
             this.pictureBox25.TabStop = false;
             // 
+            // s_showpword
+            // 
+            this.s_showpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose;
+            this.s_showpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.s_showpword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.s_showpword.FlatAppearance.BorderSize = 0;
+            this.s_showpword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.s_showpword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.s_showpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.s_showpword.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_showpword.ForeColor = System.Drawing.Color.Transparent;
+            this.s_showpword.Location = new System.Drawing.Point(400, 147);
+            this.s_showpword.Name = "s_showpword";
+            this.s_showpword.Size = new System.Drawing.Size(20, 20);
+            this.s_showpword.TabIndex = 30;
+            this.s_showpword.TabStop = false;
+            this.s_showpword.UseVisualStyleBackColor = true;
+            this.s_showpword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.s_showpword_MouseDown);
+            this.s_showpword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.s_showpword_MouseUp);
+            // 
+            // s_showconpword
+            // 
+            this.s_showconpword.BackgroundImage = global::Gym_Management_System.Properties.Resources.eyeclose;
+            this.s_showconpword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.s_showconpword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.s_showconpword.FlatAppearance.BorderSize = 0;
+            this.s_showconpword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.s_showconpword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.s_showconpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.s_showconpword.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_showconpword.ForeColor = System.Drawing.Color.Transparent;
+            this.s_showconpword.Location = new System.Drawing.Point(400, 197);
+            this.s_showconpword.Name = "s_showconpword";
+            this.s_showconpword.Size = new System.Drawing.Size(20, 20);
+            this.s_showconpword.TabIndex = 31;
+            this.s_showconpword.TabStop = false;
+            this.s_showconpword.UseVisualStyleBackColor = true;
+            this.s_showconpword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.s_showconpword_MouseDown);
+            this.s_showconpword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.s_showconpword_MouseUp);
+            // 
             // staffregform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1904,7 +1904,7 @@
         private System.Windows.Forms.ListBox s_records;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.Button s_showconpword;
         private System.Windows.Forms.Button s_showpword;
+        private System.Windows.Forms.Button s_showconpword;
     }
 }
