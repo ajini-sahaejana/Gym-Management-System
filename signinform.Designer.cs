@@ -157,8 +157,8 @@
             this.signin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.signin.FlatAppearance.BorderColor = System.Drawing.Color.DarkTurquoise;
-            this.signin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.signin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
             this.signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signin.Font = new System.Drawing.Font("Arial", 15F);
             this.signin.ForeColor = System.Drawing.Color.DarkTurquoise;
@@ -174,7 +174,6 @@
             this.signin.Click += new System.EventHandler(this.signin_Click);
             this.signin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.signin_MouseDown);
             this.signin.MouseLeave += new System.EventHandler(this.signin_MouseLeave);
-            this.signin.MouseHover += new System.EventHandler(this.signin_MouseHover);
             // 
             // picPword
             // 

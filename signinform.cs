@@ -123,12 +123,7 @@ namespace Gym_Management_System
             MessageBox.Show("Please Log In with a current Staff Member in order to create a new Staff Account.");
         }
 
-        //Sign In Button 
-        private void signin_MouseHover(object sender, EventArgs e)
-        {
-            signin.FlatAppearance.MouseOverBackColor = Color.DarkSlateGray;
-        }
-
+        //Sign In Button
         private void signin_MouseLeave(object sender, EventArgs e)
         {
             signin.BackColor = Color.Transparent;
