@@ -575,7 +575,7 @@
             this.s_maletext.Location = new System.Drawing.Point(193, 150);
             this.s_maletext.Name = "s_maletext";
             this.s_maletext.Size = new System.Drawing.Size(56, 20);
-            this.s_maletext.TabIndex = 37;
+            this.s_maletext.TabIndex = 0;
             this.s_maletext.Text = "Male";
             this.s_maletext.UseVisualStyleBackColor = true;
             // 
@@ -1247,7 +1247,7 @@
             this.s_idtext.Name = "s_idtext";
             this.s_idtext.ReadOnly = true;
             this.s_idtext.Size = new System.Drawing.Size(230, 16);
-            this.s_idtext.TabIndex = 22;
+            this.s_idtext.TabIndex = 0;
             this.s_idtext.TabStop = false;
             // 
             // s_notestext
@@ -1419,6 +1419,7 @@
             this.s_save.TabStop = false;
             this.s_save.Text = "   Save";
             this.s_save.UseVisualStyleBackColor = true;
+            this.s_save.Click += new System.EventHandler(this.s_save_Click);
             // 
             // s_update
             // 
@@ -1678,7 +1679,7 @@
             this.s_showpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_showpword.Font = new System.Drawing.Font("Arial", 10F);
             this.s_showpword.ForeColor = System.Drawing.Color.Transparent;
-            this.s_showpword.Location = new System.Drawing.Point(400, 147);
+            this.s_showpword.Location = new System.Drawing.Point(400, 144);
             this.s_showpword.Name = "s_showpword";
             this.s_showpword.Size = new System.Drawing.Size(20, 20);
             this.s_showpword.TabIndex = 30;
@@ -1698,7 +1699,7 @@
             this.s_showconpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_showconpword.Font = new System.Drawing.Font("Arial", 10F);
             this.s_showconpword.ForeColor = System.Drawing.Color.Transparent;
-            this.s_showconpword.Location = new System.Drawing.Point(400, 197);
+            this.s_showconpword.Location = new System.Drawing.Point(400, 194);
             this.s_showconpword.Name = "s_showconpword";
             this.s_showconpword.Size = new System.Drawing.Size(20, 20);
             this.s_showconpword.TabIndex = 31;
