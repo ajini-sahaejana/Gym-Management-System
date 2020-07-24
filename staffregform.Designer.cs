@@ -1199,6 +1199,7 @@
             this.s_update.TabStop = false;
             this.s_update.Text = "     Update";
             this.s_update.UseVisualStyleBackColor = true;
+            this.s_update.Click += new System.EventHandler(this.s_update_Click);
             // 
             // s_cancel
             // 
@@ -1388,6 +1389,7 @@
             // 
             this.s_records.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.s_records.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.s_records.DataSource = this.s_records.CustomTabOffsets;
             this.s_records.Font = new System.Drawing.Font("Arial", 10F);
             this.s_records.ForeColor = System.Drawing.Color.White;
             this.s_records.FormattingEnabled = true;
@@ -1481,7 +1483,6 @@
             this.s_conpwordtext.TabIndex = 20;
             this.s_conpwordtext.TabStop = false;
             this.s_conpwordtext.UseSystemPasswordChar = true;
-            this.s_conpwordtext.TextChanged += new System.EventHandler(this.s_conpwordtext_TextChanged);
             this.s_conpwordtext.Leave += new System.EventHandler(this.s_conpwordtext_Leave);
             // 
             // pictureBox10
@@ -1637,7 +1638,7 @@
             this.s_showpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_showpword.Font = new System.Drawing.Font("Arial", 10F);
             this.s_showpword.ForeColor = System.Drawing.Color.Transparent;
-            this.s_showpword.Location = new System.Drawing.Point(400, 144);
+            this.s_showpword.Location = new System.Drawing.Point(400, 145);
             this.s_showpword.Name = "s_showpword";
             this.s_showpword.Size = new System.Drawing.Size(20, 20);
             this.s_showpword.TabIndex = 30;
@@ -1657,7 +1658,7 @@
             this.s_showconpword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_showconpword.Font = new System.Drawing.Font("Arial", 10F);
             this.s_showconpword.ForeColor = System.Drawing.Color.Transparent;
-            this.s_showconpword.Location = new System.Drawing.Point(400, 194);
+            this.s_showconpword.Location = new System.Drawing.Point(400, 195);
             this.s_showconpword.Name = "s_showconpword";
             this.s_showconpword.Size = new System.Drawing.Size(20, 20);
             this.s_showconpword.TabIndex = 31;

@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="initform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +99,17 @@
     <EmbeddedResource Include="staffregform.resx">
       <DependentUpon>staffregform.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="GMSDataSet.xsc">
+      <DependentUpon>GMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GMSDataSet.xss">
+      <DependentUpon>GMSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

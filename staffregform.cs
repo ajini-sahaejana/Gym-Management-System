@@ -62,19 +62,33 @@ namespace Gym_Management_System
         //Clear text after saving
         private void cleartext()
         {
-            s_idtext.Text = "";
-            s_usernametext.Text = "";
-            s_emailtext.Text = "";
-            s_pwordtext.Text = "";
-            s_conpwordtext.Text = "";
-            s_fullnametext.Text = "";
+            s_idtext.Clear();
+            s_usernametext.Clear();
+            s_emailtext.Clear();
+            s_pwordtext.Clear();
+            s_conpwordtext.Clear();
+            s_fullnametext.Clear();
             s_dobtext.Value = DateTime.Now;
-            s_agetext.Text = "";
-            radiobuttoncheck();
-            s_addresstext.Text = "";
-            s_contactnotext.Text = "";
+            s_agetext.Clear();
+            s_maletext.Checked = false;
+            s_femaletext.Checked = false;
+            s_othertext.Checked = false;
+            s_addresstext.Clear();
+            s_contactnotext.Clear();
             s_hireddatetext.Value = DateTime.Now;
-            s_notestext.Text = "";
+            s_notestext.Clear();
+        }
+
+        private void s_conpwordtext_Leave(object sender, EventArgs e)
+        {
+            if (!(s_pwordtext.Text.Equals(s_conpwordtext.Text)))
+            {
+                label16.ForeColor = Color.Tomato;
+            }
+            else
+            {
+                label16.ForeColor = Color.FromArgb(36, 41, 46);
+            }
         }
 
         //---------------------------------------------SQL---------------------------------------------------
@@ -118,29 +132,17 @@ namespace Gym_Management_System
             cleartext();
         }
 
+
+        private void s_update_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            con.Open();
+
+        }
+
         private void s_cancel_Click(object sender, EventArgs e)
         {
             cleartext();
-        }
-
-        private void s_conpwordtext_TextChanged(object sender, EventArgs e)
-        {
-            /*if (s_pwordtext.Text.Equals(s_conpwordtext.Text))
-            {
-                label16.ForeColor = Color.Tomato;
-            }*/
-        }
-
-        private void s_conpwordtext_Leave(object sender, EventArgs e)
-        {
-            if (!(s_pwordtext.Text.Equals(s_conpwordtext.Text)))
-            {
-                label16.ForeColor = Color.Tomato;
-            }
-            else
-            {
-                label16.ForeColor = Color.FromArgb(36, 41, 46);
-            }
         }
     }
 }
