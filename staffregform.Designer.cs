@@ -120,7 +120,6 @@
             this.s_searchtext = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.s_records = new System.Windows.Forms.ListBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.s_emailtext = new System.Windows.Forms.TextBox();
@@ -1385,24 +1384,9 @@
             this.panel17.Size = new System.Drawing.Size(493, 1);
             this.panel17.TabIndex = 45;
             // 
-            // s_records
-            // 
-            this.s_records.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_records.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.s_records.DataSource = this.s_records.CustomTabOffsets;
-            this.s_records.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_records.ForeColor = System.Drawing.Color.White;
-            this.s_records.FormattingEnabled = true;
-            this.s_records.ItemHeight = 16;
-            this.s_records.Location = new System.Drawing.Point(34, 73);
-            this.s_records.Name = "s_records";
-            this.s_records.Size = new System.Drawing.Size(599, 194);
-            this.s_records.TabIndex = 45;
-            // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox7.Controls.Add(this.s_records);
             this.groupBox7.Controls.Add(this.panel9);
             this.groupBox7.Controls.Add(this.s_searchtext);
             this.groupBox7.Controls.Add(this.pictureBox17);
@@ -1888,7 +1872,6 @@
         private System.Windows.Forms.TextBox s_searchtext;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.ListBox s_records;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.TextBox s_emailtext;

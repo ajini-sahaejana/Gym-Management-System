@@ -137,7 +137,6 @@ namespace Gym_Management_System
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
-
         }
 
         private void s_cancel_Click(object sender, EventArgs e)
