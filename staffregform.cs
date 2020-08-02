@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Gym_Management_System
 {
@@ -171,9 +172,34 @@ namespace Gym_Management_System
             refreshSearch();
         }
 
+        private void s_delete_Click(object sender, EventArgs e)
+        {
+            refreshSearch();
+        }
+
         private void staffregform_Load(object sender, EventArgs e)
         {
             refreshSearch();
         }
+
+
+        /*
+        private void lbStaff_Click(object sender, EventArgs e)
+        {
+            if (dbClass.bs.Position != lbStaff.SelectedIndex)
+            {
+                int idx = lbStaff.SelectedIndex;
+                dbClass.bs.Position = idx;
+            }
+        }
+
+        private void bindingPosition()
+        {
+            if (lbStaff.SelectedIndex != dbClass.bs.Position)
+            {
+                int pos = dbClass.bs.Position;
+                lbStaff.SelectedIndex = pos;
+            }
+        }*/
     }
 }

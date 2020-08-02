@@ -1237,6 +1237,7 @@
             this.s_delete.TabStop = false;
             this.s_delete.Text = "    Delete";
             this.s_delete.UseVisualStyleBackColor = true;
+            this.s_delete.Click += new System.EventHandler(this.s_delete_Click);
             // 
             // pictureBox23
             // 
@@ -1710,6 +1711,7 @@
             this.lbStaff.Name = "lbStaff";
             this.lbStaff.Size = new System.Drawing.Size(599, 208);
             this.lbStaff.TabIndex = 48;
+            this.lbStaff.Click += new System.EventHandler(this.lbStaff_Click);
             // 
             // staffregform
             // 
