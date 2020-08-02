@@ -121,6 +121,9 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.sbid = new System.Windows.Forms.RadioButton();
+            this.sbname = new System.Windows.Forms.RadioButton();
+            this.label20 = new System.Windows.Forms.Label();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.s_emailtext = new System.Windows.Forms.TextBox();
             this.s_usernametext = new System.Windows.Forms.TextBox();
@@ -142,6 +145,7 @@
             this.s_showconpword = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.lbStaff = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -210,7 +214,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 763);
+            this.panel5.Location = new System.Drawing.Point(0, 744);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1316, 5);
             this.panel5.TabIndex = 18;
@@ -221,7 +225,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1311, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 763);
+            this.panel4.Size = new System.Drawing.Size(5, 744);
             this.panel4.TabIndex = 19;
             // 
             // groupBox1
@@ -1360,7 +1364,7 @@
             this.s_searchtext.Location = new System.Drawing.Point(145, 44);
             this.s_searchtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_searchtext.Name = "s_searchtext";
-            this.s_searchtext.Size = new System.Drawing.Size(488, 16);
+            this.s_searchtext.Size = new System.Drawing.Size(356, 16);
             this.s_searchtext.TabIndex = 0;
             // 
             // panel9
@@ -1387,6 +1391,10 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox7.Controls.Add(this.lbStaff);
+            this.groupBox7.Controls.Add(this.sbid);
+            this.groupBox7.Controls.Add(this.sbname);
+            this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.panel9);
             this.groupBox7.Controls.Add(this.s_searchtext);
             this.groupBox7.Controls.Add(this.pictureBox17);
@@ -1402,6 +1410,42 @@
             this.groupBox7.TabIndex = 38;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "       Staff Records";
+            // 
+            // sbid
+            // 
+            this.sbid.AutoSize = true;
+            this.sbid.Font = new System.Drawing.Font("Arial", 8F);
+            this.sbid.ForeColor = System.Drawing.Color.Turquoise;
+            this.sbid.Location = new System.Drawing.Point(599, 44);
+            this.sbid.Name = "sbid";
+            this.sbid.Size = new System.Drawing.Size(34, 18);
+            this.sbid.TabIndex = 47;
+            this.sbid.Text = "ID";
+            this.sbid.UseVisualStyleBackColor = true;
+            // 
+            // sbname
+            // 
+            this.sbname.AutoSize = true;
+            this.sbname.Checked = true;
+            this.sbname.Font = new System.Drawing.Font("Arial", 8F);
+            this.sbname.ForeColor = System.Drawing.Color.Turquoise;
+            this.sbname.Location = new System.Drawing.Point(541, 44);
+            this.sbname.Name = "sbname";
+            this.sbname.Size = new System.Drawing.Size(52, 18);
+            this.sbname.TabIndex = 46;
+            this.sbname.TabStop = true;
+            this.sbname.Text = "Name";
+            this.sbname.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 8F);
+            this.label20.Location = new System.Drawing.Point(533, 27);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(60, 14);
+            this.label20.TabIndex = 45;
+            this.label20.Text = "Search by:";
             // 
             // pictureBox25
             // 
@@ -1696,12 +1740,25 @@
             this.label16.TabIndex = 32;
             this.label16.Text = "Passwords Do Not Match";
             // 
+            // lbStaff
+            // 
+            this.lbStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
+            this.lbStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbStaff.Font = new System.Drawing.Font("Arial", 10F);
+            this.lbStaff.ForeColor = System.Drawing.Color.White;
+            this.lbStaff.FormattingEnabled = true;
+            this.lbStaff.ItemHeight = 16;
+            this.lbStaff.Location = new System.Drawing.Point(34, 70);
+            this.lbStaff.Name = "lbStaff";
+            this.lbStaff.Size = new System.Drawing.Size(599, 208);
+            this.lbStaff.TabIndex = 48;
+            // 
             // staffregform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1316, 768);
+            this.ClientSize = new System.Drawing.Size(1316, 749);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -1728,6 +1785,7 @@
             this.Name = "staffregform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "GMS";
+            this.Load += new System.EventHandler(this.staffregform_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1894,5 +1952,9 @@
         private System.Windows.Forms.Button s_showconpword;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.RadioButton sbid;
+        private System.Windows.Forms.RadioButton sbname;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ListBox lbStaff;
     }
 }

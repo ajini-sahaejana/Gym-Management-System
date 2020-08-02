@@ -33,5 +33,16 @@ namespace Gym_Management_System.Properties {
                 return ((string)(this["GMSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\GMS.mdf;Integ" +
+            "rated Security=True;Connect Timeout=30")]
+        public string GMSConnectionString1 {
+            get {
+                return ((string)(this["GMSConnectionString1"]));
+            }
+        }
     }
 }

@@ -143,5 +143,25 @@ namespace Gym_Management_System
         {
             cleartext();
         }
+
+        private void staffregform_Load(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            con.Open();
+
+            string query = "SELECT * from Staff";
+
+            //Fill Dataset
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            DataTable set = new DataTable();
+            adapter.Fill(set);
+            
+            //Bind the table to the list box
+            lbStaff.DisplayMember = "s_name";
+            lbStaff.ValueMember = "s_id";
+            lbStaff.DataSource = set;
+
+            con.Close();
+        }
     }
 }
