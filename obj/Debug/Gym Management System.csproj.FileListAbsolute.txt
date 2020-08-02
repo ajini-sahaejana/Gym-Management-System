@@ -11,8 +11,3 @@ C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Managem
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.initform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.mainform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.staffregform.resources
-C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\bin\Debug\EntityFramework.dll
-C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\bin\Debug\EntityFramework.xml
-C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym Management System.csproj.CopyComplete
