@@ -115,12 +115,14 @@
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.s_search = new System.Windows.Forms.Button();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.s_searchtext = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.searchbyname = new System.Windows.Forms.RadioButton();
+            this.searchbyid = new System.Windows.Forms.RadioButton();
+            this.label20 = new System.Windows.Forms.Label();
             this.lbStaff = new System.Windows.Forms.ListBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.s_emailtext = new System.Windows.Forms.TextBox();
@@ -1323,25 +1325,6 @@
             this.pictureBox34.TabIndex = 40;
             this.pictureBox34.TabStop = false;
             // 
-            // s_search
-            // 
-            this.s_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_search.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_search.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_search.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_search.ForeColor = System.Drawing.Color.White;
-            this.s_search.Location = new System.Drawing.Point(34, 39);
-            this.s_search.Name = "s_search";
-            this.s_search.Size = new System.Drawing.Size(105, 28);
-            this.s_search.TabIndex = 42;
-            this.s_search.TabStop = false;
-            this.s_search.Text = "    Search";
-            this.s_search.UseVisualStyleBackColor = true;
-            this.s_search.Click += new System.EventHandler(this.s_search_Click);
-            // 
             // pictureBox17
             // 
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
@@ -1360,10 +1343,10 @@
             this.s_searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_searchtext.Font = new System.Drawing.Font("Arial", 10F);
             this.s_searchtext.ForeColor = System.Drawing.Color.Turquoise;
-            this.s_searchtext.Location = new System.Drawing.Point(145, 44);
+            this.s_searchtext.Location = new System.Drawing.Point(68, 44);
             this.s_searchtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_searchtext.Name = "s_searchtext";
-            this.s_searchtext.Size = new System.Drawing.Size(488, 16);
+            this.s_searchtext.Size = new System.Drawing.Size(565, 16);
             this.s_searchtext.TabIndex = 0;
             this.s_searchtext.TextChanged += new System.EventHandler(this.s_searchtext_TextChanged);
             // 
@@ -1372,10 +1355,10 @@
             this.panel9.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel9.Controls.Add(this.panel17);
             this.panel9.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel9.Location = new System.Drawing.Point(140, 65);
+            this.panel9.Location = new System.Drawing.Point(63, 65);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(493, 1);
+            this.panel9.Size = new System.Drawing.Size(570, 1);
             this.panel9.TabIndex = 44;
             // 
             // panel17
@@ -1391,11 +1374,13 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox7.Controls.Add(this.searchbyname);
+            this.groupBox7.Controls.Add(this.searchbyid);
+            this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.lbStaff);
             this.groupBox7.Controls.Add(this.panel9);
             this.groupBox7.Controls.Add(this.s_searchtext);
             this.groupBox7.Controls.Add(this.pictureBox17);
-            this.groupBox7.Controls.Add(this.s_search);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox7.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -1407,6 +1392,42 @@
             this.groupBox7.TabIndex = 38;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "       Staff Records";
+            // 
+            // searchbyname
+            // 
+            this.searchbyname.AutoSize = true;
+            this.searchbyname.Font = new System.Drawing.Font("Arial", 9F);
+            this.searchbyname.ForeColor = System.Drawing.Color.Turquoise;
+            this.searchbyname.Location = new System.Drawing.Point(574, 43);
+            this.searchbyname.Name = "searchbyname";
+            this.searchbyname.Size = new System.Drawing.Size(59, 19);
+            this.searchbyname.TabIndex = 51;
+            this.searchbyname.TabStop = true;
+            this.searchbyname.Text = "Name";
+            this.searchbyname.UseVisualStyleBackColor = true;
+            // 
+            // searchbyid
+            // 
+            this.searchbyid.AutoSize = true;
+            this.searchbyid.Checked = true;
+            this.searchbyid.Font = new System.Drawing.Font("Arial", 9F);
+            this.searchbyid.ForeColor = System.Drawing.Color.Turquoise;
+            this.searchbyid.Location = new System.Drawing.Point(531, 43);
+            this.searchbyid.Name = "searchbyid";
+            this.searchbyid.Size = new System.Drawing.Size(37, 19);
+            this.searchbyid.TabIndex = 50;
+            this.searchbyid.Text = "ID";
+            this.searchbyid.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 9F);
+            this.label20.Location = new System.Drawing.Point(522, 25);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 15);
+            this.label20.TabIndex = 49;
+            this.label20.Text = "Search By:";
             // 
             // lbStaff
             // 
@@ -1886,7 +1907,6 @@
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.Button s_search;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.TextBox s_searchtext;
         private System.Windows.Forms.Panel panel9;
@@ -1914,5 +1934,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ListBox lbStaff;
+        private System.Windows.Forms.RadioButton searchbyname;
+        private System.Windows.Forms.RadioButton searchbyid;
+        private System.Windows.Forms.Label label20;
     }
 }

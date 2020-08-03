@@ -158,8 +158,9 @@ namespace Gym_Management_System
                 while (reader.Read())
                 {
                     string id = reader.GetInt32(0).ToString();
-                    string name = reader.GetString(1);
-                    lbStaff.Items.Add(id + ": " + name);
+                    string uname = reader.GetString(1);
+                    //string fullname = reader.GetString(5);
+                    lbStaff.Items.Add(id + ": " + uname);
                 }
             }
             catch (Exception e)
@@ -241,6 +242,8 @@ namespace Gym_Management_System
             fillListbox();
 
             viewsid();
+
+            s_searchtext.Clear();
         }
 
 
@@ -278,6 +281,8 @@ namespace Gym_Management_System
             fillListbox();
 
             viewsid();
+
+            s_searchtext.Clear();
         }
 
         private void s_cancel_Click(object sender, EventArgs e)
@@ -289,6 +294,8 @@ namespace Gym_Management_System
             fillListbox();
 
             viewsid();
+
+            s_searchtext.Clear();
         }
 
         private void s_delete_Click(object sender, EventArgs e)
@@ -310,6 +317,8 @@ namespace Gym_Management_System
             clearListbox();
 
             fillListbox();
+
+            s_searchtext.Clear();
         }
 
         private void lbStaff_SelectedIndexChanged(object sender, EventArgs e)
@@ -366,46 +375,82 @@ namespace Gym_Management_System
 
         private void searchstaff(string values)
         {
-            lbStaff.SelectedItems.Clear();
-
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = " SELECT * FROM Staff WHERE s_id = '" + values + "' ";
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataReader reader;
-
-            try
+            if (searchbyid.Checked == true)
             {
-                reader = cmd.ExecuteReader();
+                lbStaff.SelectedItems.Clear();
 
-                while (reader.Read())
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = " SELECT * FROM Staff WHERE s_id LIKE '%" + values + "%' ";
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
+                try
                 {
-                    string id = reader.GetInt32(0).ToString();
-                    string name = reader.GetString(1);
-                    lbStaff.Items.Add(id + ": " + name);
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+
+                        string id = reader.GetInt32(0).ToString();
+                        string uname = reader.GetString(1);
+                        //string fullname = reader.GetString(5);
+                        lbStaff.Items.Add(id + ": " + uname);
+                    }
                 }
+                catch (Exception e2)
+                {
+                    MessageBox.Show(e2.Message);
+                }
+
+                con.Close();
             }
-            catch (Exception e2)
+            else
             {
-                MessageBox.Show(e2.Message);
+                lbStaff.SelectedItems.Clear();
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = " SELECT * FROM Staff WHERE s_name LIKE '%" + values + "%' ";
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
+                try
+                {
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string id = reader.GetInt32(0).ToString();
+                        string uname = reader.GetString(1);
+                        //string fullname = reader.GetString(5);
+                        lbStaff.Items.Add(id + ": " + uname);
+                    }
+                }
+                catch (Exception e2)
+                {
+                    MessageBox.Show(e2.Message);
+                }
+
+                con.Close();
             }
 
-            con.Close();
-        }
-
-        private void s_search_Click(object sender, EventArgs e)
-        {
-            string values = s_searchtext.Text.ToString();
-            clearListbox();
-            searchstaff(values);
         }
 
         private void s_searchtext_TextChanged(object sender, EventArgs e)
         {
-            if (s_searchtext.Text.ToString() == "")
+            string values = s_searchtext.Text.ToString().ToLower();
+            if (values == "")
             {
+                clearListbox();
                 fillListbox();
+            }
+            else
+            {
+                clearListbox();
+                searchstaff(values);
             }
         }
     }
