@@ -185,6 +185,8 @@ namespace Gym_Management_System
             {
                 MessageBox.Show(e.Message);
             }
+
+            con.Close();
         }
 
         //---------------------------------------------SQL---------------------------------------------------
@@ -358,31 +360,31 @@ namespace Gym_Management_System
             {
                 MessageBox.Show(er.Message);
             }
-        }
 
-        private void s_search_Click(object sender, EventArgs e)
-        {
-            string values = s_searchtext.Text.ToString();
-            searchstaff(values);
+            con.Close();
         }
 
         private void searchstaff(string values)
         {
+            lbStaff.SelectedItems.Clear();
+
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * FROM Staff WHERE s_id LIKE '%" + values + "%' ";
+            string query = " SELECT * FROM Staff WHERE s_id = '" + values + "' ";
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader reader;
 
             try
             {
-                
-                con.Open();
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                reader = cmd.ExecuteReader();
 
-                SqlDataReader reader;
-
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                lbStaff.DataSource = dt;
+                while (reader.Read())
+                {
+                    string id = reader.GetInt32(0).ToString();
+                    string name = reader.GetString(1);
+                    lbStaff.Items.Add(id + ": " + name);
+                }
             }
             catch (Exception e2)
             {
@@ -392,5 +394,19 @@ namespace Gym_Management_System
             con.Close();
         }
 
+        private void s_search_Click(object sender, EventArgs e)
+        {
+            string values = s_searchtext.Text.ToString();
+            clearListbox();
+            searchstaff(values);
+        }
+
+        private void s_searchtext_TextChanged(object sender, EventArgs e)
+        {
+            if (s_searchtext.Text.ToString() == "")
+            {
+                fillListbox();
+            }
+        }
     }
 }

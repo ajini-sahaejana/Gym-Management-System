@@ -1365,6 +1365,7 @@
             this.s_searchtext.Name = "s_searchtext";
             this.s_searchtext.Size = new System.Drawing.Size(488, 16);
             this.s_searchtext.TabIndex = 0;
+            this.s_searchtext.TextChanged += new System.EventHandler(this.s_searchtext_TextChanged);
             // 
             // panel9
             // 
