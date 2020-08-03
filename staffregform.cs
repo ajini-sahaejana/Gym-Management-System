@@ -17,6 +17,7 @@ namespace Gym_Management_System
         public staffregform()
         {
             InitializeComponent();
+            fillListbox();
         }
 
         private void s_showpword_MouseDown(object sender, MouseEventArgs e)
@@ -91,7 +92,7 @@ namespace Gym_Management_System
                 label16.ForeColor = Color.FromArgb(36, 41, 46);
             }
         }
-
+        /*
         //Refresh Listbox
         private void refreshSearch()
         {
@@ -111,6 +112,51 @@ namespace Gym_Management_System
             lbStaff.DataSource = table;
 
             con.Close();
+        }*/
+
+        //Fill Listbox
+        private void fillListbox()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * from Staff";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            SqlDataReader reader;
+            try
+            {
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    string name = reader.GetString(1);
+                    lbStaff.Items.Add(id + ": " + name);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        //Clear Listbox
+        private void clearListbox()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * from Staff";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            SqlDataReader reader;
+            try
+            {
+                con.Open();
+                lbStaff.Items.Clear();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         //---------------------------------------------SQL---------------------------------------------------
@@ -153,53 +199,33 @@ namespace Gym_Management_System
 
             cleartext();
 
-            refreshSearch();
+            clearListbox();
+
+            fillListbox();
         }
 
 
         private void s_update_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            con.Open();
+            clearListbox();
 
-            refreshSearch();
+            fillListbox();
         }
 
         private void s_cancel_Click(object sender, EventArgs e)
         {
             cleartext();
 
-            refreshSearch();
+            clearListbox();
+
+            fillListbox();
         }
 
         private void s_delete_Click(object sender, EventArgs e)
         {
-            refreshSearch();
+            clearListbox();
+
+            fillListbox();
         }
-
-        private void staffregform_Load(object sender, EventArgs e)
-        {
-            refreshSearch();
-        }
-
-
-        /*
-        private void lbStaff_Click(object sender, EventArgs e)
-        {
-            if (dbClass.bs.Position != lbStaff.SelectedIndex)
-            {
-                int idx = lbStaff.SelectedIndex;
-                dbClass.bs.Position = idx;
-            }
-        }
-
-        private void bindingPosition()
-        {
-            if (lbStaff.SelectedIndex != dbClass.bs.Position)
-            {
-                int pos = dbClass.bs.Position;
-                lbStaff.SelectedIndex = pos;
-            }
-        }*/
     }
 }

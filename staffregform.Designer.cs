@@ -1711,7 +1711,6 @@
             this.lbStaff.Name = "lbStaff";
             this.lbStaff.Size = new System.Drawing.Size(599, 208);
             this.lbStaff.TabIndex = 48;
-            this.lbStaff.Click += new System.EventHandler(this.lbStaff_Click);
             // 
             // staffregform
             // 
@@ -1745,7 +1744,6 @@
             this.Name = "staffregform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "GMS";
-            this.Load += new System.EventHandler(this.staffregform_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
