@@ -1340,6 +1340,7 @@
             this.s_search.TabStop = false;
             this.s_search.Text = "    Search";
             this.s_search.UseVisualStyleBackColor = true;
+            this.s_search.Click += new System.EventHandler(this.s_search_Click);
             // 
             // pictureBox17
             // 

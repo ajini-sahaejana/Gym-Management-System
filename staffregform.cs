@@ -166,6 +166,7 @@ namespace Gym_Management_System
             {
                 MessageBox.Show(e.Message);
             }
+            con.Close();
         }
 
         //Clear Listbox
@@ -358,5 +359,38 @@ namespace Gym_Management_System
                 MessageBox.Show(er.Message);
             }
         }
+
+        private void s_search_Click(object sender, EventArgs e)
+        {
+            string values = s_searchtext.Text.ToString();
+            searchstaff(values);
+        }
+
+        private void searchstaff(string values)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * FROM Staff WHERE s_id LIKE '%" + values + "%' ";
+
+            try
+            {
+                
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                SqlDataReader reader;
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                lbStaff.DataSource = dt;
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.Message);
+            }
+
+            con.Close();
+        }
+
     }
 }
