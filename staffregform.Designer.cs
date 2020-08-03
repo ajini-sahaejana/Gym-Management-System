@@ -121,6 +121,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.lbStaff = new System.Windows.Forms.ListBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.s_emailtext = new System.Windows.Forms.TextBox();
             this.s_usernametext = new System.Windows.Forms.TextBox();
@@ -142,7 +143,6 @@
             this.s_showconpword = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.lbStaff = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -1406,6 +1406,20 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "       Staff Records";
             // 
+            // lbStaff
+            // 
+            this.lbStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
+            this.lbStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbStaff.Font = new System.Drawing.Font("Arial", 10F);
+            this.lbStaff.ForeColor = System.Drawing.Color.White;
+            this.lbStaff.FormattingEnabled = true;
+            this.lbStaff.ItemHeight = 16;
+            this.lbStaff.Location = new System.Drawing.Point(34, 70);
+            this.lbStaff.Name = "lbStaff";
+            this.lbStaff.Size = new System.Drawing.Size(599, 208);
+            this.lbStaff.TabIndex = 48;
+            this.lbStaff.SelectedIndexChanged += new System.EventHandler(this.lbStaff_SelectedIndexChanged);
+            // 
             // pictureBox25
             // 
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1698,19 +1712,6 @@
             this.label16.Size = new System.Drawing.Size(130, 14);
             this.label16.TabIndex = 32;
             this.label16.Text = "Passwords Do Not Match";
-            // 
-            // lbStaff
-            // 
-            this.lbStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
-            this.lbStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbStaff.Font = new System.Drawing.Font("Arial", 10F);
-            this.lbStaff.ForeColor = System.Drawing.Color.White;
-            this.lbStaff.FormattingEnabled = true;
-            this.lbStaff.ItemHeight = 16;
-            this.lbStaff.Location = new System.Drawing.Point(34, 70);
-            this.lbStaff.Name = "lbStaff";
-            this.lbStaff.Size = new System.Drawing.Size(599, 208);
-            this.lbStaff.TabIndex = 48;
             // 
             // staffregform
             // 

@@ -129,7 +129,7 @@ namespace Gym_Management_System
 
                 while (reader.Read())
                 {
-                    int id = reader.GetInt32(0);
+                    string id = reader.GetInt32(0).ToString();
                     string name = reader.GetString(1);
                     lbStaff.Items.Add(id + ": " + name);
                 }
@@ -147,7 +147,6 @@ namespace Gym_Management_System
             string query = "SELECT * from Staff";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-            SqlDataReader reader;
             try
             {
                 con.Open();
@@ -226,6 +225,56 @@ namespace Gym_Management_System
             clearListbox();
 
             fillListbox();
+        }
+
+        private void lbStaff_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string onlyid = new String(lbStaff.Text.Where(Char.IsDigit).ToArray());
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * FROM Staff WHERE s_id = '" + onlyid + "' ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            SqlDataReader reader;
+            try
+            {
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    s_idtext.Text = reader.GetInt32(0).ToString().Trim();
+                    s_usernametext.Text = reader.GetString(1).Trim();
+                    s_emailtext.Text = reader.GetString(2).Trim();
+                    s_pwordtext.Text = reader.GetString(3).Trim();
+                    s_conpwordtext.Text = reader.GetString(4).Trim();
+                    s_fullnametext.Text = reader.GetString(5).Trim();
+                    s_dobtext.Value = reader.GetDateTime(6);
+                    s_agetext.Text = reader.GetString(7).Trim();
+
+                    //Radio button check
+                    if (reader.GetString(8).Trim() == "Male")
+                    {
+                        s_maletext.Checked = true;
+                    }
+                    else if (reader.GetString(8).Trim() == "Female")
+                    {
+                        s_femaletext.Checked = true;
+                    }
+                    else
+                    {
+                        s_othertext.Checked = true;
+                    }
+
+                    s_addresstext.Text = reader.GetString(9).Trim();
+                    s_contactnotext.Text = reader.GetString(10).Trim();
+                    s_hireddatetext.Value = reader.GetDateTime(11);
+                    s_notestext.Text = reader.GetString(12).Trim();
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
         }
     }
 }
