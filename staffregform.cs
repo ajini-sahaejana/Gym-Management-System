@@ -191,36 +191,43 @@ namespace Gym_Management_System
         private void s_save_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            con.Open();
             string query = "SELECT * from Staff";
 
-            //Fill Dataset
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-            DataSet set = new DataSet();
-            adapter.Fill(set, "Staff");
+            try
+            {
+                con.Open();
+                //Fill Dataset
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataSet set = new DataSet();
+                adapter.Fill(set, "Staff");
 
-            //Add new row to database
-            DataRow row = set.Tables["Staff"].NewRow();
-            row["s_name"] = s_usernametext.Text;
-            row["s_email"] = s_emailtext.Text;
-            row["s_pword"] = s_pwordtext.Text;
-            row["s_conpword"] = s_conpwordtext.Text;
-            row["s_fullname"] = s_fullnametext.Text;
-            row["s_dob"] = s_dobtext.Value;
-            row["s_age"] = s_agetext.Text;
-            row["s_gender"] = radiobuttoncheck();
-            row["s_address"] = s_addresstext.Text;
-            row["s_contactno"] = s_contactnotext.Text;
-            row["s_hireddate"] = s_hireddatetext.Value;
-            row["s_notes"] = s_notestext.Text;
+                //Add new row to database
+                DataRow row = set.Tables["Staff"].NewRow();
+                row["s_name"] = s_usernametext.Text;
+                row["s_email"] = s_emailtext.Text;
+                row["s_pword"] = s_pwordtext.Text;
+                row["s_conpword"] = s_conpwordtext.Text;
+                row["s_fullname"] = s_fullnametext.Text;
+                row["s_dob"] = s_dobtext.Value;
+                row["s_age"] = s_agetext.Text;
+                row["s_gender"] = radiobuttoncheck();
+                row["s_address"] = s_addresstext.Text;
+                row["s_contactno"] = s_contactnotext.Text;
+                row["s_hireddate"] = s_hireddatetext.Value;
+                row["s_notes"] = s_notestext.Text;
 
-            set.Tables["Staff"].Rows.Add(row);
+                set.Tables["Staff"].Rows.Add(row);
 
-            //Updating Database Table
-            SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
-            adapter.Update(set.Tables["Staff"]);
+                //Updating Database Table
+                SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+                adapter.Update(set.Tables["Staff"]);
 
-            MessageBox.Show("Staff Account Created Successfully!");
+                MessageBox.Show("Staff Account Created Successfully!");
+            }
+            catch (Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+            }
 
             con.Close();
 
@@ -236,6 +243,32 @@ namespace Gym_Management_System
 
         private void s_update_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            con.Open();
+            string query = "UPDATE Staff SET " +
+                "s_name = '"+this.s_usernametext.Text+"'," +
+                "s_email = '"+this.s_emailtext.Text+"', " +
+                "s_pword = '" + this.s_pwordtext.Text + "', " +
+                "s_conpword = '" + this.s_conpwordtext.Text + "', " +
+                "s_fullname = '" + this.s_fullnametext.Text + "', " +
+                "s_dob = '" + this.s_dobtext.Value + "', " +
+                "s_age = '" + this.s_agetext.Text + "', " +
+                "s_gender = '" + this.radiobuttoncheck() + "', " +
+                "s_address = '" + this.s_addresstext.Text + "', " +
+                "s_contactno = '" + this.s_contactnotext.Text + "', " +
+                "s_hireddate = '" + this.s_hireddatetext.Value + "', " +
+                "s_notes = '" + this.s_notestext.Text + "'" +
+                "WHERE s_id = '" + this.s_idtext.Text + "' ";
+
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            adapter.SelectCommand.ExecuteNonQuery();
+
+            MessageBox.Show("Staff Account Updated Successfully!");
+
+            con.Close();
+
+            cleartext();
+
             clearListbox();
 
             fillListbox();
@@ -265,13 +298,11 @@ namespace Gym_Management_System
 
         private void lbStaff_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string allid = new String(lbStaff.Text.Where(Char.IsDigit).ToArray());
-            string onlyid = allid.Substring(0, 6);
-            MessageBox.Show(onlyid);
+            string onlyid = lbStaff.Text.Substring(0, 6);
+
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "SELECT * FROM Staff WHERE s_id = '" + onlyid + "' ";
             SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             SqlDataReader reader;
             try
             {
