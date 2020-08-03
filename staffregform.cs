@@ -18,6 +18,7 @@ namespace Gym_Management_System
         {
             InitializeComponent();
             fillListbox();
+            viewsid();
         }
 
         private void s_showpword_MouseDown(object sender, MouseEventArgs e)
@@ -42,6 +43,33 @@ namespace Gym_Management_System
         {
             s_conpwordtext.UseSystemPasswordChar = true;
             s_showconpword.BackgroundImage = Properties.Resources.eyeclose;
+        }
+
+        //View Staff_id in the form
+        private void viewsid()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT s_id FROM Staff WHERE s_id = (SELECT MAX(s_id) FROM Staff) ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            SqlDataReader reader;
+            try
+            {
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    id++;
+                    s_idtext.Text = Convert.ToString(id);
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+            con.Close();
         }
 
         //Radio Button Selection
@@ -201,6 +229,8 @@ namespace Gym_Management_System
             clearListbox();
 
             fillListbox();
+
+            viewsid();
         }
 
 
@@ -209,6 +239,8 @@ namespace Gym_Management_System
             clearListbox();
 
             fillListbox();
+
+            viewsid();
         }
 
         private void s_cancel_Click(object sender, EventArgs e)
@@ -218,6 +250,8 @@ namespace Gym_Management_System
             clearListbox();
 
             fillListbox();
+
+            viewsid();
         }
 
         private void s_delete_Click(object sender, EventArgs e)
@@ -225,11 +259,15 @@ namespace Gym_Management_System
             clearListbox();
 
             fillListbox();
+
+            viewsid();
         }
 
         private void lbStaff_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string onlyid = new String(lbStaff.Text.Where(Char.IsDigit).ToArray());
+            string allid = new String(lbStaff.Text.Where(Char.IsDigit).ToArray());
+            string onlyid = allid.Substring(0, 6);
+            MessageBox.Show(onlyid);
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "SELECT * FROM Staff WHERE s_id = '" + onlyid + "' ";
             SqlCommand cmd = new SqlCommand(query, con);
