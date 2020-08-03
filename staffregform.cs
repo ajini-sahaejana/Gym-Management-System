@@ -244,7 +244,6 @@ namespace Gym_Management_System
         private void s_update_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            con.Open();
             string query = "UPDATE Staff SET " +
                 "s_name = '"+this.s_usernametext.Text+"'," +
                 "s_email = '"+this.s_emailtext.Text+"', " +
@@ -259,6 +258,8 @@ namespace Gym_Management_System
                 "s_hireddate = '" + this.s_hireddatetext.Value + "', " +
                 "s_notes = '" + this.s_notestext.Text + "'" +
                 "WHERE s_id = '" + this.s_idtext.Text + "' ";
+
+            con.Open();
 
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             adapter.SelectCommand.ExecuteNonQuery();
@@ -289,11 +290,23 @@ namespace Gym_Management_System
 
         private void s_delete_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "DELETE FROM Staff WHERE s_id =  '" + this.s_idtext.Text + "' ";
+
+            con.Open();
+
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            adapter.SelectCommand.ExecuteNonQuery();
+
+            MessageBox.Show("Staff Account Deleted Successfully!");
+
+            con.Close();
+
+            cleartext();
+
             clearListbox();
 
             fillListbox();
-
-            viewsid();
         }
 
         private void lbStaff_SelectedIndexChanged(object sender, EventArgs e)
