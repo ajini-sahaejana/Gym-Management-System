@@ -57,17 +57,19 @@ namespace Gym_Management_System
         private void manageSession_Click(object sender, EventArgs e)
         {
             sessionform s1 = new sessionform();
-            s1.show();
+            s1.Show();
         }
 
         private void manageMembership_Click(object sender, EventArgs e)
         {
-
+            membershipform mb1 = new membershipform();
+            mb1.Show();
         }
 
         private void managePurchase_Click(object sender, EventArgs e)
         {
-
+            purchaseform p1 = new purchaseform();
+            p1.Show();
         }
 
         private void manageStaff_Click_1(object sender, EventArgs e)

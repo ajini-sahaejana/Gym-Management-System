@@ -87,10 +87,28 @@
     <Compile Include="memberform.Designer.cs">
       <DependentUpon>memberform.cs</DependentUpon>
     </Compile>
+    <Compile Include="membershipform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="membershipform.Designer.cs">
+      <DependentUpon>membershipform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="purchaseform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchaseform.Designer.cs">
+      <DependentUpon>purchaseform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sessionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sessionform.Designer.cs">
+      <DependentUpon>sessionform.cs</DependentUpon>
     </Compile>
     <Compile Include="signinform.cs">
       <SubType>Form</SubType>
@@ -123,6 +141,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="memberform.resx">
       <DependentUpon>memberform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="membershipform.resx">
+      <DependentUpon>membershipform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchaseform.resx">
+      <DependentUpon>purchaseform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sessionform.resx">
+      <DependentUpon>sessionform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="signinform.resx">
       <DependentUpon>signinform.cs</DependentUpon>
