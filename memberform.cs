@@ -27,7 +27,7 @@ namespace Gym_Management_System
             }
         }
 
-        private void panel9_Paint(object sender, PaintEventArgs e)
+        private void bodydata_Click(object sender, EventArgs e)
         {
 
         }
