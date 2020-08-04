@@ -60,8 +60,15 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bodydataform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bodydataform.Designer.cs">
+      <DependentUpon>bodydataform.cs</DependentUpon>
+    </Compile>
     <Compile Include="initform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +80,12 @@
     </Compile>
     <Compile Include="mainform.Designer.cs">
       <DependentUpon>mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memberform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memberform.Designer.cs">
+      <DependentUpon>memberform.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -93,11 +106,17 @@
     <Compile Include="staffregform.Designer.cs">
       <DependentUpon>staffregform.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bodydataform.resx">
+      <DependentUpon>bodydataform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="initform.resx">
       <DependentUpon>initform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberform.resx">
+      <DependentUpon>memberform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="signinform.resx">
       <DependentUpon>signinform.cs</DependentUpon>

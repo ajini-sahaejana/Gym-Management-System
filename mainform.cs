@@ -42,7 +42,13 @@ namespace Gym_Management_System
             showdate.Text = date;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void manageStaff_Click_1(object sender, EventArgs e)
+        {
+            staffregform srf1 = new staffregform();
+            srf1.Show();
+        }
+
+        private void manageMember_Click(object sender, EventArgs e)
         {
             staffregform srf1 = new staffregform();
             srf1.Show();
