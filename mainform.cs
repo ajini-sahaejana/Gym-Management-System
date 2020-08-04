@@ -42,16 +42,38 @@ namespace Gym_Management_System
             showdate.Text = date;
         }
 
-        private void manageStaff_Click_1(object sender, EventArgs e)
-        {
-            staffregform srf1 = new staffregform();
-            srf1.Show();
-        }
-
         private void manageMember_Click(object sender, EventArgs e)
         {
             memberform m1 = new memberform();
             m1.Show();
+        }
+
+        private void manageTrainer_Click(object sender, EventArgs e)
+        {
+            trainerform t1 = new trainerform();
+            t1.Show();
+        }
+
+        private void manageSession_Click(object sender, EventArgs e)
+        {
+            sessionform s1 = new sessionform();
+            s1.show();
+        }
+
+        private void manageMembership_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void managePurchase_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manageStaff_Click_1(object sender, EventArgs e)
+        {
+            staffregform srf1 = new staffregform();
+            srf1.Show();
         }
     }
 }

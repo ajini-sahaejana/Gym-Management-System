@@ -106,6 +106,12 @@
     <Compile Include="staffregform.Designer.cs">
       <DependentUpon>staffregform.cs</DependentUpon>
     </Compile>
+    <Compile Include="trainerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainerform.Designer.cs">
+      <DependentUpon>trainerform.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bodydataform.resx">
       <DependentUpon>bodydataform.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="staffregform.resx">
       <DependentUpon>staffregform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainerform.resx">
+      <DependentUpon>trainerform.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

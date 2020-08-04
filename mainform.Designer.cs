@@ -39,11 +39,11 @@
             this.showtime = new System.Windows.Forms.Label();
             this.welcometext = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.manageMembership = new System.Windows.Forms.Button();
+            this.managePurchase = new System.Windows.Forms.Button();
+            this.manageSession = new System.Windows.Forms.Button();
             this.manageMember = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.manageTrainer = new System.Windows.Forms.Button();
             this.manageStaff = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -55,14 +55,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 763);
+            this.panel4.Size = new System.Drawing.Size(5, 744);
             this.panel4.TabIndex = 21;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 763);
+            this.panel5.Location = new System.Drawing.Point(0, 744);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 20;
@@ -74,7 +74,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(50, 763);
+            this.panel2.Size = new System.Drawing.Size(50, 744);
             this.panel2.TabIndex = 22;
             // 
             // label1
@@ -148,11 +148,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.manageMembership);
+            this.panel1.Controls.Add(this.managePurchase);
+            this.panel1.Controls.Add(this.manageSession);
             this.panel1.Controls.Add(this.manageMember);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.manageTrainer);
             this.panel1.Controls.Add(this.manageStaff);
             this.panel1.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.panel1.Location = new System.Drawing.Point(105, 105);
@@ -160,56 +160,62 @@
             this.panel1.Size = new System.Drawing.Size(800, 600);
             this.panel1.TabIndex = 28;
             // 
-            // button6
+            // manageMembership
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.button6.Location = new System.Drawing.Point(570, 360);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 130);
-            this.button6.TabIndex = 6;
-            this.button6.TabStop = false;
-            this.button6.Text = "Staff";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.manageMembership.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.manageMembership.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageMembership.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.manageMembership.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.manageMembership.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageMembership.Font = new System.Drawing.Font("Arial", 13F);
+            this.manageMembership.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.manageMembership.Location = new System.Drawing.Point(100, 360);
+            this.manageMembership.Name = "manageMembership";
+            this.manageMembership.Size = new System.Drawing.Size(130, 130);
+            this.manageMembership.TabIndex = 6;
+            this.manageMembership.TabStop = false;
+            this.manageMembership.Text = "Manage Memberships";
+            this.manageMembership.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageMembership.UseVisualStyleBackColor = false;
+            this.manageMembership.Click += new System.EventHandler(this.manageMembership_Click);
             // 
-            // button5
+            // managePurchase
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.button5.Location = new System.Drawing.Point(340, 360);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 130);
-            this.button5.TabIndex = 5;
-            this.button5.TabStop = false;
-            this.button5.Text = "Staff";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.managePurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.managePurchase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.managePurchase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.managePurchase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.managePurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.managePurchase.Font = new System.Drawing.Font("Arial", 13F);
+            this.managePurchase.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.managePurchase.Location = new System.Drawing.Point(340, 360);
+            this.managePurchase.Name = "managePurchase";
+            this.managePurchase.Size = new System.Drawing.Size(130, 130);
+            this.managePurchase.TabIndex = 5;
+            this.managePurchase.TabStop = false;
+            this.managePurchase.Text = "Manage Purchases";
+            this.managePurchase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.managePurchase.UseVisualStyleBackColor = false;
+            this.managePurchase.Click += new System.EventHandler(this.managePurchase_Click);
             // 
-            // button4
+            // manageSession
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.button4.Location = new System.Drawing.Point(570, 110);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 130);
-            this.button4.TabIndex = 4;
-            this.button4.TabStop = false;
-            this.button4.Text = "Staff";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.manageSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.manageSession.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageSession.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.manageSession.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.manageSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageSession.Font = new System.Drawing.Font("Arial", 13F);
+            this.manageSession.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.manageSession.Location = new System.Drawing.Point(570, 110);
+            this.manageSession.Name = "manageSession";
+            this.manageSession.Size = new System.Drawing.Size(130, 130);
+            this.manageSession.TabIndex = 4;
+            this.manageSession.TabStop = false;
+            this.manageSession.Text = "Manage Training Sessions";
+            this.manageSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageSession.UseVisualStyleBackColor = false;
+            this.manageSession.Click += new System.EventHandler(this.manageSession_Click);
             // 
             // manageMember
             // 
@@ -218,6 +224,7 @@
             this.manageMember.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.manageMember.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.manageMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageMember.Font = new System.Drawing.Font("Arial", 13F);
             this.manageMember.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.manageMember.Location = new System.Drawing.Point(100, 110);
             this.manageMember.Name = "manageMember";
@@ -229,22 +236,24 @@
             this.manageMember.UseVisualStyleBackColor = false;
             this.manageMember.Click += new System.EventHandler(this.manageMember_Click);
             // 
-            // button2
+            // manageTrainer
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.button2.Location = new System.Drawing.Point(340, 110);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 130);
-            this.button2.TabIndex = 2;
-            this.button2.TabStop = false;
-            this.button2.Text = "Staff";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.manageTrainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.manageTrainer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageTrainer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.manageTrainer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.manageTrainer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageTrainer.Font = new System.Drawing.Font("Arial", 13F);
+            this.manageTrainer.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.manageTrainer.Location = new System.Drawing.Point(340, 110);
+            this.manageTrainer.Name = "manageTrainer";
+            this.manageTrainer.Size = new System.Drawing.Size(130, 130);
+            this.manageTrainer.TabIndex = 2;
+            this.manageTrainer.TabStop = false;
+            this.manageTrainer.Text = "Manage\r\nTrainers";
+            this.manageTrainer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageTrainer.UseVisualStyleBackColor = false;
+            this.manageTrainer.Click += new System.EventHandler(this.manageTrainer_Click);
             // 
             // manageStaff
             // 
@@ -253,8 +262,9 @@
             this.manageStaff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.manageStaff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.manageStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageStaff.Font = new System.Drawing.Font("Arial", 13F);
             this.manageStaff.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.manageStaff.Location = new System.Drawing.Point(100, 360);
+            this.manageStaff.Location = new System.Drawing.Point(570, 360);
             this.manageStaff.Name = "manageStaff";
             this.manageStaff.Size = new System.Drawing.Size(130, 130);
             this.manageStaff.TabIndex = 1;
@@ -269,7 +279,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.welcometext);
             this.Controls.Add(this.panel6);
@@ -306,10 +316,10 @@
         private System.Windows.Forms.Label showdate;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button manageStaff;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button manageMembership;
+        private System.Windows.Forms.Button managePurchase;
+        private System.Windows.Forms.Button manageSession;
         private System.Windows.Forms.Button manageMember;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button manageTrainer;
     }
 }

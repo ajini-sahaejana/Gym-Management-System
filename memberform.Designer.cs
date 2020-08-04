@@ -1231,7 +1231,7 @@
             this.bodydata.Size = new System.Drawing.Size(390, 40);
             this.bodydata.TabIndex = 54;
             this.bodydata.TabStop = false;
-            this.bodydata.Text = "   Click Here To Enter Body Details";
+            this.bodydata.Text = "   Click Here To Enter Additional Data";
             this.bodydata.UseVisualStyleBackColor = true;
             // 
             // textBox3
