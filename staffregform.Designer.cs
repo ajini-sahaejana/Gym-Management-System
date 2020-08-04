@@ -213,7 +213,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 744);
+            this.panel5.Location = new System.Drawing.Point(0, 763);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1316, 5);
             this.panel5.TabIndex = 18;
@@ -224,7 +224,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1311, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 744);
+            this.panel4.Size = new System.Drawing.Size(5, 763);
             this.panel4.TabIndex = 19;
             // 
             // groupBox1
@@ -1416,6 +1416,7 @@
             this.searchbyid.Name = "searchbyid";
             this.searchbyid.Size = new System.Drawing.Size(37, 19);
             this.searchbyid.TabIndex = 50;
+            this.searchbyid.TabStop = true;
             this.searchbyid.Text = "ID";
             this.searchbyid.UseVisualStyleBackColor = true;
             // 
@@ -1741,7 +1742,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1316, 749);
+            this.ClientSize = new System.Drawing.Size(1316, 768);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);

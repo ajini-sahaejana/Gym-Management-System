@@ -183,6 +183,16 @@ namespace Gym_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dashboardlogo {
+            get {
+                object obj = ResourceManager.GetObject("dashboardlogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
@@ -336,6 +346,16 @@ namespace Gym_Management_System.Properties {
         internal static System.Drawing.Bitmap logo1 {
             get {
                 object obj = ResourceManager.GetObject("logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo11 {
+            get {
+                object obj = ResourceManager.GetObject("logo11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

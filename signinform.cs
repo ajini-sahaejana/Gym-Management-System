@@ -18,6 +18,8 @@ namespace Gym_Management_System
             InitializeComponent();
         }
 
+        public static string viewsname;
+
         private void username_Click(object sender, EventArgs e)
         {
             picUser.BackgroundImage = Properties.Resources.user;
@@ -157,11 +159,14 @@ namespace Gym_Management_System
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "SELECT * FROM Staff WHERE s_name = '" + loginusername.Text.Trim() + "' AND s_email='" + loginemail.Text.Trim() + "' AND s_pword='" + loginpword.Text.Trim() + "'";
+            con.Open();
             SqlDataAdapter s1 = new SqlDataAdapter(query, con);
             DataTable dtbl1 = new DataTable();
             s1.Fill(dtbl1);
             if (dtbl1.Rows.Count == 1)
             {
+                viewsname = this.loginusername.Text;
+
                 mainform mf1 = new mainform();
                 this.Hide();
                 ActiveForm.Hide();
@@ -171,6 +176,7 @@ namespace Gym_Management_System
             {
                 MessageBox.Show("The details you have entered is not a match. Please try again.");
             }
+            con.Close();
         }
 
         private void showpword_MouseDown(object sender, MouseEventArgs e)
