@@ -35,7 +35,7 @@
             this.searchbyname = new System.Windows.Forms.RadioButton();
             this.searchbyid = new System.Windows.Forms.RadioButton();
             this.label20 = new System.Windows.Forms.Label();
-            this.lbStaff = new System.Windows.Forms.ListBox();
+            this.lbMember = new System.Windows.Forms.ListBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.s_delete = new System.Windows.Forms.Button();
@@ -95,28 +95,25 @@
             this.bodydata = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.s_addresstext = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
@@ -146,9 +143,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox34
@@ -225,18 +222,18 @@
             this.label20.TabIndex = 49;
             this.label20.Text = "Search By:";
             // 
-            // lbStaff
+            // lbMember
             // 
-            this.lbStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
-            this.lbStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbStaff.Font = new System.Drawing.Font("Arial", 10F);
-            this.lbStaff.ForeColor = System.Drawing.Color.White;
-            this.lbStaff.FormattingEnabled = true;
-            this.lbStaff.ItemHeight = 16;
-            this.lbStaff.Location = new System.Drawing.Point(13, 85);
-            this.lbStaff.Name = "lbStaff";
-            this.lbStaff.Size = new System.Drawing.Size(254, 496);
-            this.lbStaff.TabIndex = 48;
+            this.lbMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
+            this.lbMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMember.Font = new System.Drawing.Font("Arial", 10F);
+            this.lbMember.ForeColor = System.Drawing.Color.White;
+            this.lbMember.FormattingEnabled = true;
+            this.lbMember.ItemHeight = 16;
+            this.lbMember.Location = new System.Drawing.Point(13, 85);
+            this.lbMember.Name = "lbMember";
+            this.lbMember.Size = new System.Drawing.Size(254, 496);
+            this.lbMember.TabIndex = 48;
             // 
             // pictureBox24
             // 
@@ -436,7 +433,7 @@
             this.groupBox7.Controls.Add(this.searchbyname);
             this.groupBox7.Controls.Add(this.searchbyid);
             this.groupBox7.Controls.Add(this.label20);
-            this.groupBox7.Controls.Add(this.lbStaff);
+            this.groupBox7.Controls.Add(this.lbMember);
             this.groupBox7.Controls.Add(this.panel9);
             this.groupBox7.Controls.Add(this.s_searchtext);
             this.groupBox7.Controls.Add(this.pictureBox17);
@@ -1027,14 +1024,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.s_addresstext);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.panel8);
             this.groupBox1.Controls.Add(this.pictureBox9);
-            this.groupBox1.Controls.Add(this.panel12);
             this.groupBox1.Controls.Add(this.pictureBox18);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -1046,6 +1042,18 @@
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "       Membership Details";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 10F);
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(185, 45);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(190, 24);
+            this.comboBox1.TabIndex = 30;
             // 
             // s_addresstext
             // 
@@ -1107,16 +1115,6 @@
             this.pictureBox9.TabIndex = 23;
             this.pictureBox9.TabStop = false;
             // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel12.Location = new System.Drawing.Point(185, 67);
-            this.panel12.Margin = new System.Windows.Forms.Padding(0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(190, 1);
-            this.panel12.TabIndex = 26;
-            // 
             // pictureBox18
             // 
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
@@ -1128,19 +1126,6 @@
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox18.TabIndex = 25;
             this.pictureBox18.TabStop = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(185, 50);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(190, 16);
-            this.textBox5.TabIndex = 22;
-            this.textBox5.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -1158,18 +1143,16 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.comboBox2);
             this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.panel13);
             this.groupBox3.Controls.Add(this.pictureBox19);
-            this.groupBox3.Controls.Add(this.textBox3);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.panel6);
             this.groupBox3.Controls.Add(this.pictureBox11);
-            this.groupBox3.Controls.Add(this.panel7);
             this.groupBox3.Controls.Add(this.pictureBox15);
-            this.groupBox3.Controls.Add(this.textBox4);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -1182,100 +1165,29 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "       Training Session Details";
             // 
-            // textBox3
+            // comboBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(185, 90);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox3.Size = new System.Drawing.Size(190, 16);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.TabStop = false;
+            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox3.Font = new System.Drawing.Font("Arial", 10F);
+            this.comboBox3.ForeColor = System.Drawing.Color.White;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(185, 84);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(190, 24);
+            this.comboBox3.TabIndex = 34;
             // 
-            // label4
+            // comboBox2
             // 
-            this.label4.AutoSize = true;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Arial", 10F);
-            this.label4.ForeColor = System.Drawing.Color.Turquoise;
-            this.label4.Location = new System.Drawing.Point(60, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 16);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Training Session:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Arial", 10F);
-            this.label5.ForeColor = System.Drawing.Color.Turquoise;
-            this.label5.Location = new System.Drawing.Point(60, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 16);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Trainer Name:";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel6.Location = new System.Drawing.Point(185, 107);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(190, 1);
-            this.panel6.TabIndex = 28;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox11.Location = new System.Drawing.Point(31, 44);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 23;
-            this.pictureBox11.TabStop = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel7.Location = new System.Drawing.Point(185, 67);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(190, 1);
-            this.panel7.TabIndex = 26;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox15.Location = new System.Drawing.Point(31, 83);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 25;
-            this.pictureBox15.TabStop = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(185, 50);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 16);
-            this.textBox4.TabIndex = 22;
-            this.textBox4.TabStop = false;
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.Font = new System.Drawing.Font("Arial", 10F);
+            this.comboBox2.ForeColor = System.Drawing.Color.White;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(185, 45);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(190, 24);
+            this.comboBox2.TabIndex = 31;
             // 
             // textBox6
             // 
@@ -1324,6 +1236,54 @@
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox19.TabIndex = 31;
             this.pictureBox19.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Arial", 10F);
+            this.label4.ForeColor = System.Drawing.Color.Turquoise;
+            this.label4.Location = new System.Drawing.Point(60, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(117, 16);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Training Session:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Arial", 10F);
+            this.label5.ForeColor = System.Drawing.Color.Turquoise;
+            this.label5.Location = new System.Drawing.Point(60, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 16);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Trainer Name:";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox11.Location = new System.Drawing.Point(31, 44);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 23;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox15.Image = global::Gym_Management_System.Properties.Resources.address;
+            this.pictureBox15.Location = new System.Drawing.Point(31, 83);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 25;
+            this.pictureBox15.TabStop = false;
             // 
             // memberform
             // 
@@ -1390,9 +1350,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1406,7 +1366,7 @@
         private System.Windows.Forms.RadioButton searchbyname;
         private System.Windows.Forms.RadioButton searchbyid;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ListBox lbStaff;
+        private System.Windows.Forms.ListBox lbMember;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.Button s_delete;
@@ -1471,22 +1431,19 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
