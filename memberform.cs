@@ -30,6 +30,7 @@ namespace Gym_Management_System
         private void bodydata_Click(object sender, EventArgs e)
         {
             bodydataform bdf1 = new bodydataform();
+            bdf1.Show();
         }
     }
 }
