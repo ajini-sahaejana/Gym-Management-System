@@ -31,5 +31,21 @@ namespace Gym_Management_System
             string name = signinform.viewsname;
             welcometext.Text = "  Welcome " + name + "!   ";
         }
+
+        private void mainform_Load(object sender, EventArgs e)
+        {
+            Timer t = new Timer();
+            t.Interval = 1000;
+            t.Tick += new EventHandler(this.t_Tick);
+            t.Start();
+        }
+
+        private void t_Tick(object sender, EventArgs e)
+        {
+            string time = DateTime.Now.ToLongTimeString();
+            string date = DateTime.Now.ToLongDateString();
+            showtime.Text = time;
+            showdate.Text = date;
+        }
     }
 }

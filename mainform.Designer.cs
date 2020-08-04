@@ -36,7 +36,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.showdate = new System.Windows.Forms.Label();
+            this.showtime = new System.Windows.Forms.Label();
             this.welcometext = new System.Windows.Forms.Label();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -59,14 +62,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 763);
+            this.panel4.Size = new System.Drawing.Size(5, 744);
             this.panel4.TabIndex = 21;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 763);
+            this.panel5.Location = new System.Drawing.Point(0, 744);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 20;
@@ -78,7 +81,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(50, 763);
+            this.panel2.Size = new System.Drawing.Size(50, 744);
             this.panel2.TabIndex = 22;
             // 
             // label1
@@ -106,22 +109,45 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
+            this.panel6.Controls.Add(this.showdate);
+            this.panel6.Controls.Add(this.showtime);
             this.panel6.Location = new System.Drawing.Point(1001, 94);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(350, 185);
             this.panel6.TabIndex = 0;
             // 
+            // showdate
+            // 
+            this.showdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showdate.Font = new System.Drawing.Font("Arial", 10F);
+            this.showdate.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.showdate.Location = new System.Drawing.Point(10, 105);
+            this.showdate.Name = "showdate";
+            this.showdate.Size = new System.Drawing.Size(330, 45);
+            this.showdate.TabIndex = 1;
+            this.showdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // showtime
+            // 
+            this.showtime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showtime.Font = new System.Drawing.Font("Arial Rounded MT Bold", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.showtime.Location = new System.Drawing.Point(10, 10);
+            this.showtime.Name = "showtime";
+            this.showtime.Size = new System.Drawing.Size(330, 150);
+            this.showtime.TabIndex = 0;
+            this.showtime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // welcometext
             // 
-            this.welcometext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
+            this.welcometext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.welcometext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.welcometext.Font = new System.Drawing.Font("Arial", 20F);
-            this.welcometext.ForeColor = System.Drawing.Color.CadetBlue;
-            this.welcometext.Image = global::Gym_Management_System.Properties.Resources.dashboardlogo;
+            this.welcometext.ForeColor = System.Drawing.Color.MediumTurquoise;
             this.welcometext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.welcometext.Location = new System.Drawing.Point(53, 25);
             this.welcometext.Name = "welcometext";
-            this.welcometext.Size = new System.Drawing.Size(1308, 58);
+            this.welcometext.Size = new System.Drawing.Size(1295, 58);
             this.welcometext.TabIndex = 27;
             this.welcometext.Text = "Welcome";
             this.welcometext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -131,7 +157,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.welcometext);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label1);
@@ -147,8 +173,11 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1364, 736);
             this.Name = "mainform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.mainform_Load);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -163,5 +192,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label welcometext;
+        private System.Windows.Forms.Label showtime;
+        private System.Windows.Forms.Label showdate;
     }
 }
