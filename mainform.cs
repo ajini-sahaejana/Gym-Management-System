@@ -19,17 +19,11 @@ namespace Gym_Management_System
             welcomemsg();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            staffregform srf1 = new staffregform();
-            srf1.Show();
-        }
-
         //View username in the form
         private void welcomemsg()
         {
             string name = signinform.viewsname;
-            welcometext.Text = "  Welcome " + name + "!   ";
+            welcometext.Text = "Welcome " + name + "!";
         }
 
         private void mainform_Load(object sender, EventArgs e)
@@ -46,6 +40,12 @@ namespace Gym_Management_System
             string date = DateTime.Now.ToLongDateString();
             showtime.Text = time;
             showdate.Text = date;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            staffregform srf1 = new staffregform();
+            srf1.Show();
         }
     }
 }

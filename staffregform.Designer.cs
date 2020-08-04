@@ -145,6 +145,8 @@
             this.s_showconpword = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.goback = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -213,18 +215,18 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 763);
+            this.panel5.Location = new System.Drawing.Point(0, 744);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1316, 5);
+            this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 18;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1311, 0);
+            this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 763);
+            this.panel4.Size = new System.Drawing.Size(5, 744);
             this.panel4.TabIndex = 19;
             // 
             // groupBox1
@@ -249,7 +251,7 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Location = new System.Drawing.Point(65, 95);
+            this.groupBox1.Location = new System.Drawing.Point(110, 94);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
@@ -447,7 +449,7 @@
             this.pictureBox4.BackgroundImage = global::Gym_Management_System.Properties.Resources.login;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox4.Location = new System.Drawing.Point(75, 91);
+            this.pictureBox4.Location = new System.Drawing.Point(120, 90);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
@@ -460,7 +462,7 @@
             this.pictureBox2.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox2.Location = new System.Drawing.Point(75, 395);
+            this.pictureBox2.Location = new System.Drawing.Point(120, 394);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
@@ -498,7 +500,7 @@
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox2.Location = new System.Drawing.Point(65, 401);
+            this.groupBox2.Location = new System.Drawing.Point(110, 400);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(10);
@@ -552,7 +554,7 @@
             // 
             this.s_othertext.AutoSize = true;
             this.s_othertext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_othertext.Location = new System.Drawing.Point(354, 150);
+            this.s_othertext.Location = new System.Drawing.Point(354, 151);
             this.s_othertext.Name = "s_othertext";
             this.s_othertext.Size = new System.Drawing.Size(62, 20);
             this.s_othertext.TabIndex = 39;
@@ -563,7 +565,7 @@
             // 
             this.s_femaletext.AutoSize = true;
             this.s_femaletext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_femaletext.Location = new System.Drawing.Point(265, 150);
+            this.s_femaletext.Location = new System.Drawing.Point(265, 151);
             this.s_femaletext.Name = "s_femaletext";
             this.s_femaletext.Size = new System.Drawing.Size(73, 20);
             this.s_femaletext.TabIndex = 38;
@@ -574,7 +576,7 @@
             // 
             this.s_maletext.AutoSize = true;
             this.s_maletext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_maletext.Location = new System.Drawing.Point(193, 150);
+            this.s_maletext.Location = new System.Drawing.Point(193, 151);
             this.s_maletext.Name = "s_maletext";
             this.s_maletext.Size = new System.Drawing.Size(56, 20);
             this.s_maletext.TabIndex = 0;
@@ -990,7 +992,7 @@
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox5.Location = new System.Drawing.Point(580, 95);
+            this.groupBox5.Location = new System.Drawing.Point(625, 94);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(10);
@@ -1143,7 +1145,7 @@
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox4.Location = new System.Drawing.Point(580, 95);
+            this.groupBox4.Location = new System.Drawing.Point(625, 94);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(10);
@@ -1157,7 +1159,7 @@
             this.pictureBox14.BackgroundImage = global::Gym_Management_System.Properties.Resources.account;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox14.Location = new System.Drawing.Point(590, 91);
+            this.pictureBox14.Location = new System.Drawing.Point(635, 90);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(25, 25);
@@ -1303,7 +1305,7 @@
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox6.Location = new System.Drawing.Point(1095, 95);
+            this.groupBox6.Location = new System.Drawing.Point(1140, 94);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(10);
@@ -1317,7 +1319,7 @@
             this.pictureBox34.BackgroundImage = global::Gym_Management_System.Properties.Resources.management;
             this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox34.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox34.Location = new System.Drawing.Point(1105, 91);
+            this.pictureBox34.Location = new System.Drawing.Point(1150, 90);
             this.pictureBox34.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(25, 25);
@@ -1384,7 +1386,7 @@
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox7.Location = new System.Drawing.Point(580, 401);
+            this.groupBox7.Location = new System.Drawing.Point(625, 400);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(10);
@@ -1449,7 +1451,7 @@
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox25.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox25.Image = global::Gym_Management_System.Properties.Resources.view;
-            this.pictureBox25.Location = new System.Drawing.Point(590, 395);
+            this.pictureBox25.Location = new System.Drawing.Point(635, 394);
             this.pictureBox25.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(25, 25);
@@ -1717,7 +1719,7 @@
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(65, 95);
+            this.groupBox3.Location = new System.Drawing.Point(110, 94);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(10);
@@ -1737,12 +1739,39 @@
             this.label16.TabIndex = 32;
             this.label16.Text = "Passwords Do Not Match";
             // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Margin = new System.Windows.Forms.Padding(0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(50, 744);
+            this.panel18.TabIndex = 41;
+            // 
+            // goback
+            // 
+            this.goback.AutoSize = true;
+            this.goback.FlatAppearance.BorderSize = 0;
+            this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goback.Font = new System.Drawing.Font("Arial", 10F);
+            this.goback.Location = new System.Drawing.Point(53, 31);
+            this.goback.Name = "goback";
+            this.goback.Size = new System.Drawing.Size(95, 30);
+            this.goback.TabIndex = 42;
+            this.goback.Text = "Go Back";
+            this.goback.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.goback.UseVisualStyleBackColor = true;
+            this.goback.Click += new System.EventHandler(this.goback_Click);
+            // 
             // staffregform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1316, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.goback);
+            this.Controls.Add(this.panel18);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -1762,7 +1791,6 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(50, 0);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -1938,5 +1966,7 @@
         private System.Windows.Forms.RadioButton searchbyname;
         private System.Windows.Forms.RadioButton searchbyid;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Button goback;
     }
 }

@@ -453,5 +453,10 @@ namespace Gym_Management_System
                 searchstaff(values);
             }
         }
+
+        private void goback_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
