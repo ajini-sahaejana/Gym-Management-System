@@ -50,8 +50,8 @@ namespace Gym_Management_System
 
         private void manageMember_Click(object sender, EventArgs e)
         {
-            staffregform srf1 = new staffregform();
-            srf1.Show();
+            memberform m1 = new memberform();
+            m1.Show();
         }
     }
 }

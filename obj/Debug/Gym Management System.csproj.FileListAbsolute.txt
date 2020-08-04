@@ -11,3 +11,5 @@ C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Managem
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.initform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.mainform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.staffregform.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.bodydataform.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.memberform.resources

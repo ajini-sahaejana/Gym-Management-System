@@ -55,14 +55,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 744);
+            this.panel4.Size = new System.Drawing.Size(5, 763);
             this.panel4.TabIndex = 21;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 744);
+            this.panel5.Location = new System.Drawing.Point(0, 763);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 20;
@@ -74,7 +74,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(50, 744);
+            this.panel2.Size = new System.Drawing.Size(50, 763);
             this.panel2.TabIndex = 22;
             // 
             // label1
@@ -174,6 +174,7 @@
             this.button6.TabIndex = 6;
             this.button6.TabStop = false;
             this.button6.Text = "Staff";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -190,6 +191,7 @@
             this.button5.TabIndex = 5;
             this.button5.TabStop = false;
             this.button5.Text = "Staff";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -206,6 +208,7 @@
             this.button4.TabIndex = 4;
             this.button4.TabStop = false;
             this.button4.Text = "Staff";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             // 
             // manageMember
@@ -221,7 +224,8 @@
             this.manageMember.Size = new System.Drawing.Size(130, 130);
             this.manageMember.TabIndex = 3;
             this.manageMember.TabStop = false;
-            this.manageMember.Text = "Member";
+            this.manageMember.Text = "Manage Members";
+            this.manageMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.manageMember.UseVisualStyleBackColor = false;
             this.manageMember.Click += new System.EventHandler(this.manageMember_Click);
             // 
@@ -239,6 +243,7 @@
             this.button2.TabIndex = 2;
             this.button2.TabStop = false;
             this.button2.Text = "Staff";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
             // manageStaff
@@ -254,7 +259,8 @@
             this.manageStaff.Size = new System.Drawing.Size(130, 130);
             this.manageStaff.TabIndex = 1;
             this.manageStaff.TabStop = false;
-            this.manageStaff.Text = "Staff";
+            this.manageStaff.Text = "Manage Staff\r\nMembers";
+            this.manageStaff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.manageStaff.UseVisualStyleBackColor = false;
             this.manageStaff.Click += new System.EventHandler(this.manageStaff_Click_1);
             // 
@@ -263,7 +269,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.welcometext);
             this.Controls.Add(this.panel6);
@@ -279,7 +285,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1364, 736);
             this.Name = "mainform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.mainform_Load);
