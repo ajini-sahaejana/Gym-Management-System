@@ -1754,13 +1754,12 @@
             this.goback.AutoSize = true;
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.goback.Font = new System.Drawing.Font("Arial", 10F);
-            this.goback.Location = new System.Drawing.Point(53, 31);
+            this.goback.Font = new System.Drawing.Font("Arial", 9F);
+            this.goback.Image = global::Gym_Management_System.Properties.Resources.goback;
+            this.goback.Location = new System.Drawing.Point(53, 28);
             this.goback.Name = "goback";
-            this.goback.Size = new System.Drawing.Size(95, 30);
+            this.goback.Size = new System.Drawing.Size(30, 30);
             this.goback.TabIndex = 42;
-            this.goback.Text = "Go Back";
-            this.goback.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.goback.UseVisualStyleBackColor = true;
             this.goback.Click += new System.EventHandler(this.goback_Click);
             // 

@@ -456,7 +456,12 @@ namespace Gym_Management_System
 
         private void goback_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult dialog = MessageBox.Show("Any unsaved changed wont't be saved. Are you sure?", "Go Back to Homepage", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                this.Hide();
+                mainform m1 = new mainform();
+            }
         }
     }
 }
