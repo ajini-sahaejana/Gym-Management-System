@@ -125,14 +125,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 763);
+            this.panel4.Size = new System.Drawing.Size(5, 744);
             this.panel4.TabIndex = 66;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 763);
+            this.panel5.Location = new System.Drawing.Point(0, 744);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 65;
@@ -410,6 +410,7 @@
             // goback
             // 
             this.goback.AutoSize = true;
+            this.goback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goback.Font = new System.Drawing.Font("Arial", 9F);
@@ -998,7 +999,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel4);

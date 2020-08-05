@@ -153,6 +153,7 @@
             // goback
             // 
             this.goback.AutoSize = true;
+            this.goback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goback.Font = new System.Drawing.Font("Arial", 9F);

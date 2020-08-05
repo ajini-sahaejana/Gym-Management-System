@@ -19,7 +19,6 @@ namespace Gym_Management_System
             fillListbox();
             viewsid();
             this.MinimumSize = new System.Drawing.Size(1366, 768);
-            Size = new Size(1366, 768);
         }
 
         private void s_showpword_MouseDown(object sender, MouseEventArgs e)
