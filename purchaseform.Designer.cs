@@ -87,6 +87,16 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.ms_discounttext = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.ms_discountamounttext = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -111,6 +121,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -758,7 +772,7 @@
             this.s_fullnametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_fullnametext.Font = new System.Drawing.Font("Arial", 10F);
             this.s_fullnametext.ForeColor = System.Drawing.Color.White;
-            this.s_fullnametext.Location = new System.Drawing.Point(210, 95);
+            this.s_fullnametext.Location = new System.Drawing.Point(201, 154);
             this.s_fullnametext.Margin = new System.Windows.Forms.Padding(0);
             this.s_fullnametext.Name = "s_fullnametext";
             this.s_fullnametext.Size = new System.Drawing.Size(230, 16);
@@ -884,12 +898,145 @@
             this.textBox3.TabIndex = 34;
             this.textBox3.TabStop = false;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.pictureBox10);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.pictureBox12);
+            this.groupBox4.Controls.Add(this.panel8);
+            this.groupBox4.Controls.Add(this.ms_discounttext);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.pictureBox13);
+            this.groupBox4.Controls.Add(this.panel12);
+            this.groupBox4.Controls.Add(this.ms_discountamounttext);
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox4.Location = new System.Drawing.Point(700, 518);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(10);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(10);
+            this.groupBox4.Size = new System.Drawing.Size(480, 195);
+            this.groupBox4.TabIndex = 103;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "       Discount Details";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox10.Location = new System.Drawing.Point(10, -3);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox10.TabIndex = 83;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Arial", 10F);
+            this.label7.ForeColor = System.Drawing.Color.Turquoise;
+            this.label7.Location = new System.Drawing.Point(70, 70);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 16);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Discount Value:";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.Image = global::Gym_Management_System.Properties.Resources.id;
+            this.pictureBox12.Location = new System.Drawing.Point(41, 64);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 31;
+            this.pictureBox12.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel8.Location = new System.Drawing.Point(210, 87);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(230, 1);
+            this.panel8.TabIndex = 32;
+            // 
+            // ms_discounttext
+            // 
+            this.ms_discounttext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_discounttext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_discounttext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_discounttext.ForeColor = System.Drawing.Color.White;
+            this.ms_discounttext.Location = new System.Drawing.Point(210, 70);
+            this.ms_discounttext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_discounttext.Name = "ms_discounttext";
+            this.ms_discounttext.ReadOnly = true;
+            this.ms_discounttext.Size = new System.Drawing.Size(230, 16);
+            this.ms_discounttext.TabIndex = 30;
+            this.ms_discounttext.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Font = new System.Drawing.Font("Arial", 10F);
+            this.label11.ForeColor = System.Drawing.Color.Turquoise;
+            this.label11.Location = new System.Drawing.Point(70, 120);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(118, 16);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Discount Amount:";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox13.Location = new System.Drawing.Point(41, 114);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 23;
+            this.pictureBox13.TabStop = false;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel12.Location = new System.Drawing.Point(210, 137);
+            this.panel12.Margin = new System.Windows.Forms.Padding(0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(230, 1);
+            this.panel12.TabIndex = 26;
+            // 
+            // ms_discountamounttext
+            // 
+            this.ms_discountamounttext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_discountamounttext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_discountamounttext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_discountamounttext.ForeColor = System.Drawing.Color.White;
+            this.ms_discountamounttext.Location = new System.Drawing.Point(210, 120);
+            this.ms_discountamounttext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_discountamounttext.Name = "ms_discountamounttext";
+            this.ms_discountamounttext.Size = new System.Drawing.Size(230, 16);
+            this.ms_discountamounttext.TabIndex = 22;
+            this.ms_discountamounttext.TabStop = false;
+            // 
             // purchaseform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox2);
@@ -940,6 +1087,11 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1004,5 +1156,15 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox ms_discounttext;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.TextBox ms_discountamounttext;
     }
 }

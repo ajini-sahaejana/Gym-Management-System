@@ -60,13 +60,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.s_notestext = new System.Windows.Forms.TextBox();
+            this.ms_periodtext = new System.Windows.Forms.TextBox();
+            this.ms_notestext = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.s_agetext = new System.Windows.Forms.TextBox();
+            this.ms_idtext = new System.Windows.Forms.TextBox();
+            this.ms_feetext = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -75,17 +75,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.s_fullnametext = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.ms_nametext = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -104,10 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -179,7 +165,7 @@
             this.pictureBox34.BackgroundImage = global::Gym_Management_System.Properties.Resources.management;
             this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox34.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox34.Location = new System.Drawing.Point(764, 82);
+            this.pictureBox34.Location = new System.Drawing.Point(235, 502);
             this.pictureBox34.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(25, 25);
@@ -201,11 +187,11 @@
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox6.Location = new System.Drawing.Point(765, 87);
+            this.groupBox6.Location = new System.Drawing.Point(225, 505);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox6.Size = new System.Drawing.Size(403, 150);
+            this.groupBox6.Size = new System.Drawing.Size(481, 180);
             this.groupBox6.TabIndex = 77;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "       Manage";
@@ -214,7 +200,7 @@
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox28.Image = global::Gym_Management_System.Properties.Resources.delete;
-            this.pictureBox28.Location = new System.Drawing.Point(220, 95);
+            this.pictureBox28.Location = new System.Drawing.Point(260, 110);
             this.pictureBox28.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(24, 24);
@@ -226,7 +212,7 @@
             // 
             this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox26.Image = global::Gym_Management_System.Properties.Resources.cancel;
-            this.pictureBox26.Location = new System.Drawing.Point(220, 45);
+            this.pictureBox26.Location = new System.Drawing.Point(260, 52);
             this.pictureBox26.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(24, 24);
@@ -238,7 +224,7 @@
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox24.Image = global::Gym_Management_System.Properties.Resources.update;
-            this.pictureBox24.Location = new System.Drawing.Point(90, 95);
+            this.pictureBox24.Location = new System.Drawing.Point(125, 110);
             this.pictureBox24.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(24, 24);
@@ -250,7 +236,7 @@
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox23.Image = global::Gym_Management_System.Properties.Resources.save;
-            this.pictureBox23.Location = new System.Drawing.Point(90, 45);
+            this.pictureBox23.Location = new System.Drawing.Point(125, 52);
             this.pictureBox23.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(24, 24);
@@ -268,7 +254,7 @@
             this.s_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_delete.Font = new System.Drawing.Font("Arial", 10F);
             this.s_delete.ForeColor = System.Drawing.Color.White;
-            this.s_delete.Location = new System.Drawing.Point(219, 93);
+            this.s_delete.Location = new System.Drawing.Point(259, 108);
             this.s_delete.Name = "s_delete";
             this.s_delete.Size = new System.Drawing.Size(105, 28);
             this.s_delete.TabIndex = 44;
@@ -286,7 +272,7 @@
             this.s_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_cancel.Font = new System.Drawing.Font("Arial", 10F);
             this.s_cancel.ForeColor = System.Drawing.Color.White;
-            this.s_cancel.Location = new System.Drawing.Point(219, 43);
+            this.s_cancel.Location = new System.Drawing.Point(259, 50);
             this.s_cancel.Name = "s_cancel";
             this.s_cancel.Size = new System.Drawing.Size(105, 28);
             this.s_cancel.TabIndex = 39;
@@ -304,7 +290,7 @@
             this.s_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_update.Font = new System.Drawing.Font("Arial", 10F);
             this.s_update.ForeColor = System.Drawing.Color.White;
-            this.s_update.Location = new System.Drawing.Point(89, 93);
+            this.s_update.Location = new System.Drawing.Point(124, 108);
             this.s_update.Name = "s_update";
             this.s_update.Size = new System.Drawing.Size(105, 28);
             this.s_update.TabIndex = 38;
@@ -322,7 +308,7 @@
             this.s_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.s_save.Font = new System.Drawing.Font("Arial", 10F);
             this.s_save.ForeColor = System.Drawing.Color.White;
-            this.s_save.Location = new System.Drawing.Point(89, 43);
+            this.s_save.Location = new System.Drawing.Point(124, 50);
             this.s_save.Name = "s_save";
             this.s_save.Size = new System.Drawing.Size(105, 28);
             this.s_save.TabIndex = 30;
@@ -335,7 +321,7 @@
             this.pictureBox2.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox2.Location = new System.Drawing.Point(219, 77);
+            this.pictureBox2.Location = new System.Drawing.Point(10, -3);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
@@ -348,7 +334,7 @@
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox25.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox25.Image = global::Gym_Management_System.Properties.Resources.view;
-            this.pictureBox25.Location = new System.Drawing.Point(775, 252);
+            this.pictureBox25.Location = new System.Drawing.Point(785, 80);
             this.pictureBox25.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(25, 25);
@@ -369,11 +355,11 @@
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox7.Location = new System.Drawing.Point(765, 257);
+            this.groupBox7.Location = new System.Drawing.Point(775, 85);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox7.Size = new System.Drawing.Size(403, 425);
+            this.groupBox7.Size = new System.Drawing.Size(403, 598);
             this.groupBox7.TabIndex = 78;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "       Membership Records";
@@ -383,7 +369,7 @@
             this.searchbyname.AutoSize = true;
             this.searchbyname.Font = new System.Drawing.Font("Arial", 9F);
             this.searchbyname.ForeColor = System.Drawing.Color.Turquoise;
-            this.searchbyname.Location = new System.Drawing.Point(330, 40);
+            this.searchbyname.Location = new System.Drawing.Point(225, 35);
             this.searchbyname.Name = "searchbyname";
             this.searchbyname.Size = new System.Drawing.Size(59, 19);
             this.searchbyname.TabIndex = 51;
@@ -397,7 +383,7 @@
             this.searchbyid.Checked = true;
             this.searchbyid.Font = new System.Drawing.Font("Arial", 9F);
             this.searchbyid.ForeColor = System.Drawing.Color.Turquoise;
-            this.searchbyid.Location = new System.Drawing.Point(290, 40);
+            this.searchbyid.Location = new System.Drawing.Point(182, 35);
             this.searchbyid.Name = "searchbyid";
             this.searchbyid.Size = new System.Drawing.Size(37, 19);
             this.searchbyid.TabIndex = 50;
@@ -409,7 +395,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Arial", 9F);
-            this.label20.Location = new System.Drawing.Point(287, 22);
+            this.label20.Location = new System.Drawing.Point(111, 37);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(65, 15);
             this.label20.TabIndex = 49;
@@ -423,9 +409,9 @@
             this.lbMembership.ForeColor = System.Drawing.Color.White;
             this.lbMembership.FormattingEnabled = true;
             this.lbMembership.ItemHeight = 16;
-            this.lbMembership.Location = new System.Drawing.Point(13, 75);
+            this.lbMembership.Location = new System.Drawing.Point(13, 102);
             this.lbMembership.Name = "lbMembership";
-            this.lbMembership.Size = new System.Drawing.Size(377, 336);
+            this.lbMembership.Size = new System.Drawing.Size(377, 480);
             this.lbMembership.TabIndex = 48;
             // 
             // panel9
@@ -433,7 +419,7 @@
             this.panel9.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel9.Controls.Add(this.panel17);
             this.panel9.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel9.Location = new System.Drawing.Point(36, 60);
+            this.panel9.Location = new System.Drawing.Point(36, 90);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(353, 1);
@@ -455,7 +441,7 @@
             this.s_searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.s_searchtext.Font = new System.Drawing.Font("Arial", 10F);
             this.s_searchtext.ForeColor = System.Drawing.Color.Turquoise;
-            this.s_searchtext.Location = new System.Drawing.Point(37, 41);
+            this.s_searchtext.Location = new System.Drawing.Point(37, 71);
             this.s_searchtext.Margin = new System.Windows.Forms.Padding(0);
             this.s_searchtext.Name = "s_searchtext";
             this.s_searchtext.Size = new System.Drawing.Size(352, 16);
@@ -465,7 +451,7 @@
             // 
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox17.Image = global::Gym_Management_System.Properties.Resources.search;
-            this.pictureBox17.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox17.Location = new System.Drawing.Point(12, 68);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(24, 24);
@@ -478,14 +464,15 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.pictureBox4);
+            this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.panel3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.s_notestext);
+            this.groupBox2.Controls.Add(this.ms_periodtext);
+            this.groupBox2.Controls.Add(this.ms_notestext);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.panel2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.s_agetext);
+            this.groupBox2.Controls.Add(this.ms_idtext);
+            this.groupBox2.Controls.Add(this.ms_feetext);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label9);
@@ -494,15 +481,15 @@
             this.groupBox2.Controls.Add(this.pictureBox5);
             this.groupBox2.Controls.Add(this.panel11);
             this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.s_fullnametext);
+            this.groupBox2.Controls.Add(this.ms_nametext);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox2.Location = new System.Drawing.Point(220, 82);
+            this.groupBox2.Location = new System.Drawing.Point(226, 83);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox2.Size = new System.Drawing.Size(480, 387);
+            this.groupBox2.Size = new System.Drawing.Size(480, 400);
             this.groupBox2.TabIndex = 75;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Membership Details";
@@ -513,7 +500,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Arial", 10F);
             this.label3.ForeColor = System.Drawing.Color.Turquoise;
-            this.label3.Location = new System.Drawing.Point(70, 160);
+            this.label3.Location = new System.Drawing.Point(70, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 16);
             this.label3.TabIndex = 47;
@@ -523,7 +510,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox4.Location = new System.Drawing.Point(41, 154);
+            this.pictureBox4.Location = new System.Drawing.Point(41, 159);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
@@ -535,38 +522,38 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel3.Location = new System.Drawing.Point(210, 177);
+            this.panel3.Location = new System.Drawing.Point(210, 182);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 1);
             this.panel3.TabIndex = 46;
             // 
-            // textBox2
+            // ms_periodtext
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(210, 160);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 16);
-            this.textBox2.TabIndex = 44;
-            this.textBox2.TabStop = false;
+            this.ms_periodtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_periodtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_periodtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_periodtext.ForeColor = System.Drawing.Color.White;
+            this.ms_periodtext.Location = new System.Drawing.Point(210, 165);
+            this.ms_periodtext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_periodtext.Name = "ms_periodtext";
+            this.ms_periodtext.Size = new System.Drawing.Size(230, 16);
+            this.ms_periodtext.TabIndex = 44;
+            this.ms_periodtext.TabStop = false;
             // 
-            // s_notestext
+            // ms_notestext
             // 
-            this.s_notestext.AllowDrop = true;
-            this.s_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_notestext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.s_notestext.Location = new System.Drawing.Point(210, 275);
-            this.s_notestext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_notestext.Multiline = true;
-            this.s_notestext.Name = "s_notestext";
-            this.s_notestext.Size = new System.Drawing.Size(230, 75);
-            this.s_notestext.TabIndex = 40;
-            this.s_notestext.TabStop = false;
+            this.ms_notestext.AllowDrop = true;
+            this.ms_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_notestext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.ms_notestext.Location = new System.Drawing.Point(210, 285);
+            this.ms_notestext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_notestext.Multiline = true;
+            this.ms_notestext.Name = "ms_notestext";
+            this.ms_notestext.Size = new System.Drawing.Size(230, 85);
+            this.ms_notestext.TabIndex = 40;
+            this.ms_notestext.TabStop = false;
             // 
             // label2
             // 
@@ -574,7 +561,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Arial", 10F);
             this.label2.ForeColor = System.Drawing.Color.Turquoise;
-            this.label2.Location = new System.Drawing.Point(70, 60);
+            this.label2.Location = new System.Drawing.Point(70, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 16);
             this.label2.TabIndex = 33;
@@ -584,7 +571,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Gym_Management_System.Properties.Resources.id;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 49);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
@@ -596,38 +583,38 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel2.Location = new System.Drawing.Point(210, 77);
+            this.panel2.Location = new System.Drawing.Point(210, 72);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 1);
             this.panel2.TabIndex = 32;
             // 
-            // textBox1
+            // ms_idtext
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(210, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(230, 16);
-            this.textBox1.TabIndex = 30;
-            this.textBox1.TabStop = false;
+            this.ms_idtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_idtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_idtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_idtext.ForeColor = System.Drawing.Color.White;
+            this.ms_idtext.Location = new System.Drawing.Point(210, 55);
+            this.ms_idtext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_idtext.Name = "ms_idtext";
+            this.ms_idtext.ReadOnly = true;
+            this.ms_idtext.Size = new System.Drawing.Size(230, 16);
+            this.ms_idtext.TabIndex = 30;
+            this.ms_idtext.TabStop = false;
             // 
-            // s_agetext
+            // ms_feetext
             // 
-            this.s_agetext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_agetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_agetext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_agetext.ForeColor = System.Drawing.Color.White;
-            this.s_agetext.Location = new System.Drawing.Point(210, 217);
-            this.s_agetext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_agetext.Name = "s_agetext";
-            this.s_agetext.Size = new System.Drawing.Size(230, 16);
-            this.s_agetext.TabIndex = 20;
-            this.s_agetext.TabStop = false;
+            this.ms_feetext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_feetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_feetext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_feetext.ForeColor = System.Drawing.Color.White;
+            this.ms_feetext.Location = new System.Drawing.Point(210, 222);
+            this.ms_feetext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_feetext.Name = "ms_feetext";
+            this.ms_feetext.Size = new System.Drawing.Size(230, 16);
+            this.ms_feetext.TabIndex = 20;
+            this.ms_feetext.TabStop = false;
             // 
             // label6
             // 
@@ -635,7 +622,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Arial", 10F);
             this.label6.ForeColor = System.Drawing.Color.Turquoise;
-            this.label6.Location = new System.Drawing.Point(70, 280);
+            this.label6.Location = new System.Drawing.Point(70, 290);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 16);
             this.label6.TabIndex = 29;
@@ -647,7 +634,7 @@
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Arial", 10F);
             this.label8.ForeColor = System.Drawing.Color.Turquoise;
-            this.label8.Location = new System.Drawing.Point(70, 217);
+            this.label8.Location = new System.Drawing.Point(70, 222);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 16);
             this.label8.TabIndex = 29;
@@ -681,7 +668,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel10.Location = new System.Drawing.Point(210, 234);
+            this.panel10.Location = new System.Drawing.Point(210, 239);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(230, 1);
@@ -691,7 +678,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Gym_Management_System.Properties.Resources.dob;
-            this.pictureBox5.Location = new System.Drawing.Point(41, 211);
+            this.pictureBox5.Location = new System.Drawing.Point(41, 216);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
@@ -713,7 +700,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox6.Location = new System.Drawing.Point(41, 273);
+            this.pictureBox6.Location = new System.Drawing.Point(41, 283);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
@@ -721,150 +708,18 @@
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
             // 
-            // s_fullnametext
+            // ms_nametext
             // 
-            this.s_fullnametext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_fullnametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_fullnametext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_fullnametext.ForeColor = System.Drawing.Color.White;
-            this.s_fullnametext.Location = new System.Drawing.Point(210, 110);
-            this.s_fullnametext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_fullnametext.Name = "s_fullnametext";
-            this.s_fullnametext.Size = new System.Drawing.Size(230, 16);
-            this.s_fullnametext.TabIndex = 22;
-            this.s_fullnametext.TabStop = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.pictureBox7);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.pictureBox9);
-            this.groupBox1.Controls.Add(this.panel7);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.pictureBox10);
-            this.groupBox1.Controls.Add(this.panel12);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Location = new System.Drawing.Point(220, 489);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Size = new System.Drawing.Size(480, 195);
-            this.groupBox1.TabIndex = 81;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "       Discount Details";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox7.Location = new System.Drawing.Point(10, -3);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 83;
-            this.pictureBox7.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Arial", 10F);
-            this.label5.ForeColor = System.Drawing.Color.Turquoise;
-            this.label5.Location = new System.Drawing.Point(70, 70);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 16);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Discount Value:";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = global::Gym_Management_System.Properties.Resources.id;
-            this.pictureBox9.Location = new System.Drawing.Point(41, 64);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 31;
-            this.pictureBox9.TabStop = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel7.Location = new System.Drawing.Point(210, 87);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(230, 1);
-            this.panel7.TabIndex = 32;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(210, 70);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(230, 16);
-            this.textBox5.TabIndex = 30;
-            this.textBox5.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label11.Font = new System.Drawing.Font("Arial", 10F);
-            this.label11.ForeColor = System.Drawing.Color.Turquoise;
-            this.label11.Location = new System.Drawing.Point(70, 120);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 16);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Discount Amount:";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox10.Location = new System.Drawing.Point(41, 114);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 23;
-            this.pictureBox10.TabStop = false;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel12.Location = new System.Drawing.Point(210, 137);
-            this.panel12.Margin = new System.Windows.Forms.Padding(0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(230, 1);
-            this.panel12.TabIndex = 26;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(210, 120);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(230, 16);
-            this.textBox7.TabIndex = 22;
-            this.textBox7.TabStop = false;
+            this.ms_nametext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_nametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_nametext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_nametext.ForeColor = System.Drawing.Color.White;
+            this.ms_nametext.Location = new System.Drawing.Point(210, 110);
+            this.ms_nametext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_nametext.Name = "ms_nametext";
+            this.ms_nametext.Size = new System.Drawing.Size(230, 16);
+            this.ms_nametext.TabIndex = 22;
+            this.ms_nametext.TabStop = false;
             // 
             // membershipform
             // 
@@ -873,9 +728,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.pictureBox34);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox2);
@@ -911,11 +764,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -953,13 +801,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox s_notestext;
+        private System.Windows.Forms.TextBox ms_periodtext;
+        private System.Windows.Forms.TextBox ms_notestext;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox s_agetext;
+        private System.Windows.Forms.TextBox ms_idtext;
+        private System.Windows.Forms.TextBox ms_feetext;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -968,16 +816,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox s_fullnametext;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox ms_nametext;
     }
 }
