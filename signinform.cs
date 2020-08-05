@@ -157,26 +157,33 @@ namespace Gym_Management_System
         //---------------------------------------SQL---------------------------------------------//
         private void signin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * FROM Staff WHERE s_name = '" + loginusername.Text.Trim() + "' AND s_email='" + loginemail.Text.Trim() + "' AND s_pword='" + loginpword.Text.Trim() + "'";
-            con.Open();
-            SqlDataAdapter s1 = new SqlDataAdapter(query, con);
-            DataTable dtbl1 = new DataTable();
-            s1.Fill(dtbl1);
-            if (dtbl1.Rows.Count == 1)
+            try
             {
-                viewsname = this.loginusername.Text;
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * FROM Staff WHERE s_name = '" + loginusername.Text.Trim() + "' AND s_email='" + loginemail.Text.Trim() + "' AND s_pword='" + loginpword.Text.Trim() + "'";
+                con.Open();
+                SqlDataAdapter s1 = new SqlDataAdapter(query, con);
+                DataTable dtbl1 = new DataTable();
+                s1.Fill(dtbl1);
+                if (dtbl1.Rows.Count == 1)
+                {
+                    viewsname = this.loginusername.Text;
 
-                mainform mf1 = new mainform();
-                Hide();
-                ActiveForm.Hide();
-                mf1.Show();
+                    mainform mf1 = new mainform();
+                    Hide();
+                    ActiveForm.Hide();
+                    mf1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("The details you have entered is not a match. Please try again.");
+                }
+                con.Close();
             }
-            else
+            catch (Exception e1)
             {
-                MessageBox.Show("The details you have entered is not a match. Please try again.");
+                MessageBox.Show(e1.Message);
             }
-            con.Close();
         }
 
         private void showpword_MouseDown(object sender, MouseEventArgs e)

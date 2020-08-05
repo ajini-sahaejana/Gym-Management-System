@@ -18,6 +18,7 @@ namespace Gym_Management_System
             InitializeComponent();
             viewsid();
             fillListbox();
+            fillcombobox();
             MinimumSize = new Size(1366, 768);
             Size = new Size(1366, 768);
         }
@@ -58,13 +59,44 @@ namespace Gym_Management_System
             con.Close();
         }
 
+        //View Trainer_Name in the form
+        private void fillcombobox()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from Trainer";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string id = reader.GetInt32(0).ToString().Trim();
+                    string name = reader.GetString(1).Trim();
+                    t_namecombo.Items.Add(id + ": " + name);
+                }
+
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
         //Clear text after saving
         private void cleartext()
         {
+            t_namecombo.SelectedItem = "";
             ts_idtext.Clear();
             ts_nametext.Clear();
             ts_datetext.Value = DateTime.Now;
             ts_notestext.Clear();
+            t_details.Clear();
         }
 
         //Fill Listbox
@@ -73,7 +105,7 @@ namespace Gym_Management_System
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "SELECT * from Session";
             SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            //SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             SqlDataReader reader;
             try
             {
@@ -98,20 +130,20 @@ namespace Gym_Management_System
         //Clear Listbox
         private void clearListbox()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * from Session";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            //string query = "SELECT * from Session";
+            //SqlCommand cmd = new SqlCommand(query, con);
+            //SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             try
             {
-                con.Open();
+                //con.Open();
                 lbSession.Items.Clear();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
-            con.Close();
+            //con.Close();
         }
 
         //Search Staff
@@ -178,6 +210,8 @@ namespace Gym_Management_System
                 con.Close();
             }
         }
+
+        //------------------------------------SQL-------------------------------------
 
         private void ts_save_Click(object sender, EventArgs e)
         {
@@ -291,14 +325,15 @@ namespace Gym_Management_System
 
         private void lbSession_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string onlyid = lbSession.Text.Substring(0, 6);
-
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * FROM Session WHERE ts_id = '" + onlyid + "' ";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataReader reader;
             try
             {
+                string onlyid = lbSession.Text.Substring(0, 6);
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * FROM Session WHERE ts_id = '" + onlyid + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
                 con.Open();
                 reader = cmd.ExecuteReader();
 
@@ -309,12 +344,13 @@ namespace Gym_Management_System
                     ts_datetext.Value = reader.GetDateTime(2);
                     ts_notestext.Text = reader.GetString(3).Trim();
                 }
+
+                con.Close();
             }
             catch (Exception er)
             {
                 MessageBox.Show(er.Message);
             }
-            con.Close();
         }
 
         private void ts_searchtext_TextChanged(object sender, EventArgs e)
@@ -329,6 +365,41 @@ namespace Gym_Management_System
             {
                 clearListbox();
                 searchsession(values);
+            }
+        }
+
+        private void t_namecombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string onlyid = t_namecombo.Text.Substring(0, 6);
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from Trainer WHERE t_id = '" + onlyid + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    t_details.Text =
+                        reader.GetString(2).Trim() + "\r\n" +
+                        reader.GetDateTime(3).ToShortDateString() + "\r\n" +
+                        reader.GetString(4).Trim() + "\r\n" +
+                        reader.GetString(5).Trim() + "\r\n" +
+                        reader.GetString(6).Trim() + "\r\n" +
+                        reader.GetString(7).Trim() + "\r\n" +
+                        reader.GetString(9).Trim();
+                }
+
+                con.Close();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.Message);
             }
         }
     }

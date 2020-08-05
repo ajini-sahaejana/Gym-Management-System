@@ -123,20 +123,20 @@ namespace Gym_Management_System
         //Clear Listbox
         private void clearListbox()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * from Trainer";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            //string query = "SELECT * from Session";
+            //SqlCommand cmd = new SqlCommand(query, con);
+            //SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             try
             {
-                con.Open();
+                //con.Open();
                 lbTrainer.Items.Clear();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
-            con.Close();
+            //con.Close();
         }
 
         //Search Staff

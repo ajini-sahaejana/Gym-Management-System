@@ -34,22 +34,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.goback = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.ts_delete = new System.Windows.Forms.Button();
-            this.ts_cancel = new System.Windows.Forms.Button();
-            this.ts_update = new System.Windows.Forms.Button();
-            this.ts_save = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.t_details = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.t_name = new System.Windows.Forms.ComboBox();
+            this.t_namecombo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.ts_nametext = new System.Windows.Forms.TextBox();
@@ -79,13 +69,17 @@
             this.ts_searchtext = new System.Windows.Forms.TextBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.ts_delete = new System.Windows.Forms.Button();
+            this.ts_cancel = new System.Windows.Forms.Button();
+            this.ts_update = new System.Windows.Forms.Button();
+            this.ts_save = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -100,6 +94,12 @@
             this.groupBox7.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -157,166 +157,6 @@
             this.panel18.Size = new System.Drawing.Size(50, 763);
             this.panel18.TabIndex = 84;
             // 
-            // pictureBox34
-            // 
-            this.pictureBox34.BackgroundImage = global::Gym_Management_System.Properties.Resources.management;
-            this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox34.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox34.Location = new System.Drawing.Point(770, 530);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox34.TabIndex = 78;
-            this.pictureBox34.TabStop = false;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox6.Controls.Add(this.pictureBox28);
-            this.groupBox6.Controls.Add(this.pictureBox26);
-            this.groupBox6.Controls.Add(this.pictureBox24);
-            this.groupBox6.Controls.Add(this.pictureBox23);
-            this.groupBox6.Controls.Add(this.ts_delete);
-            this.groupBox6.Controls.Add(this.ts_cancel);
-            this.groupBox6.Controls.Add(this.ts_update);
-            this.groupBox6.Controls.Add(this.ts_save);
-            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox6.Location = new System.Drawing.Point(760, 535);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(10);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox6.Size = new System.Drawing.Size(450, 150);
-            this.groupBox6.TabIndex = 75;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "       Manage";
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox28.Image = global::Gym_Management_System.Properties.Resources.delete;
-            this.pictureBox28.Location = new System.Drawing.Point(241, 95);
-            this.pictureBox28.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox28.TabIndex = 43;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox26.Image = global::Gym_Management_System.Properties.Resources.cancel;
-            this.pictureBox26.Location = new System.Drawing.Point(241, 45);
-            this.pictureBox26.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox26.TabIndex = 25;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox24.Image = global::Gym_Management_System.Properties.Resources.update;
-            this.pictureBox24.Location = new System.Drawing.Point(111, 95);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox24.TabIndex = 24;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox23.Image = global::Gym_Management_System.Properties.Resources.save;
-            this.pictureBox23.Location = new System.Drawing.Point(111, 45);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 23;
-            this.pictureBox23.TabStop = false;
-            // 
-            // ts_delete
-            // 
-            this.ts_delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ts_delete.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.ts_delete.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ts_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.ts_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.ts_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ts_delete.Font = new System.Drawing.Font("Arial", 10F);
-            this.ts_delete.ForeColor = System.Drawing.Color.White;
-            this.ts_delete.Location = new System.Drawing.Point(240, 93);
-            this.ts_delete.Name = "ts_delete";
-            this.ts_delete.Size = new System.Drawing.Size(105, 28);
-            this.ts_delete.TabIndex = 44;
-            this.ts_delete.TabStop = false;
-            this.ts_delete.Text = "    Delete";
-            this.ts_delete.UseVisualStyleBackColor = true;
-            this.ts_delete.Click += new System.EventHandler(this.ts_delete_Click);
-            // 
-            // ts_cancel
-            // 
-            this.ts_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ts_cancel.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.ts_cancel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ts_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.ts_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.ts_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ts_cancel.Font = new System.Drawing.Font("Arial", 10F);
-            this.ts_cancel.ForeColor = System.Drawing.Color.White;
-            this.ts_cancel.Location = new System.Drawing.Point(240, 43);
-            this.ts_cancel.Name = "ts_cancel";
-            this.ts_cancel.Size = new System.Drawing.Size(105, 28);
-            this.ts_cancel.TabIndex = 39;
-            this.ts_cancel.TabStop = false;
-            this.ts_cancel.Text = "     Cancel";
-            this.ts_cancel.UseVisualStyleBackColor = true;
-            this.ts_cancel.Click += new System.EventHandler(this.ts_cancel_Click);
-            // 
-            // ts_update
-            // 
-            this.ts_update.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ts_update.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.ts_update.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ts_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.ts_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.ts_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ts_update.Font = new System.Drawing.Font("Arial", 10F);
-            this.ts_update.ForeColor = System.Drawing.Color.White;
-            this.ts_update.Location = new System.Drawing.Point(110, 93);
-            this.ts_update.Name = "ts_update";
-            this.ts_update.Size = new System.Drawing.Size(105, 28);
-            this.ts_update.TabIndex = 38;
-            this.ts_update.TabStop = false;
-            this.ts_update.Text = "     Update";
-            this.ts_update.UseVisualStyleBackColor = true;
-            this.ts_update.Click += new System.EventHandler(this.ts_update_Click);
-            // 
-            // ts_save
-            // 
-            this.ts_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ts_save.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.ts_save.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ts_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.ts_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.ts_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ts_save.Font = new System.Drawing.Font("Arial", 10F);
-            this.ts_save.ForeColor = System.Drawing.Color.White;
-            this.ts_save.Location = new System.Drawing.Point(110, 43);
-            this.ts_save.Name = "ts_save";
-            this.ts_save.Size = new System.Drawing.Size(105, 28);
-            this.ts_save.TabIndex = 30;
-            this.ts_save.TabStop = false;
-            this.ts_save.Text = "   Save";
-            this.ts_save.UseVisualStyleBackColor = true;
-            this.ts_save.Click += new System.EventHandler(this.ts_save_Click);
-            // 
             // pictureBox10
             // 
             this.pictureBox10.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
@@ -336,7 +176,7 @@
             this.groupBox3.Controls.Add(this.t_details);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.pictureBox19);
-            this.groupBox3.Controls.Add(this.t_name);
+            this.groupBox3.Controls.Add(this.t_namecombo);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.pictureBox11);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -390,17 +230,19 @@
             this.pictureBox19.TabIndex = 41;
             this.pictureBox19.TabStop = false;
             // 
-            // t_name
+            // t_namecombo
             // 
-            this.t_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.t_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.t_name.Font = new System.Drawing.Font("Arial", 10F);
-            this.t_name.ForeColor = System.Drawing.Color.White;
-            this.t_name.FormattingEnabled = true;
-            this.t_name.Location = new System.Drawing.Point(185, 45);
-            this.t_name.Name = "t_name";
-            this.t_name.Size = new System.Drawing.Size(235, 24);
-            this.t_name.TabIndex = 31;
+            this.t_namecombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_namecombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t_namecombo.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_namecombo.ForeColor = System.Drawing.Color.White;
+            this.t_namecombo.FormattingEnabled = true;
+            this.t_namecombo.Location = new System.Drawing.Point(185, 45);
+            this.t_namecombo.Name = "t_namecombo";
+            this.t_namecombo.Size = new System.Drawing.Size(235, 24);
+            this.t_namecombo.TabIndex = 31;
+            this.t_namecombo.TabStop = false;
+            this.t_namecombo.SelectedIndexChanged += new System.EventHandler(this.t_namecombo_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -530,7 +372,7 @@
             this.ts_datetext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
             this.ts_datetext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
             this.ts_datetext.Checked = false;
-            this.ts_datetext.CustomFormat = "dd/MM/yyyy hh:mm tt";
+            this.ts_datetext.CustomFormat = "dd/MM/yyyy HH:mm";
             this.ts_datetext.Font = new System.Drawing.Font("Arial", 10F);
             this.ts_datetext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ts_datetext.Location = new System.Drawing.Point(190, 157);
@@ -648,7 +490,7 @@
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox25.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox25.Image = global::Gym_Management_System.Properties.Resources.view;
-            this.pictureBox25.Location = new System.Drawing.Point(770, 90);
+            this.pictureBox25.Location = new System.Drawing.Point(770, 255);
             this.pictureBox25.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(25, 25);
@@ -669,7 +511,7 @@
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox7.Location = new System.Drawing.Point(760, 95);
+            this.groupBox7.Location = new System.Drawing.Point(760, 260);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(10);
@@ -784,12 +626,174 @@
             this.panel5.Size = new System.Drawing.Size(1361, 5);
             this.panel5.TabIndex = 92;
             // 
+            // pictureBox34
+            // 
+            this.pictureBox34.BackgroundImage = global::Gym_Management_System.Properties.Resources.management;
+            this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox34.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox34.Location = new System.Drawing.Point(770, 90);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox34.TabIndex = 94;
+            this.pictureBox34.TabStop = false;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox6.Controls.Add(this.pictureBox28);
+            this.groupBox6.Controls.Add(this.pictureBox26);
+            this.groupBox6.Controls.Add(this.pictureBox24);
+            this.groupBox6.Controls.Add(this.pictureBox23);
+            this.groupBox6.Controls.Add(this.ts_delete);
+            this.groupBox6.Controls.Add(this.ts_cancel);
+            this.groupBox6.Controls.Add(this.ts_update);
+            this.groupBox6.Controls.Add(this.ts_save);
+            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox6.Location = new System.Drawing.Point(760, 95);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(10);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(10);
+            this.groupBox6.Size = new System.Drawing.Size(450, 150);
+            this.groupBox6.TabIndex = 93;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "       Manage";
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox28.Image = global::Gym_Management_System.Properties.Resources.delete;
+            this.pictureBox28.Location = new System.Drawing.Point(241, 95);
+            this.pictureBox28.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox28.TabIndex = 43;
+            this.pictureBox28.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox26.Image = global::Gym_Management_System.Properties.Resources.cancel;
+            this.pictureBox26.Location = new System.Drawing.Point(241, 45);
+            this.pictureBox26.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox26.TabIndex = 25;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox24.Image = global::Gym_Management_System.Properties.Resources.update;
+            this.pictureBox24.Location = new System.Drawing.Point(111, 95);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox24.TabIndex = 24;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox23.Image = global::Gym_Management_System.Properties.Resources.save;
+            this.pictureBox23.Location = new System.Drawing.Point(111, 45);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox23.TabIndex = 23;
+            this.pictureBox23.TabStop = false;
+            // 
+            // ts_delete
+            // 
+            this.ts_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ts_delete.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ts_delete.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ts_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ts_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ts_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ts_delete.Font = new System.Drawing.Font("Arial", 10F);
+            this.ts_delete.ForeColor = System.Drawing.Color.White;
+            this.ts_delete.Location = new System.Drawing.Point(240, 93);
+            this.ts_delete.Name = "ts_delete";
+            this.ts_delete.Size = new System.Drawing.Size(105, 28);
+            this.ts_delete.TabIndex = 44;
+            this.ts_delete.TabStop = false;
+            this.ts_delete.Text = "    Delete";
+            this.ts_delete.UseVisualStyleBackColor = true;
+            this.ts_delete.Click += new System.EventHandler(this.ts_delete_Click);
+            // 
+            // ts_cancel
+            // 
+            this.ts_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ts_cancel.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ts_cancel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ts_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ts_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ts_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ts_cancel.Font = new System.Drawing.Font("Arial", 10F);
+            this.ts_cancel.ForeColor = System.Drawing.Color.White;
+            this.ts_cancel.Location = new System.Drawing.Point(240, 43);
+            this.ts_cancel.Name = "ts_cancel";
+            this.ts_cancel.Size = new System.Drawing.Size(105, 28);
+            this.ts_cancel.TabIndex = 39;
+            this.ts_cancel.TabStop = false;
+            this.ts_cancel.Text = "     Cancel";
+            this.ts_cancel.UseVisualStyleBackColor = true;
+            this.ts_cancel.Click += new System.EventHandler(this.ts_cancel_Click);
+            // 
+            // ts_update
+            // 
+            this.ts_update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ts_update.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ts_update.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ts_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ts_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ts_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ts_update.Font = new System.Drawing.Font("Arial", 10F);
+            this.ts_update.ForeColor = System.Drawing.Color.White;
+            this.ts_update.Location = new System.Drawing.Point(110, 93);
+            this.ts_update.Name = "ts_update";
+            this.ts_update.Size = new System.Drawing.Size(105, 28);
+            this.ts_update.TabIndex = 38;
+            this.ts_update.TabStop = false;
+            this.ts_update.Text = "     Update";
+            this.ts_update.UseVisualStyleBackColor = true;
+            this.ts_update.Click += new System.EventHandler(this.ts_update_Click);
+            // 
+            // ts_save
+            // 
+            this.ts_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ts_save.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ts_save.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ts_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ts_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ts_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ts_save.Font = new System.Drawing.Font("Arial", 10F);
+            this.ts_save.ForeColor = System.Drawing.Color.White;
+            this.ts_save.Location = new System.Drawing.Point(110, 43);
+            this.ts_save.Name = "ts_save";
+            this.ts_save.Size = new System.Drawing.Size(105, 28);
+            this.ts_save.TabIndex = 30;
+            this.ts_save.TabStop = false;
+            this.ts_save.Text = "   Save";
+            this.ts_save.UseVisualStyleBackColor = true;
+            this.ts_save.Click += new System.EventHandler(this.ts_save_Click);
+            // 
             // sessionform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.pictureBox34);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.groupBox7);
@@ -797,9 +801,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.goback);
             this.Controls.Add(this.panel18);
@@ -811,12 +813,6 @@
             this.Name = "sessionform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -834,6 +830,12 @@
             this.groupBox7.PerformLayout();
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -845,19 +847,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button goback;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.Button ts_delete;
-        private System.Windows.Forms.Button ts_cancel;
-        private System.Windows.Forms.Button ts_update;
-        private System.Windows.Forms.Button ts_save;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox t_name;
+        private System.Windows.Forms.ComboBox t_namecombo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.TextBox ts_nametext;
@@ -890,5 +882,15 @@
         private System.Windows.Forms.TextBox ts_searchtext;
         private System.Windows.Forms.PictureBox pictureBox20;
         public System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Button ts_delete;
+        private System.Windows.Forms.Button ts_cancel;
+        private System.Windows.Forms.Button ts_update;
+        private System.Windows.Forms.Button ts_save;
     }
 }
