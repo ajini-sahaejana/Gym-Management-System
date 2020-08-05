@@ -185,8 +185,74 @@ namespace Gym_Management_System
             {
                 MessageBox.Show(e.Message);
             }
-
             con.Close();
+        }
+
+        //Search Staff
+        private void searchstaff(string values)
+        {
+            if (searchbyid.Checked == true)
+            {
+                lbStaff.SelectedItems.Clear();
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = " SELECT * FROM Staff WHERE s_id LIKE '%" + values + "%' ";
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
+                try
+                {
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+
+                        string id = reader.GetInt32(0).ToString();
+                        string uname = reader.GetString(1);
+                        //string fullname = reader.GetString(5);
+                        lbStaff.Items.Add(id + ": " + uname);
+                    }
+                }
+                catch (Exception e2)
+                {
+                    MessageBox.Show(e2.Message);
+                }
+
+                con.Close();
+            }
+            else
+            {
+                lbStaff.SelectedItems.Clear();
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = " SELECT * FROM Staff WHERE s_name LIKE '%" + values + "%' ";
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
+                try
+                {
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string id = reader.GetInt32(0).ToString();
+                        string uname = reader.GetString(1);
+                        //string fullname = reader.GetString(5);
+                        lbStaff.Items.Add(id + ": " + uname);
+                    }
+                }
+                catch (Exception e2)
+                {
+                    MessageBox.Show(e2.Message);
+                }
+
+                con.Close();
+            }
+
         }
 
         //---------------------------------------------SQL---------------------------------------------------
@@ -206,18 +272,18 @@ namespace Gym_Management_System
 
                 //Add new row to database
                 DataRow row = set.Tables["Staff"].NewRow();
-                row["s_name"] = s_usernametext.Text;
-                row["s_email"] = s_emailtext.Text;
-                row["s_pword"] = s_pwordtext.Text;
-                row["s_conpword"] = s_conpwordtext.Text;
-                row["s_fullname"] = s_fullnametext.Text;
-                row["s_dob"] = s_dobtext.Value;
-                row["s_age"] = s_agetext.Text;
-                row["s_gender"] = radiobuttoncheck();
-                row["s_address"] = s_addresstext.Text;
-                row["s_contactno"] = s_contactnotext.Text;
-                row["s_hireddate"] = s_hireddatetext.Value;
-                row["s_notes"] = s_notestext.Text;
+                row["s_name"] = this.s_usernametext.Text;
+                row["s_email"] = this.s_emailtext.Text;
+                row["s_pword"] = this.s_pwordtext.Text;
+                row["s_conpword"] = this.s_conpwordtext.Text;
+                row["s_fullname"] = this.s_fullnametext.Text;
+                row["s_dob"] = this.s_dobtext.Value;
+                row["s_age"] = this.s_agetext.Text;
+                row["s_gender"] = this.radiobuttoncheck();
+                row["s_address"] = this.s_addresstext.Text;
+                row["s_contactno"] = this.s_contactnotext.Text;
+                row["s_hireddate"] = this.s_hireddatetext.Value;
+                row["s_notes"] = this.s_notestext.Text;
 
                 set.Tables["Staff"].Rows.Add(row);
 
@@ -372,71 +438,6 @@ namespace Gym_Management_System
             con.Close();
         }
 
-        private void searchstaff(string values)
-        {
-            if (searchbyid.Checked == true)
-            {
-                lbStaff.SelectedItems.Clear();
-
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = " SELECT * FROM Staff WHERE s_id LIKE '%" + values + "%' ";
-                con.Open();
-
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader reader;
-
-                try
-                {
-                    reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-
-                        string id = reader.GetInt32(0).ToString();
-                        string uname = reader.GetString(1);
-                        //string fullname = reader.GetString(5);
-                        lbStaff.Items.Add(id + ": " + uname);
-                    }
-                }
-                catch (Exception e2)
-                {
-                    MessageBox.Show(e2.Message);
-                }
-
-                con.Close();
-            }
-            else
-            {
-                lbStaff.SelectedItems.Clear();
-
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = " SELECT * FROM Staff WHERE s_name LIKE '%" + values + "%' ";
-                con.Open();
-
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader reader;
-
-                try
-                {
-                    reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        string id = reader.GetInt32(0).ToString();
-                        string uname = reader.GetString(1);
-                        //string fullname = reader.GetString(5);
-                        lbStaff.Items.Add(id + ": " + uname);
-                    }
-                }
-                catch (Exception e2)
-                {
-                    MessageBox.Show(e2.Message);
-                }
-
-                con.Close();
-            }
-
-        }
 
         private void s_searchtext_TextChanged(object sender, EventArgs e)
         {

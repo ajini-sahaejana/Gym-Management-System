@@ -118,5 +118,217 @@ namespace Gym_Management_System
             }
             con.Close();
         }
+
+        //Clear Listbox
+        private void clearListbox()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * from Trainer";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            try
+            {
+                con.Open();
+                lbTrainer.Items.Clear();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            con.Close();
+        }
+
+        //Search Staff
+        private void searchtrainer(string values)
+        {
+            if (searchbyid.Checked == true)
+            {
+                lbTrainer.SelectedItems.Clear();
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = " SELECT * FROM Trainer WHERE t_id LIKE '%" + values + "%' ";
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
+                try
+                {
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+
+                        string id = reader.GetInt32(0).ToString();
+                        string name = reader.GetString(1);
+                        //string fullname = reader.GetString(5);
+                        lbTrainer.Items.Add(id + ": " + name);
+                    }
+                }
+                catch (Exception e2)
+                {
+                    MessageBox.Show(e2.Message);
+                }
+
+                con.Close();
+            }
+            else
+            {
+                lbTrainer.SelectedItems.Clear();
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = " SELECT * FROM Trainer WHERE t_name LIKE '%" + values + "%' ";
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
+                try
+                {
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string id = reader.GetInt32(0).ToString();
+                        string name = reader.GetString(1);
+                        //string fullname = reader.GetString(5);
+                        lbTrainer.Items.Add(id + ": " + name);
+                    }
+                }
+                catch (Exception e2)
+                {
+                    MessageBox.Show(e2.Message);
+                }
+
+                con.Close();
+            }
+
+        }
+
+
+        //---------------------------------------------SQL---------------------------------------------------
+
+        private void t_save_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * from Trainer";
+
+            try
+            {
+                con.Open();
+                //Fill Dataset
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataSet set = new DataSet();
+                adapter.Fill(set, "Trainer");
+
+                //Add new row to database
+                DataRow row = set.Tables["Trainer"].NewRow();
+                row["t_name"] = this.t_nametext.Text;
+                row["t_email"] = this.t_emailtext.Text;
+                row["t_dob"] = this.t_dobtext.Value;
+                row["t_age"] = this.t_agetext.Text;
+                row["t_gender"] = this.radiobuttoncheck();
+                row["t_address"] = this.t_addresstext.Text;
+                row["t_contactno"] = this.t_contactnotext.Text;
+                row["t_joineddate"] = this.t_joineddatetext.Value;
+                row["t_notes"] = this.t_notestext.Text;
+
+                set.Tables["Trainer"].Rows.Add(row);
+
+                //Updating Database Table
+                SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+                adapter.Update(set.Tables["Trainer"]);
+
+                MessageBox.Show("Trainer Account Created Successfully!");
+            }
+            catch (Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+            }
+
+            con.Close();
+
+            cleartext();
+
+            clearListbox();
+
+            fillListbox();
+
+            viewsid();
+
+            t_searchtext.Clear();
+        }
+
+
+        private void t_update_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "UPDATE Staff SET " +
+                "s_name = '" + t_nametext.Text + "'," +
+                "s_email = '" + t_emailtext.Text + "', " +
+                "s_dob = '" + t_dobtext.Value + "', " +
+                "s_age = '" + t_agetext.Text + "', " +
+                "s_gender = '" + radiobuttoncheck() + "', " +
+                "s_address = '" + t_addresstext.Text + "', " +
+                "s_contactno = '" + t_contactnotext.Text + "', " +
+                "s_hireddate = '" + t_joineddatetext.Value + "', " +
+                "s_notes = '" + t_notestext.Text + "'" +
+                "WHERE s_id = '" + t_idtext.Text + "' ";
+
+            con.Open();
+
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            adapter.SelectCommand.ExecuteNonQuery();
+
+            MessageBox.Show("Trainer Account Updated Successfully!");
+
+            con.Close();
+
+            cleartext();
+
+            clearListbox();
+
+            fillListbox();
+
+            viewsid();
+
+            t_searchtext.Clear();
+        }
+
+        private void t_cancel_Click(object sender, EventArgs e)
+        {
+            cleartext();
+
+            clearListbox();
+
+            fillListbox();
+
+            viewsid();
+
+            t_searchtext.Clear();
+        }
+
+        private void t_delete_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "DELETE FROM Trainer WHERE t_id =  '" + this.t_idtext.Text + "' ";
+
+            con.Open();
+
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            adapter.SelectCommand.ExecuteNonQuery();
+
+            MessageBox.Show("Trainer Account Deleted Successfully!");
+
+            con.Close();
+
+            cleartext();
+
+            clearListbox();
+
+            fillListbox();
+
+            t_searchtext.Clear();
+        }
     }
 }

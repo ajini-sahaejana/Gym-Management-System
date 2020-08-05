@@ -88,12 +88,12 @@
             this.t_searchtext = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.t_joineddatetext = new System.Windows.Forms.DateTimePicker();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.t_notestext = new System.Windows.Forms.TextBox();
+            this.t_joineddatetext = new System.Windows.Forms.DateTimePicker();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -115,8 +115,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -125,14 +125,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 763);
+            this.panel4.Size = new System.Drawing.Size(5, 744);
             this.panel4.TabIndex = 66;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 763);
+            this.panel5.Location = new System.Drawing.Point(0, 744);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 65;
@@ -506,6 +506,7 @@
             this.t_delete.TabStop = false;
             this.t_delete.Text = "    Delete";
             this.t_delete.UseVisualStyleBackColor = true;
+            this.t_delete.Click += new System.EventHandler(this.t_delete_Click);
             // 
             // t_cancel
             // 
@@ -524,6 +525,7 @@
             this.t_cancel.TabStop = false;
             this.t_cancel.Text = "     Cancel";
             this.t_cancel.UseVisualStyleBackColor = true;
+            this.t_cancel.Click += new System.EventHandler(this.t_cancel_Click);
             // 
             // t_update
             // 
@@ -542,6 +544,7 @@
             this.t_update.TabStop = false;
             this.t_update.Text = "     Update";
             this.t_update.UseVisualStyleBackColor = true;
+            this.t_update.Click += new System.EventHandler(this.t_update_Click);
             // 
             // t_save
             // 
@@ -560,6 +563,7 @@
             this.t_save.TabStop = false;
             this.t_save.Text = "   Save";
             this.t_save.UseVisualStyleBackColor = true;
+            this.t_save.Click += new System.EventHandler(this.t_save_Click);
             // 
             // searchbyname
             // 
@@ -907,6 +911,44 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Trainer Details";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label17.Font = new System.Drawing.Font("Arial", 10F);
+            this.label17.ForeColor = System.Drawing.Color.Turquoise;
+            this.label17.Location = new System.Drawing.Point(60, 511);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 16);
+            this.label17.TabIndex = 50;
+            this.label17.Text = "Notes:";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox18.Image = global::Gym_Management_System.Properties.Resources.notes;
+            this.pictureBox18.Location = new System.Drawing.Point(31, 505);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 49;
+            this.pictureBox18.TabStop = false;
+            // 
+            // t_notestext
+            // 
+            this.t_notestext.AllowDrop = true;
+            this.t_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_notestext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.t_notestext.Location = new System.Drawing.Point(190, 511);
+            this.t_notestext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_notestext.Multiline = true;
+            this.t_notestext.Name = "t_notestext";
+            this.t_notestext.Size = new System.Drawing.Size(230, 69);
+            this.t_notestext.TabIndex = 48;
+            this.t_notestext.TabStop = false;
+            // 
             // t_joineddatetext
             // 
             this.t_joineddatetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
@@ -949,50 +991,12 @@
             this.pictureBox16.TabIndex = 43;
             this.pictureBox16.TabStop = false;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label17.Font = new System.Drawing.Font("Arial", 10F);
-            this.label17.ForeColor = System.Drawing.Color.Turquoise;
-            this.label17.Location = new System.Drawing.Point(60, 511);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 16);
-            this.label17.TabIndex = 50;
-            this.label17.Text = "Notes:";
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox18.Image = global::Gym_Management_System.Properties.Resources.notes;
-            this.pictureBox18.Location = new System.Drawing.Point(31, 505);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 49;
-            this.pictureBox18.TabStop = false;
-            // 
-            // t_notestext
-            // 
-            this.t_notestext.AllowDrop = true;
-            this.t_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.t_notestext.Font = new System.Drawing.Font("Arial", 10F);
-            this.t_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.t_notestext.Location = new System.Drawing.Point(190, 511);
-            this.t_notestext.Margin = new System.Windows.Forms.Padding(0);
-            this.t_notestext.Multiline = true;
-            this.t_notestext.Name = "t_notestext";
-            this.t_notestext.Size = new System.Drawing.Size(230, 69);
-            this.t_notestext.TabIndex = 48;
-            this.t_notestext.TabStop = false;
-            // 
             // trainerform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel4);
@@ -1036,8 +1040,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
