@@ -34,18 +34,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.s_notestext = new System.Windows.Forms.TextBox();
+            this.t_emailtext = new System.Windows.Forms.TextBox();
+            this.t_addresstext = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.s_contactnotext = new System.Windows.Forms.TextBox();
+            this.t_contactnotext = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.s_agetext = new System.Windows.Forms.TextBox();
-            this.s_othertext = new System.Windows.Forms.RadioButton();
-            this.s_femaletext = new System.Windows.Forms.RadioButton();
-            this.s_maletext = new System.Windows.Forms.RadioButton();
-            this.s_dobtext = new System.Windows.Forms.DateTimePicker();
+            this.t_idtext = new System.Windows.Forms.TextBox();
+            this.t_agetext = new System.Windows.Forms.TextBox();
+            this.t_othertext = new System.Windows.Forms.RadioButton();
+            this.t_femaletext = new System.Windows.Forms.RadioButton();
+            this.t_maletext = new System.Windows.Forms.RadioButton();
+            this.t_dobtext = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,10 +59,10 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.s_delete = new System.Windows.Forms.Button();
-            this.s_cancel = new System.Windows.Forms.Button();
-            this.s_update = new System.Windows.Forms.Button();
-            this.s_save = new System.Windows.Forms.Button();
+            this.t_delete = new System.Windows.Forms.Button();
+            this.t_cancel = new System.Windows.Forms.Button();
+            this.t_update = new System.Windows.Forms.Button();
+            this.t_save = new System.Windows.Forms.Button();
             this.searchbyname = new System.Windows.Forms.RadioButton();
             this.searchbyid = new System.Windows.Forms.RadioButton();
             this.label20 = new System.Windows.Forms.Label();
@@ -83,14 +83,17 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.s_fullnametext = new System.Windows.Forms.TextBox();
+            this.t_nametext = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.s_searchtext = new System.Windows.Forms.TextBox();
+            this.t_searchtext = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.s_hireddatetext = new System.Windows.Forms.DateTimePicker();
+            this.t_joineddatetext = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.t_notestext = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -113,6 +116,7 @@
             this.groupBox7.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -141,9 +145,9 @@
             this.label3.ForeColor = System.Drawing.Color.Turquoise;
             this.label3.Location = new System.Drawing.Point(60, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
+            this.label3.Size = new System.Drawing.Size(46, 16);
             this.label3.TabIndex = 47;
-            this.label3.Text = "NIC No:";
+            this.label3.Text = "Email:";
             // 
             // pictureBox4
             // 
@@ -167,32 +171,32 @@
             this.panel3.Size = new System.Drawing.Size(230, 1);
             this.panel3.TabIndex = 46;
             // 
-            // textBox2
+            // t_emailtext
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(190, 160);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 16);
-            this.textBox2.TabIndex = 44;
-            this.textBox2.TabStop = false;
+            this.t_emailtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_emailtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_emailtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_emailtext.ForeColor = System.Drawing.Color.White;
+            this.t_emailtext.Location = new System.Drawing.Point(190, 160);
+            this.t_emailtext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_emailtext.Name = "t_emailtext";
+            this.t_emailtext.Size = new System.Drawing.Size(230, 16);
+            this.t_emailtext.TabIndex = 44;
+            this.t_emailtext.TabStop = false;
             // 
-            // s_notestext
+            // t_addresstext
             // 
-            this.s_notestext.AllowDrop = true;
-            this.s_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_notestext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.s_notestext.Location = new System.Drawing.Point(190, 310);
-            this.s_notestext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_notestext.Multiline = true;
-            this.s_notestext.Name = "s_notestext";
-            this.s_notestext.Size = new System.Drawing.Size(230, 80);
-            this.s_notestext.TabIndex = 40;
-            this.s_notestext.TabStop = false;
+            this.t_addresstext.AllowDrop = true;
+            this.t_addresstext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_addresstext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_addresstext.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.t_addresstext.Location = new System.Drawing.Point(190, 305);
+            this.t_addresstext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_addresstext.Multiline = true;
+            this.t_addresstext.Name = "t_addresstext";
+            this.t_addresstext.Size = new System.Drawing.Size(230, 60);
+            this.t_addresstext.TabIndex = 40;
+            this.t_addresstext.TabStop = false;
             // 
             // label2
             // 
@@ -218,19 +222,19 @@
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // s_contactnotext
+            // t_contactnotext
             // 
-            this.s_contactnotext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_contactnotext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_contactnotext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_contactnotext.ForeColor = System.Drawing.Color.White;
-            this.s_contactnotext.Location = new System.Drawing.Point(190, 422);
-            this.s_contactnotext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_contactnotext.Name = "s_contactnotext";
-            this.s_contactnotext.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.s_contactnotext.Size = new System.Drawing.Size(230, 16);
-            this.s_contactnotext.TabIndex = 0;
-            this.s_contactnotext.TabStop = false;
+            this.t_contactnotext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_contactnotext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_contactnotext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_contactnotext.ForeColor = System.Drawing.Color.White;
+            this.t_contactnotext.Location = new System.Drawing.Point(190, 397);
+            this.t_contactnotext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_contactnotext.Name = "t_contactnotext";
+            this.t_contactnotext.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.t_contactnotext.Size = new System.Drawing.Size(230, 16);
+            this.t_contactnotext.TabIndex = 0;
+            this.t_contactnotext.TabStop = false;
             // 
             // panel2
             // 
@@ -242,83 +246,83 @@
             this.panel2.Size = new System.Drawing.Size(230, 1);
             this.panel2.TabIndex = 32;
             // 
-            // textBox1
+            // t_idtext
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(190, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(230, 16);
-            this.textBox1.TabIndex = 30;
-            this.textBox1.TabStop = false;
+            this.t_idtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_idtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_idtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_idtext.ForeColor = System.Drawing.Color.White;
+            this.t_idtext.Location = new System.Drawing.Point(190, 60);
+            this.t_idtext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_idtext.Name = "t_idtext";
+            this.t_idtext.ReadOnly = true;
+            this.t_idtext.Size = new System.Drawing.Size(230, 16);
+            this.t_idtext.TabIndex = 30;
+            this.t_idtext.TabStop = false;
             // 
-            // s_agetext
+            // t_agetext
             // 
-            this.s_agetext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_agetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_agetext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_agetext.ForeColor = System.Drawing.Color.White;
-            this.s_agetext.Location = new System.Drawing.Point(370, 217);
-            this.s_agetext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_agetext.Name = "s_agetext";
-            this.s_agetext.Size = new System.Drawing.Size(50, 16);
-            this.s_agetext.TabIndex = 20;
-            this.s_agetext.TabStop = false;
+            this.t_agetext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_agetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_agetext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_agetext.ForeColor = System.Drawing.Color.White;
+            this.t_agetext.Location = new System.Drawing.Point(370, 212);
+            this.t_agetext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_agetext.Name = "t_agetext";
+            this.t_agetext.Size = new System.Drawing.Size(50, 16);
+            this.t_agetext.TabIndex = 20;
+            this.t_agetext.TabStop = false;
             // 
-            // s_othertext
+            // t_othertext
             // 
-            this.s_othertext.AutoSize = true;
-            this.s_othertext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_othertext.Location = new System.Drawing.Point(354, 268);
-            this.s_othertext.Name = "s_othertext";
-            this.s_othertext.Size = new System.Drawing.Size(62, 20);
-            this.s_othertext.TabIndex = 39;
-            this.s_othertext.Text = "Other";
-            this.s_othertext.UseVisualStyleBackColor = true;
+            this.t_othertext.AutoSize = true;
+            this.t_othertext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_othertext.Location = new System.Drawing.Point(354, 263);
+            this.t_othertext.Name = "t_othertext";
+            this.t_othertext.Size = new System.Drawing.Size(62, 20);
+            this.t_othertext.TabIndex = 39;
+            this.t_othertext.Text = "Other";
+            this.t_othertext.UseVisualStyleBackColor = true;
             // 
-            // s_femaletext
+            // t_femaletext
             // 
-            this.s_femaletext.AutoSize = true;
-            this.s_femaletext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_femaletext.Location = new System.Drawing.Point(265, 268);
-            this.s_femaletext.Name = "s_femaletext";
-            this.s_femaletext.Size = new System.Drawing.Size(73, 20);
-            this.s_femaletext.TabIndex = 38;
-            this.s_femaletext.Text = "Female";
-            this.s_femaletext.UseVisualStyleBackColor = true;
+            this.t_femaletext.AutoSize = true;
+            this.t_femaletext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_femaletext.Location = new System.Drawing.Point(265, 263);
+            this.t_femaletext.Name = "t_femaletext";
+            this.t_femaletext.Size = new System.Drawing.Size(73, 20);
+            this.t_femaletext.TabIndex = 38;
+            this.t_femaletext.Text = "Female";
+            this.t_femaletext.UseVisualStyleBackColor = true;
             // 
-            // s_maletext
+            // t_maletext
             // 
-            this.s_maletext.AutoSize = true;
-            this.s_maletext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_maletext.Location = new System.Drawing.Point(193, 268);
-            this.s_maletext.Name = "s_maletext";
-            this.s_maletext.Size = new System.Drawing.Size(56, 20);
-            this.s_maletext.TabIndex = 0;
-            this.s_maletext.Text = "Male";
-            this.s_maletext.UseVisualStyleBackColor = true;
+            this.t_maletext.AutoSize = true;
+            this.t_maletext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_maletext.Location = new System.Drawing.Point(193, 263);
+            this.t_maletext.Name = "t_maletext";
+            this.t_maletext.Size = new System.Drawing.Size(56, 20);
+            this.t_maletext.TabIndex = 0;
+            this.t_maletext.Text = "Male";
+            this.t_maletext.UseVisualStyleBackColor = true;
             // 
-            // s_dobtext
+            // t_dobtext
             // 
-            this.s_dobtext.CalendarFont = new System.Drawing.Font("Arial", 10F);
-            this.s_dobtext.CalendarForeColor = System.Drawing.Color.White;
-            this.s_dobtext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_dobtext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.s_dobtext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.s_dobtext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.s_dobtext.Checked = false;
-            this.s_dobtext.CustomFormat = "dd/MM/yyyy";
-            this.s_dobtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_dobtext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.s_dobtext.Location = new System.Drawing.Point(190, 212);
-            this.s_dobtext.Name = "s_dobtext";
-            this.s_dobtext.Size = new System.Drawing.Size(85, 23);
-            this.s_dobtext.TabIndex = 0;
-            this.s_dobtext.TabStop = false;
+            this.t_dobtext.CalendarFont = new System.Drawing.Font("Arial", 10F);
+            this.t_dobtext.CalendarForeColor = System.Drawing.Color.White;
+            this.t_dobtext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_dobtext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            this.t_dobtext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.t_dobtext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.t_dobtext.Checked = false;
+            this.t_dobtext.CustomFormat = "dd/MM/yyyy";
+            this.t_dobtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_dobtext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.t_dobtext.Location = new System.Drawing.Point(190, 207);
+            this.t_dobtext.Name = "t_dobtext";
+            this.t_dobtext.Size = new System.Drawing.Size(85, 23);
+            this.t_dobtext.TabIndex = 0;
+            this.t_dobtext.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -361,7 +365,7 @@
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Arial", 10F);
             this.label15.ForeColor = System.Drawing.Color.Turquoise;
-            this.label15.Location = new System.Drawing.Point(60, 422);
+            this.label15.Location = new System.Drawing.Point(60, 397);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(114, 16);
             this.label15.TabIndex = 29;
@@ -373,7 +377,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Arial", 10F);
             this.label6.ForeColor = System.Drawing.Color.Turquoise;
-            this.label6.Location = new System.Drawing.Point(60, 317);
+            this.label6.Location = new System.Drawing.Point(60, 312);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 29;
@@ -445,10 +449,10 @@
             this.groupBox6.Controls.Add(this.pictureBox26);
             this.groupBox6.Controls.Add(this.pictureBox24);
             this.groupBox6.Controls.Add(this.pictureBox23);
-            this.groupBox6.Controls.Add(this.s_delete);
-            this.groupBox6.Controls.Add(this.s_cancel);
-            this.groupBox6.Controls.Add(this.s_update);
-            this.groupBox6.Controls.Add(this.s_save);
+            this.groupBox6.Controls.Add(this.t_delete);
+            this.groupBox6.Controls.Add(this.t_cancel);
+            this.groupBox6.Controls.Add(this.t_update);
+            this.groupBox6.Controls.Add(this.t_save);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -485,77 +489,77 @@
             this.pictureBox23.TabIndex = 23;
             this.pictureBox23.TabStop = false;
             // 
-            // s_delete
+            // t_delete
             // 
-            this.s_delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_delete.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_delete.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_delete.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_delete.ForeColor = System.Drawing.Color.White;
-            this.s_delete.Location = new System.Drawing.Point(219, 93);
-            this.s_delete.Name = "s_delete";
-            this.s_delete.Size = new System.Drawing.Size(105, 28);
-            this.s_delete.TabIndex = 44;
-            this.s_delete.TabStop = false;
-            this.s_delete.Text = "    Delete";
-            this.s_delete.UseVisualStyleBackColor = true;
+            this.t_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.t_delete.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.t_delete.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.t_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.t_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.t_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t_delete.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_delete.ForeColor = System.Drawing.Color.White;
+            this.t_delete.Location = new System.Drawing.Point(219, 93);
+            this.t_delete.Name = "t_delete";
+            this.t_delete.Size = new System.Drawing.Size(105, 28);
+            this.t_delete.TabIndex = 44;
+            this.t_delete.TabStop = false;
+            this.t_delete.Text = "    Delete";
+            this.t_delete.UseVisualStyleBackColor = true;
             // 
-            // s_cancel
+            // t_cancel
             // 
-            this.s_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_cancel.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_cancel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_cancel.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_cancel.ForeColor = System.Drawing.Color.White;
-            this.s_cancel.Location = new System.Drawing.Point(219, 43);
-            this.s_cancel.Name = "s_cancel";
-            this.s_cancel.Size = new System.Drawing.Size(105, 28);
-            this.s_cancel.TabIndex = 39;
-            this.s_cancel.TabStop = false;
-            this.s_cancel.Text = "     Cancel";
-            this.s_cancel.UseVisualStyleBackColor = true;
+            this.t_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.t_cancel.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.t_cancel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.t_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.t_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.t_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t_cancel.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_cancel.ForeColor = System.Drawing.Color.White;
+            this.t_cancel.Location = new System.Drawing.Point(219, 43);
+            this.t_cancel.Name = "t_cancel";
+            this.t_cancel.Size = new System.Drawing.Size(105, 28);
+            this.t_cancel.TabIndex = 39;
+            this.t_cancel.TabStop = false;
+            this.t_cancel.Text = "     Cancel";
+            this.t_cancel.UseVisualStyleBackColor = true;
             // 
-            // s_update
+            // t_update
             // 
-            this.s_update.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_update.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_update.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_update.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_update.ForeColor = System.Drawing.Color.White;
-            this.s_update.Location = new System.Drawing.Point(89, 93);
-            this.s_update.Name = "s_update";
-            this.s_update.Size = new System.Drawing.Size(105, 28);
-            this.s_update.TabIndex = 38;
-            this.s_update.TabStop = false;
-            this.s_update.Text = "     Update";
-            this.s_update.UseVisualStyleBackColor = true;
+            this.t_update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.t_update.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.t_update.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.t_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.t_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.t_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t_update.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_update.ForeColor = System.Drawing.Color.White;
+            this.t_update.Location = new System.Drawing.Point(89, 93);
+            this.t_update.Name = "t_update";
+            this.t_update.Size = new System.Drawing.Size(105, 28);
+            this.t_update.TabIndex = 38;
+            this.t_update.TabStop = false;
+            this.t_update.Text = "     Update";
+            this.t_update.UseVisualStyleBackColor = true;
             // 
-            // s_save
+            // t_save
             // 
-            this.s_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_save.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_save.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_save.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_save.ForeColor = System.Drawing.Color.White;
-            this.s_save.Location = new System.Drawing.Point(89, 43);
-            this.s_save.Name = "s_save";
-            this.s_save.Size = new System.Drawing.Size(105, 28);
-            this.s_save.TabIndex = 30;
-            this.s_save.TabStop = false;
-            this.s_save.Text = "   Save";
-            this.s_save.UseVisualStyleBackColor = true;
+            this.t_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.t_save.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.t_save.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.t_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.t_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.t_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t_save.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_save.ForeColor = System.Drawing.Color.White;
+            this.t_save.Location = new System.Drawing.Point(89, 43);
+            this.t_save.Name = "t_save";
+            this.t_save.Size = new System.Drawing.Size(105, 28);
+            this.t_save.TabIndex = 30;
+            this.t_save.TabStop = false;
+            this.t_save.Text = "   Save";
+            this.t_save.UseVisualStyleBackColor = true;
             // 
             // searchbyname
             // 
@@ -651,7 +655,7 @@
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("Arial", 10F);
             this.label14.ForeColor = System.Drawing.Color.Turquoise;
-            this.label14.Location = new System.Drawing.Point(60, 267);
+            this.label14.Location = new System.Drawing.Point(60, 262);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(60, 16);
             this.label14.TabIndex = 29;
@@ -663,7 +667,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Arial", 10F);
             this.label7.ForeColor = System.Drawing.Color.Turquoise;
-            this.label7.Location = new System.Drawing.Point(330, 217);
+            this.label7.Location = new System.Drawing.Point(330, 212);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 16);
             this.label7.TabIndex = 29;
@@ -675,7 +679,7 @@
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Arial", 10F);
             this.label8.ForeColor = System.Drawing.Color.Turquoise;
-            this.label8.Location = new System.Drawing.Point(60, 217);
+            this.label8.Location = new System.Drawing.Point(60, 212);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(91, 16);
             this.label8.TabIndex = 29;
@@ -685,7 +689,7 @@
             // 
             this.panel16.BackColor = System.Drawing.Color.White;
             this.panel16.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel16.Location = new System.Drawing.Point(190, 439);
+            this.panel16.Location = new System.Drawing.Point(190, 414);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(230, 1);
@@ -719,7 +723,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel10.Location = new System.Drawing.Point(370, 234);
+            this.panel10.Location = new System.Drawing.Point(370, 229);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(50, 1);
@@ -729,7 +733,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Gym_Management_System.Properties.Resources.dob;
-            this.pictureBox5.Location = new System.Drawing.Point(31, 211);
+            this.pictureBox5.Location = new System.Drawing.Point(31, 206);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
@@ -751,7 +755,7 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox13.Image = global::Gym_Management_System.Properties.Resources.phone;
-            this.pictureBox13.Location = new System.Drawing.Point(31, 415);
+            this.pictureBox13.Location = new System.Drawing.Point(31, 390);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(25, 25);
@@ -763,7 +767,7 @@
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox12.Image = global::Gym_Management_System.Properties.Resources.gender;
-            this.pictureBox12.Location = new System.Drawing.Point(31, 260);
+            this.pictureBox12.Location = new System.Drawing.Point(31, 255);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(25, 25);
@@ -775,7 +779,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox6.Location = new System.Drawing.Point(31, 310);
+            this.pictureBox6.Location = new System.Drawing.Point(31, 305);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
@@ -787,7 +791,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::Gym_Management_System.Properties.Resources.age;
-            this.pictureBox7.Location = new System.Drawing.Point(301, 211);
+            this.pictureBox7.Location = new System.Drawing.Point(301, 206);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
@@ -795,18 +799,18 @@
             this.pictureBox7.TabIndex = 25;
             this.pictureBox7.TabStop = false;
             // 
-            // s_fullnametext
+            // t_nametext
             // 
-            this.s_fullnametext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_fullnametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_fullnametext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_fullnametext.ForeColor = System.Drawing.Color.White;
-            this.s_fullnametext.Location = new System.Drawing.Point(190, 110);
-            this.s_fullnametext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_fullnametext.Name = "s_fullnametext";
-            this.s_fullnametext.Size = new System.Drawing.Size(230, 16);
-            this.s_fullnametext.TabIndex = 22;
-            this.s_fullnametext.TabStop = false;
+            this.t_nametext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_nametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_nametext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_nametext.ForeColor = System.Drawing.Color.White;
+            this.t_nametext.Location = new System.Drawing.Point(190, 110);
+            this.t_nametext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_nametext.Name = "t_nametext";
+            this.t_nametext.Size = new System.Drawing.Size(230, 16);
+            this.t_nametext.TabIndex = 22;
+            this.t_nametext.TabStop = false;
             // 
             // groupBox7
             // 
@@ -816,7 +820,7 @@
             this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.lbTrainer);
             this.groupBox7.Controls.Add(this.panel9);
-            this.groupBox7.Controls.Add(this.s_searchtext);
+            this.groupBox7.Controls.Add(this.t_searchtext);
             this.groupBox7.Controls.Add(this.pictureBox17);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
@@ -830,17 +834,17 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "       Trainer Records";
             // 
-            // s_searchtext
+            // t_searchtext
             // 
-            this.s_searchtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_searchtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_searchtext.ForeColor = System.Drawing.Color.Turquoise;
-            this.s_searchtext.Location = new System.Drawing.Point(37, 41);
-            this.s_searchtext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_searchtext.Name = "s_searchtext";
-            this.s_searchtext.Size = new System.Drawing.Size(352, 16);
-            this.s_searchtext.TabIndex = 0;
+            this.t_searchtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_searchtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_searchtext.ForeColor = System.Drawing.Color.Turquoise;
+            this.t_searchtext.Location = new System.Drawing.Point(37, 41);
+            this.t_searchtext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_searchtext.Name = "t_searchtext";
+            this.t_searchtext.Size = new System.Drawing.Size(352, 16);
+            this.t_searchtext.TabIndex = 0;
             // 
             // panel18
             // 
@@ -854,24 +858,27 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.pictureBox18);
+            this.groupBox2.Controls.Add(this.t_notestext);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.pictureBox4);
             this.groupBox2.Controls.Add(this.panel3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.s_hireddatetext);
+            this.groupBox2.Controls.Add(this.t_emailtext);
+            this.groupBox2.Controls.Add(this.t_joineddatetext);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.pictureBox16);
-            this.groupBox2.Controls.Add(this.s_notestext);
+            this.groupBox2.Controls.Add(this.t_addresstext);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.s_contactnotext);
+            this.groupBox2.Controls.Add(this.t_contactnotext);
             this.groupBox2.Controls.Add(this.panel2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.s_agetext);
-            this.groupBox2.Controls.Add(this.s_othertext);
-            this.groupBox2.Controls.Add(this.s_femaletext);
-            this.groupBox2.Controls.Add(this.s_maletext);
-            this.groupBox2.Controls.Add(this.s_dobtext);
+            this.groupBox2.Controls.Add(this.t_idtext);
+            this.groupBox2.Controls.Add(this.t_agetext);
+            this.groupBox2.Controls.Add(this.t_othertext);
+            this.groupBox2.Controls.Add(this.t_femaletext);
+            this.groupBox2.Controls.Add(this.t_maletext);
+            this.groupBox2.Controls.Add(this.t_dobtext);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label6);
@@ -887,7 +894,7 @@
             this.groupBox2.Controls.Add(this.pictureBox12);
             this.groupBox2.Controls.Add(this.pictureBox6);
             this.groupBox2.Controls.Add(this.pictureBox7);
-            this.groupBox2.Controls.Add(this.s_fullnametext);
+            this.groupBox2.Controls.Add(this.t_nametext);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -898,25 +905,25 @@
             this.groupBox2.Size = new System.Drawing.Size(450, 600);
             this.groupBox2.TabIndex = 67;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "       Personal Details";
+            this.groupBox2.Text = "       Trainer Details";
             // 
-            // s_hireddatetext
+            // t_joineddatetext
             // 
-            this.s_hireddatetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
-            this.s_hireddatetext.CalendarForeColor = System.Drawing.Color.White;
-            this.s_hireddatetext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_hireddatetext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.s_hireddatetext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.s_hireddatetext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.s_hireddatetext.Checked = false;
-            this.s_hireddatetext.CustomFormat = "dd MMMM yyyy";
-            this.s_hireddatetext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_hireddatetext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.s_hireddatetext.Location = new System.Drawing.Point(190, 480);
-            this.s_hireddatetext.Name = "s_hireddatetext";
-            this.s_hireddatetext.Size = new System.Drawing.Size(230, 23);
-            this.s_hireddatetext.TabIndex = 41;
-            this.s_hireddatetext.TabStop = false;
+            this.t_joineddatetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
+            this.t_joineddatetext.CalendarForeColor = System.Drawing.Color.White;
+            this.t_joineddatetext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_joineddatetext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            this.t_joineddatetext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.t_joineddatetext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.t_joineddatetext.Checked = false;
+            this.t_joineddatetext.CustomFormat = "dd MMMM yyyy";
+            this.t_joineddatetext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_joineddatetext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.t_joineddatetext.Location = new System.Drawing.Point(190, 450);
+            this.t_joineddatetext.Name = "t_joineddatetext";
+            this.t_joineddatetext.Size = new System.Drawing.Size(230, 23);
+            this.t_joineddatetext.TabIndex = 41;
+            this.t_joineddatetext.TabStop = false;
             // 
             // label18
             // 
@@ -924,7 +931,7 @@
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label18.Font = new System.Drawing.Font("Arial", 10F);
             this.label18.ForeColor = System.Drawing.Color.Turquoise;
-            this.label18.Location = new System.Drawing.Point(60, 482);
+            this.label18.Location = new System.Drawing.Point(60, 452);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(87, 16);
             this.label18.TabIndex = 42;
@@ -934,13 +941,51 @@
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox16.Image = global::Gym_Management_System.Properties.Resources.hiredate;
-            this.pictureBox16.Location = new System.Drawing.Point(31, 476);
+            this.pictureBox16.Location = new System.Drawing.Point(31, 446);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(25, 25);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 43;
             this.pictureBox16.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label17.Font = new System.Drawing.Font("Arial", 10F);
+            this.label17.ForeColor = System.Drawing.Color.Turquoise;
+            this.label17.Location = new System.Drawing.Point(60, 511);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 16);
+            this.label17.TabIndex = 50;
+            this.label17.Text = "Notes:";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox18.Image = global::Gym_Management_System.Properties.Resources.notes;
+            this.pictureBox18.Location = new System.Drawing.Point(31, 505);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 49;
+            this.pictureBox18.TabStop = false;
+            // 
+            // t_notestext
+            // 
+            this.t_notestext.AllowDrop = true;
+            this.t_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_notestext.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.t_notestext.Location = new System.Drawing.Point(190, 511);
+            this.t_notestext.Margin = new System.Windows.Forms.Padding(0);
+            this.t_notestext.Multiline = true;
+            this.t_notestext.Name = "t_notestext";
+            this.t_notestext.Size = new System.Drawing.Size(230, 69);
+            this.t_notestext.TabIndex = 48;
+            this.t_notestext.TabStop = false;
             // 
             // trainerform
             // 
@@ -992,6 +1037,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1004,18 +1050,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox s_notestext;
+        private System.Windows.Forms.TextBox t_emailtext;
+        private System.Windows.Forms.TextBox t_addresstext;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox s_contactnotext;
+        private System.Windows.Forms.TextBox t_contactnotext;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox s_agetext;
-        private System.Windows.Forms.RadioButton s_othertext;
-        private System.Windows.Forms.RadioButton s_femaletext;
-        private System.Windows.Forms.RadioButton s_maletext;
-        private System.Windows.Forms.DateTimePicker s_dobtext;
+        private System.Windows.Forms.TextBox t_idtext;
+        private System.Windows.Forms.TextBox t_agetext;
+        private System.Windows.Forms.RadioButton t_othertext;
+        private System.Windows.Forms.RadioButton t_femaletext;
+        private System.Windows.Forms.RadioButton t_maletext;
+        private System.Windows.Forms.DateTimePicker t_dobtext;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
@@ -1029,10 +1075,10 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.Button s_delete;
-        private System.Windows.Forms.Button s_cancel;
-        private System.Windows.Forms.Button s_update;
-        private System.Windows.Forms.Button s_save;
+        private System.Windows.Forms.Button t_delete;
+        private System.Windows.Forms.Button t_cancel;
+        private System.Windows.Forms.Button t_update;
+        private System.Windows.Forms.Button t_save;
         private System.Windows.Forms.RadioButton searchbyname;
         private System.Windows.Forms.RadioButton searchbyid;
         private System.Windows.Forms.Label label20;
@@ -1053,13 +1099,16 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox s_fullnametext;
+        private System.Windows.Forms.TextBox t_nametext;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox s_searchtext;
+        private System.Windows.Forms.TextBox t_searchtext;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker s_hireddatetext;
+        private System.Windows.Forms.DateTimePicker t_joineddatetext;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.TextBox t_notestext;
     }
 }
