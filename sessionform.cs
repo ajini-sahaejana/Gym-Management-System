@@ -24,6 +24,7 @@ namespace Gym_Management_System
             {
                 this.Hide();
                 mainform m1 = new mainform();
+                m1.Show();
             }
         }
     }

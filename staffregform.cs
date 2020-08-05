@@ -460,7 +460,6 @@ namespace Gym_Management_System
             if (dialog == DialogResult.Yes)
             {
                 this.Hide();
-                mainform m1 = new mainform();
             }
         }
     }
