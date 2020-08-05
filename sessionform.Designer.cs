@@ -60,7 +60,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.ts_date = new System.Windows.Forms.DateTimePicker();
+            this.ts_datetext = new System.Windows.Forms.DateTimePicker();
             this.ts_idtext = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -258,6 +258,7 @@
             this.ts_delete.TabStop = false;
             this.ts_delete.Text = "    Delete";
             this.ts_delete.UseVisualStyleBackColor = true;
+            this.ts_delete.Click += new System.EventHandler(this.ts_delete_Click);
             // 
             // ts_cancel
             // 
@@ -276,6 +277,7 @@
             this.ts_cancel.TabStop = false;
             this.ts_cancel.Text = "     Cancel";
             this.ts_cancel.UseVisualStyleBackColor = true;
+            this.ts_cancel.Click += new System.EventHandler(this.ts_cancel_Click);
             // 
             // ts_update
             // 
@@ -294,6 +296,7 @@
             this.ts_update.TabStop = false;
             this.ts_update.Text = "     Update";
             this.ts_update.UseVisualStyleBackColor = true;
+            this.ts_update.Click += new System.EventHandler(this.ts_update_Click);
             // 
             // ts_save
             // 
@@ -312,6 +315,7 @@
             this.ts_save.TabStop = false;
             this.ts_save.Text = "   Save";
             this.ts_save.UseVisualStyleBackColor = true;
+            this.ts_save.Click += new System.EventHandler(this.ts_save_Click);
             // 
             // pictureBox10
             // 
@@ -517,23 +521,23 @@
             this.label11.TabIndex = 29;
             this.label11.Text = "Session Details:";
             // 
-            // ts_date
+            // ts_datetext
             // 
-            this.ts_date.CalendarFont = new System.Drawing.Font("Arial", 10F);
-            this.ts_date.CalendarForeColor = System.Drawing.Color.White;
-            this.ts_date.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.ts_date.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.ts_date.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.ts_date.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.ts_date.Checked = false;
-            this.ts_date.CustomFormat = "dd/MM/yyyy hh:mm tt";
-            this.ts_date.Font = new System.Drawing.Font("Arial", 10F);
-            this.ts_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ts_date.Location = new System.Drawing.Point(190, 157);
-            this.ts_date.Name = "ts_date";
-            this.ts_date.Size = new System.Drawing.Size(230, 23);
-            this.ts_date.TabIndex = 0;
-            this.ts_date.TabStop = false;
+            this.ts_datetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
+            this.ts_datetext.CalendarForeColor = System.Drawing.Color.White;
+            this.ts_datetext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ts_datetext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            this.ts_datetext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.ts_datetext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.ts_datetext.Checked = false;
+            this.ts_datetext.CustomFormat = "dd/MM/yyyy hh:mm tt";
+            this.ts_datetext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ts_datetext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ts_datetext.Location = new System.Drawing.Point(190, 157);
+            this.ts_datetext.Name = "ts_datetext";
+            this.ts_datetext.Size = new System.Drawing.Size(230, 23);
+            this.ts_datetext.TabIndex = 0;
+            this.ts_datetext.TabStop = false;
             // 
             // ts_idtext
             // 
@@ -605,7 +609,7 @@
             this.groupBox1.Controls.Add(this.pictureBox8);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.ts_idtext);
-            this.groupBox1.Controls.Add(this.ts_date);
+            this.groupBox1.Controls.Add(this.ts_datetext);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label16);
@@ -723,6 +727,7 @@
             this.lbSession.Name = "lbSession";
             this.lbSession.Size = new System.Drawing.Size(424, 336);
             this.lbSession.TabIndex = 48;
+            this.lbSession.SelectedIndexChanged += new System.EventHandler(this.lbSession_SelectedIndexChanged);
             // 
             // panel9
             // 
@@ -756,6 +761,7 @@
             this.ts_searchtext.Name = "ts_searchtext";
             this.ts_searchtext.Size = new System.Drawing.Size(400, 16);
             this.ts_searchtext.TabIndex = 0;
+            this.ts_searchtext.TextChanged += new System.EventHandler(this.ts_searchtext_TextChanged);
             // 
             // pictureBox20
             // 
@@ -862,7 +868,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker ts_date;
+        private System.Windows.Forms.DateTimePicker ts_datetext;
         private System.Windows.Forms.TextBox ts_idtext;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox8;
