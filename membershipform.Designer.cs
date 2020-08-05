@@ -200,7 +200,7 @@
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox28.Image = global::Gym_Management_System.Properties.Resources.delete;
-            this.pictureBox28.Location = new System.Drawing.Point(260, 110);
+            this.pictureBox28.Location = new System.Drawing.Point(260, 115);
             this.pictureBox28.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(24, 24);
@@ -224,7 +224,7 @@
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox24.Image = global::Gym_Management_System.Properties.Resources.update;
-            this.pictureBox24.Location = new System.Drawing.Point(125, 110);
+            this.pictureBox24.Location = new System.Drawing.Point(125, 115);
             this.pictureBox24.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(24, 24);
@@ -254,13 +254,14 @@
             this.ms_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ms_delete.Font = new System.Drawing.Font("Arial", 10F);
             this.ms_delete.ForeColor = System.Drawing.Color.White;
-            this.ms_delete.Location = new System.Drawing.Point(259, 108);
+            this.ms_delete.Location = new System.Drawing.Point(259, 113);
             this.ms_delete.Name = "ms_delete";
             this.ms_delete.Size = new System.Drawing.Size(105, 28);
             this.ms_delete.TabIndex = 44;
             this.ms_delete.TabStop = false;
             this.ms_delete.Text = "    Delete";
             this.ms_delete.UseVisualStyleBackColor = true;
+            this.ms_delete.Click += new System.EventHandler(this.ms_delete_Click);
             // 
             // ms_cancel
             // 
@@ -279,6 +280,7 @@
             this.ms_cancel.TabStop = false;
             this.ms_cancel.Text = "     Cancel";
             this.ms_cancel.UseVisualStyleBackColor = true;
+            this.ms_cancel.Click += new System.EventHandler(this.ms_cancel_Click);
             // 
             // ms_update
             // 
@@ -290,13 +292,14 @@
             this.ms_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ms_update.Font = new System.Drawing.Font("Arial", 10F);
             this.ms_update.ForeColor = System.Drawing.Color.White;
-            this.ms_update.Location = new System.Drawing.Point(124, 108);
+            this.ms_update.Location = new System.Drawing.Point(124, 113);
             this.ms_update.Name = "ms_update";
             this.ms_update.Size = new System.Drawing.Size(105, 28);
             this.ms_update.TabIndex = 38;
             this.ms_update.TabStop = false;
             this.ms_update.Text = "     Update";
             this.ms_update.UseVisualStyleBackColor = true;
+            this.ms_update.Click += new System.EventHandler(this.ms_update_Click);
             // 
             // ms_save
             // 
@@ -315,6 +318,7 @@
             this.ms_save.TabStop = false;
             this.ms_save.Text = "   Save";
             this.ms_save.UseVisualStyleBackColor = true;
+            this.ms_save.Click += new System.EventHandler(this.ms_save_Click);
             // 
             // pictureBox2
             // 
@@ -413,6 +417,7 @@
             this.lbMembership.Name = "lbMembership";
             this.lbMembership.Size = new System.Drawing.Size(377, 480);
             this.lbMembership.TabIndex = 48;
+            this.lbMembership.SelectedIndexChanged += new System.EventHandler(this.lbMembership_SelectedIndexChanged);
             // 
             // panel9
             // 
@@ -446,6 +451,7 @@
             this.ms_searchtext.Name = "ms_searchtext";
             this.ms_searchtext.Size = new System.Drawing.Size(352, 16);
             this.ms_searchtext.TabIndex = 0;
+            this.ms_searchtext.TextChanged += new System.EventHandler(this.ms_searchtext_TextChanged);
             // 
             // pictureBox17
             // 

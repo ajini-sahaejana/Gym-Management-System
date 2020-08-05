@@ -35,13 +35,14 @@ namespace Gym_Management_System
         //View Session_Id in the form
         private void viewsid()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT ts_id FROM Session WHERE ts_id = (SELECT MAX(ts_id) FROM Session) ";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-            SqlDataReader reader;
             try
             {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT ts_id FROM Session WHERE ts_id = (SELECT MAX(ts_id) FROM Session) ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+            
                 con.Open();
                 reader = cmd.ExecuteReader();
 
@@ -51,12 +52,13 @@ namespace Gym_Management_System
                     id++;
                     ts_idtext.Text = Convert.ToString(id);
                 }
+
+                con.Close();
             }
             catch (Exception er)
             {
                 MessageBox.Show(er.Message);
             }
-            con.Close();
         }
 
         //View Trainer_Name in the form
