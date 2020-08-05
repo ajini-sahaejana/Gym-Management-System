@@ -1267,6 +1267,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox8);
@@ -1277,7 +1278,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.pictureBox25);
-            this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.goback);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox2);

@@ -35,9 +35,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.s_hireddatetext = new System.Windows.Forms.DateTimePicker();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.s_notestext = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -91,8 +88,10 @@
             this.s_searchtext = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.s_hireddatetext = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -113,6 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -179,48 +179,6 @@
             this.textBox2.Size = new System.Drawing.Size(230, 16);
             this.textBox2.TabIndex = 44;
             this.textBox2.TabStop = false;
-            // 
-            // s_hireddatetext
-            // 
-            this.s_hireddatetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
-            this.s_hireddatetext.CalendarForeColor = System.Drawing.Color.White;
-            this.s_hireddatetext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_hireddatetext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.s_hireddatetext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.s_hireddatetext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.s_hireddatetext.Checked = false;
-            this.s_hireddatetext.CustomFormat = "dd MMMM yyyy";
-            this.s_hireddatetext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_hireddatetext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.s_hireddatetext.Location = new System.Drawing.Point(190, 480);
-            this.s_hireddatetext.Name = "s_hireddatetext";
-            this.s_hireddatetext.Size = new System.Drawing.Size(230, 23);
-            this.s_hireddatetext.TabIndex = 41;
-            this.s_hireddatetext.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label18.Font = new System.Drawing.Font("Arial", 10F);
-            this.label18.ForeColor = System.Drawing.Color.Turquoise;
-            this.label18.Location = new System.Drawing.Point(60, 482);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 16);
-            this.label18.TabIndex = 42;
-            this.label18.Text = "Date Joined:";
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox16.Image = global::Gym_Management_System.Properties.Resources.hiredate;
-            this.pictureBox16.Location = new System.Drawing.Point(31, 476);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 43;
-            this.pictureBox16.TabStop = false;
             // 
             // s_notestext
             // 
@@ -385,7 +343,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1361, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Trainer Management";
+            this.label1.Text = "Member Management";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -943,6 +901,48 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Personal Details";
             // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox16.Image = global::Gym_Management_System.Properties.Resources.hiredate;
+            this.pictureBox16.Location = new System.Drawing.Point(31, 476);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 43;
+            this.pictureBox16.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label18.Font = new System.Drawing.Font("Arial", 10F);
+            this.label18.ForeColor = System.Drawing.Color.Turquoise;
+            this.label18.Location = new System.Drawing.Point(60, 482);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(87, 16);
+            this.label18.TabIndex = 42;
+            this.label18.Text = "Date Joined:";
+            // 
+            // s_hireddatetext
+            // 
+            this.s_hireddatetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
+            this.s_hireddatetext.CalendarForeColor = System.Drawing.Color.White;
+            this.s_hireddatetext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.s_hireddatetext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            this.s_hireddatetext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.s_hireddatetext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.s_hireddatetext.Checked = false;
+            this.s_hireddatetext.CustomFormat = "dd MMMM yyyy";
+            this.s_hireddatetext.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_hireddatetext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.s_hireddatetext.Location = new System.Drawing.Point(190, 480);
+            this.s_hireddatetext.Name = "s_hireddatetext";
+            this.s_hireddatetext.Size = new System.Drawing.Size(230, 23);
+            this.s_hireddatetext.TabIndex = 41;
+            this.s_hireddatetext.TabStop = false;
+            // 
             // trainerform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -970,7 +970,6 @@
             this.Name = "trainerform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -993,6 +992,7 @@
             this.groupBox7.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1006,9 +1006,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker s_hireddatetext;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.TextBox s_notestext;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1062,5 +1059,8 @@
         private System.Windows.Forms.TextBox s_searchtext;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DateTimePicker s_hireddatetext;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }
