@@ -237,6 +237,7 @@
             this.lbMember.Name = "lbMember";
             this.lbMember.Size = new System.Drawing.Size(254, 496);
             this.lbMember.TabIndex = 48;
+            this.lbMember.SelectedIndexChanged += new System.EventHandler(this.lbMember_SelectedIndexChanged);
             // 
             // pictureBox24
             // 
@@ -455,6 +456,7 @@
             this.m_searchtext.Name = "m_searchtext";
             this.m_searchtext.Size = new System.Drawing.Size(229, 16);
             this.m_searchtext.TabIndex = 0;
+            this.m_searchtext.TextChanged += new System.EventHandler(this.m_searchtext_TextChanged);
             // 
             // panel18
             // 
@@ -553,7 +555,7 @@
             this.pictureBox14.BackgroundImage = global::Gym_Management_System.Properties.Resources.account;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox14.Location = new System.Drawing.Point(30, 535);
+            this.pictureBox14.Location = new System.Drawing.Point(30, 536);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(38, 38);

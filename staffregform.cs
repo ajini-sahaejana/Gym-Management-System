@@ -389,14 +389,15 @@ namespace Gym_Management_System
 
         private void lbStaff_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string onlyid = lbStaff.Text.Substring(0, 6);
-
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * FROM Staff WHERE s_id = '" + onlyid + "' ";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataReader reader;
             try
             {
+                string onlyid = lbStaff.Text.Substring(0, 6);
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * FROM Staff WHERE s_id = '" + onlyid + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
                 con.Open();
                 reader = cmd.ExecuteReader();
 
@@ -430,13 +431,13 @@ namespace Gym_Management_System
                     s_hireddatetext.Value = reader.GetDateTime(11);
                     s_notestext.Text = reader.GetString(12).Trim();
                 }
+
+                con.Close();
             }
             catch (Exception er)
             {
                 MessageBox.Show(er.Message);
             }
-
-            con.Close();
         }
 
 

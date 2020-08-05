@@ -233,7 +233,7 @@ namespace Gym_Management_System
                 row["m_gender"] = this.radiobuttoncheck();
                 row["m_address"] = this.m_addresstext.Text;
                 row["m_contactno"] = this.m_contactnotext.Text;
-                row["m_hireddate"] = this.m_joineddatetext.Value;
+                row["m_joineddate"] = this.m_joineddatetext.Value;
                 row["m_notes"] = this.m_notestext.Text;
 
                 set.Tables["Member"].Rows.Add(row);
@@ -265,7 +265,45 @@ namespace Gym_Management_System
 
         private void m_update_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "UPDATE Member SET " +
+                    "m_name = '" + this.m_nametext.Text + "'," +
+                    "m_email = '" + this.m_emailtext.Text + "', " +
+                    "m_dob = '" + this.m_dobtext.Value + "', " +
+                    "m_age = '" + this.m_agetext.Text + "', " +
+                    "m_gender = '" + this.radiobuttoncheck() + "', " +
+                    "m_address = '" + this.m_addresstext.Text + "', " +
+                    "m_contactno = '" + this.m_contactnotext.Text + "', " +
+                    "m_joineddate = '" + this.m_joineddatetext.Value + "', " +
+                    "m_notes = '" + this.m_notestext.Text + "'" +
+                    "WHERE m_id = '" + this.m_idtext.Text + "' ";
 
+                con.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                adapter.SelectCommand.ExecuteNonQuery();
+
+                MessageBox.Show("Member Account Updated Successfully!");
+
+                con.Close();
+
+                cleartext();
+
+                clearListbox();
+
+                fillListbox();
+
+                viewmid();
+
+                m_searchtext.Clear();
+
+            }
+            catch (Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+            }
         }
 
         private void m_cancel_Click(object sender, EventArgs e)
@@ -302,6 +340,71 @@ namespace Gym_Management_System
             fillListbox();
 
             m_searchtext.Clear();
+        }
+
+        private void lbMember_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string onlyid = lbMember.Text.Substring(0, 6);
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * FROM Member WHERE m_id = '" + onlyid + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    m_idtext.Text = reader.GetInt32(0).ToString().Trim();
+                    m_nametext.Text = reader.GetString(1).Trim();
+                    m_emailtext.Text = reader.GetString(2).Trim();
+                    m_dobtext.Value = reader.GetDateTime(3);
+                    m_agetext.Text = reader.GetString(4).Trim();
+
+                    //Radio button check
+                    if (reader.GetString(5).Trim() == "Male")
+                    {
+                        m_maletext.Checked = true;
+                    }
+                    else if (reader.GetString(5).Trim() == "Female")
+                    {
+                        m_femaletext.Checked = true;
+                    }
+                    else
+                    {
+                        m_othertext.Checked = true;
+                    }
+
+                    m_addresstext.Text = reader.GetString(6).Trim();
+                    m_contactnotext.Text = reader.GetString(7).Trim();
+                    m_joineddatetext.Value = reader.GetDateTime(8);
+                    m_notestext.Text = reader.GetString(9).Trim();
+                }
+
+                con.Close();
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+        }
+
+        private void m_searchtext_TextChanged(object sender, EventArgs e)
+        {
+            string values = m_searchtext.Text.ToString().ToLower();
+            if (values == "")
+            {
+                clearListbox();
+                fillListbox();
+            }
+            else
+            {
+                clearListbox();
+                searchmember(values);
+            }
         }
     }
 }
