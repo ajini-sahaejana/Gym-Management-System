@@ -91,7 +91,7 @@ namespace Gym_Management_System
         //Clear text after saving
         private void cleartext()
         {
-            t_namecombo.SelectedItem = "";
+            t_namecombo.Text = "";
             ts_idtext.Clear();
             ts_nametext.Clear();
             ts_datetext.Value = DateTime.Now;
@@ -184,7 +184,7 @@ namespace Gym_Management_System
                 lbSession.SelectedItems.Clear();
 
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = " SELECT * FROM Session WHERE ts_name LIKE '%" + values + "%' ";
+                string query = " SELECT * FROM Session WHERE trainer_name LIKE '%" + values + "%' ";
                 con.Open();
 
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -215,11 +215,13 @@ namespace Gym_Management_System
 
         private void ts_save_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * from Session";
-
             try
             {
+                string onlyname = t_namecombo.Text.Substring(8);
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from Session";
+
                 con.Open();
                 //Fill Dataset
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
@@ -228,9 +230,11 @@ namespace Gym_Management_System
 
                 //Add new row to database
                 DataRow row = set.Tables["Session"].NewRow();
-                row["ts_name"] = this.ts_nametext.Text;
+                row["trainer_name"] = onlyname.Trim();
+                row["ts_name"] = this.ts_nametext.Text.Trim();
                 row["ts_date"] = this.ts_datetext.Value;
-                row["ts_notes"] = this.ts_notestext.Text;
+                row["ts_notes"] = this.ts_notestext.Text.Trim();
+                row["trainer_details"] = this.t_details.Text.Trim();
 
                 set.Tables["Session"].Rows.Add(row);
 
@@ -239,33 +243,37 @@ namespace Gym_Management_System
                 adapter.Update(set.Tables["Session"]);
 
                 MessageBox.Show("Training Session Created Successfully!");
+
+                con.Close();
+
+                cleartext();
+
+                clearListbox();
+
+                fillListbox();
+
+                viewsid();
+
+                ts_searchtext.Clear();
             }
             catch (Exception e1)
             {
                 MessageBox.Show(e1.Message);
             }
-
-            con.Close();
-
-            cleartext();
-
-            clearListbox();
-
-            fillListbox();
-
-            viewsid();
-
-            ts_searchtext.Clear();
         }
 
         private void ts_update_Click(object sender, EventArgs e)
         {
+            string onlyname = t_namecombo.Text.Substring(8);
+
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "UPDATE Session SET " +
-                "ts_name = '" + ts_nametext.Text + "'," +
-                "ts_date = '" + ts_datetext.Value + "', " +
-                "ts_notes = '" + ts_notestext.Text + "'" +
-                "WHERE ts_id = '" + ts_idtext.Text + "' ";
+                "trainer_name = '" + onlyname.Trim() + "'," +
+                "ts_name = '" + ts_nametext.Text.Trim() + "'," + 
+                "ts_date = '" + ts_datetext.Value + "'," +
+                "ts_notes = '" + ts_notestext.Text.Trim() + "'," +
+                "trainer_details = '" + t_details.Text.Trim() + "'" +
+                "WHERE ts_id = '" + ts_idtext.Text.Trim() + "' ";
 
             con.Open();
 
