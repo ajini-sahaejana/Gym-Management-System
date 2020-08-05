@@ -45,10 +45,8 @@
             this.picEmail = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.picPword = new System.Windows.Forms.PictureBox();
-            this.pword = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.TextBox();
+            this.s_username = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -77,11 +75,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.s_fullnametext = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
@@ -243,10 +237,8 @@
             this.groupBox1.Controls.Add(this.picEmail);
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.picPword);
-            this.groupBox1.Controls.Add(this.pword);
-            this.groupBox1.Controls.Add(this.username);
+            this.groupBox1.Controls.Add(this.s_username);
             this.groupBox1.Controls.Add(this.email);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
@@ -380,19 +372,6 @@
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBox1.Location = new System.Drawing.Point(190, 200);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 16);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.TabStop = false;
-            // 
             // picPword
             // 
             this.picPword.BackColor = System.Drawing.Color.Transparent;
@@ -405,31 +384,18 @@
             this.picPword.TabIndex = 25;
             this.picPword.TabStop = false;
             // 
-            // pword
+            // s_username
             // 
-            this.pword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.pword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pword.Font = new System.Drawing.Font("Arial", 10F);
-            this.pword.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.pword.Location = new System.Drawing.Point(190, 150);
-            this.pword.Margin = new System.Windows.Forms.Padding(0);
-            this.pword.Name = "pword";
-            this.pword.Size = new System.Drawing.Size(230, 16);
-            this.pword.TabIndex = 20;
-            this.pword.TabStop = false;
-            // 
-            // username
-            // 
-            this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.username.Font = new System.Drawing.Font("Arial", 10F);
-            this.username.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.username.Location = new System.Drawing.Point(190, 50);
-            this.username.Margin = new System.Windows.Forms.Padding(0);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(230, 16);
-            this.username.TabIndex = 22;
-            this.username.TabStop = false;
+            this.s_username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.s_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.s_username.Font = new System.Drawing.Font("Arial", 10F);
+            this.s_username.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.s_username.Location = new System.Drawing.Point(190, 50);
+            this.s_username.Margin = new System.Windows.Forms.Padding(0);
+            this.s_username.Name = "s_username";
+            this.s_username.Size = new System.Drawing.Size(230, 16);
+            this.s_username.TabIndex = 22;
+            this.s_username.TabStop = false;
             // 
             // email
             // 
@@ -798,45 +764,6 @@
             this.s_fullnametext.TabIndex = 22;
             this.s_fullnametext.TabStop = false;
             // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox14.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBox14.Location = new System.Drawing.Point(190, 100);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(230, 16);
-            this.textBox14.TabIndex = 21;
-            this.textBox14.TabStop = false;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox13.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBox13.Location = new System.Drawing.Point(190, 50);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(230, 16);
-            this.textBox13.TabIndex = 22;
-            this.textBox13.TabStop = false;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox12.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBox12.Location = new System.Drawing.Point(190, 150);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(230, 16);
-            this.textBox12.TabIndex = 20;
-            this.textBox12.TabStop = false;
-            // 
             // pictureBox22
             // 
             this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
@@ -848,19 +775,6 @@
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox22.TabIndex = 25;
             this.pictureBox22.TabStop = false;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox11.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBox11.Location = new System.Drawing.Point(190, 200);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(230, 16);
-            this.textBox11.TabIndex = 20;
-            this.textBox11.TabStop = false;
             // 
             // pictureBox21
             // 
@@ -984,11 +898,7 @@
             this.groupBox5.Controls.Add(this.pictureBox20);
             this.groupBox5.Controls.Add(this.panel24);
             this.groupBox5.Controls.Add(this.pictureBox21);
-            this.groupBox5.Controls.Add(this.textBox11);
             this.groupBox5.Controls.Add(this.pictureBox22);
-            this.groupBox5.Controls.Add(this.textBox12);
-            this.groupBox5.Controls.Add(this.textBox13);
-            this.groupBox5.Controls.Add(this.textBox14);
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox5.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -1859,13 +1769,11 @@
         private System.Windows.Forms.PictureBox picEmail;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox picPword;
-        private System.Windows.Forms.TextBox pword;
-        private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.TextBox s_username;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -1896,11 +1804,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.PictureBox pictureBox20;
