@@ -330,5 +330,69 @@ namespace Gym_Management_System
 
             t_searchtext.Clear();
         }
+
+        private void lbTrainer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string onlyid = lbTrainer.Text.Substring(0, 6);
+
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "SELECT * FROM Trainer WHERE s_id = '" + onlyid + "' ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader reader;
+            try
+            {
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    t_idtext.Text = reader.GetInt32(0).ToString().Trim();
+                    t_nametext.Text = reader.GetString(1).Trim();
+                    t_emailtext.Text = reader.GetString(2).Trim();
+                    t_dobtext.Value = reader.GetDateTime(3);
+                    t_agetext.Text = reader.GetString(4).Trim();
+
+                    //Radio button check
+                    if (reader.GetString(5).Trim() == "Male")
+                    {
+                        t_maletext.Checked = true;
+                    }
+                    else if (reader.GetString(5).Trim() == "Female")
+                    {
+                        t_femaletext.Checked = true;
+                    }
+                    else
+                    {
+                        t_othertext.Checked = true;
+                    }
+
+                    t_addresstext.Text = reader.GetString(6).Trim();
+                    t_contactnotext.Text = reader.GetString(7).Trim();
+                    t_joineddatetext.Value = reader.GetDateTime(8);
+                    t_notestext.Text = reader.GetString(9).Trim();
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+
+            con.Close();
+        }
+
+        private void t_searchtext_TextChanged(object sender, EventArgs e)
+        {
+            string values = t_searchtext.Text.ToString().ToLower();
+            if (values == "")
+            {
+                clearListbox();
+                fillListbox();
+            }
+            else
+            {
+                clearListbox();
+                searchtrainer(values);
+            }
+        }
     }
 }

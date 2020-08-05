@@ -614,6 +614,7 @@
             this.lbTrainer.Name = "lbTrainer";
             this.lbTrainer.Size = new System.Drawing.Size(377, 336);
             this.lbTrainer.TabIndex = 48;
+            this.lbTrainer.SelectedIndexChanged += new System.EventHandler(this.lbTrainer_SelectedIndexChanged);
             // 
             // pictureBox17
             // 
@@ -849,6 +850,7 @@
             this.t_searchtext.Name = "t_searchtext";
             this.t_searchtext.Size = new System.Drawing.Size(352, 16);
             this.t_searchtext.TabIndex = 0;
+            this.t_searchtext.TextChanged += new System.EventHandler(this.t_searchtext_TextChanged);
             // 
             // panel18
             // 
