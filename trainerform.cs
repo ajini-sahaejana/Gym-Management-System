@@ -263,17 +263,17 @@ namespace Gym_Management_System
         private void t_update_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "UPDATE Staff SET " +
-                "s_name = '" + t_nametext.Text + "'," +
-                "s_email = '" + t_emailtext.Text + "', " +
-                "s_dob = '" + t_dobtext.Value + "', " +
-                "s_age = '" + t_agetext.Text + "', " +
-                "s_gender = '" + radiobuttoncheck() + "', " +
-                "s_address = '" + t_addresstext.Text + "', " +
-                "s_contactno = '" + t_contactnotext.Text + "', " +
-                "s_hireddate = '" + t_joineddatetext.Value + "', " +
-                "s_notes = '" + t_notestext.Text + "'" +
-                "WHERE s_id = '" + t_idtext.Text + "' ";
+            string query = "UPDATE Trainer SET " +
+                "t_name = '" + t_nametext.Text + "'," +
+                "t_email = '" + t_emailtext.Text + "', " +
+                "t_dob = '" + t_dobtext.Value + "', " +
+                "t_age = '" + t_agetext.Text + "', " +
+                "t_gender = '" + radiobuttoncheck() + "', " +
+                "t_address = '" + t_addresstext.Text + "', " +
+                "t_contactno = '" + t_contactnotext.Text + "', " +
+                "t_joineddate = '" + t_joineddatetext.Value + "', " +
+                "t_notes = '" + t_notestext.Text + "'" +
+                "WHERE t_id = '" + t_idtext.Text + "' ";
 
             con.Open();
 
@@ -336,7 +336,7 @@ namespace Gym_Management_System
             string onlyid = lbTrainer.Text.Substring(0, 6);
 
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "SELECT * FROM Trainer WHERE s_id = '" + onlyid + "' ";
+            string query = "SELECT * FROM Trainer WHERE t_id = '" + onlyid + "' ";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader reader;
             try
