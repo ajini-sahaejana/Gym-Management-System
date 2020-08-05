@@ -15,6 +15,7 @@ namespace Gym_Management_System
         public purchaseform()
         {
             InitializeComponent();
+            this.MinimumSize = new System.Drawing.Size(1366, 768);
         }
 
         private void goback_Click(object sender, EventArgs e)

@@ -168,7 +168,7 @@ namespace Gym_Management_System
                 viewsname = this.loginusername.Text;
 
                 mainform mf1 = new mainform();
-                this.Hide();
+                Hide();
                 ActiveForm.Hide();
                 mf1.Show();
             }

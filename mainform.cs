@@ -17,6 +17,7 @@ namespace Gym_Management_System
         {
             InitializeComponent();
             welcomemsg();
+            this.MinimumSize = new System.Drawing.Size(1366, 768);
         }
 
         //View username in the form
