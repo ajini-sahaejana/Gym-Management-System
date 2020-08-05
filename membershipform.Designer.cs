@@ -41,10 +41,10 @@
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.s_delete = new System.Windows.Forms.Button();
-            this.s_cancel = new System.Windows.Forms.Button();
-            this.s_update = new System.Windows.Forms.Button();
-            this.s_save = new System.Windows.Forms.Button();
+            this.ms_delete = new System.Windows.Forms.Button();
+            this.ms_cancel = new System.Windows.Forms.Button();
+            this.ms_update = new System.Windows.Forms.Button();
+            this.ms_save = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -54,7 +54,7 @@
             this.lbMembership = new System.Windows.Forms.ListBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.s_searchtext = new System.Windows.Forms.TextBox();
+            this.ms_searchtext = new System.Windows.Forms.TextBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -180,10 +180,10 @@
             this.groupBox6.Controls.Add(this.pictureBox26);
             this.groupBox6.Controls.Add(this.pictureBox24);
             this.groupBox6.Controls.Add(this.pictureBox23);
-            this.groupBox6.Controls.Add(this.s_delete);
-            this.groupBox6.Controls.Add(this.s_cancel);
-            this.groupBox6.Controls.Add(this.s_update);
-            this.groupBox6.Controls.Add(this.s_save);
+            this.groupBox6.Controls.Add(this.ms_delete);
+            this.groupBox6.Controls.Add(this.ms_cancel);
+            this.groupBox6.Controls.Add(this.ms_update);
+            this.groupBox6.Controls.Add(this.ms_save);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -244,77 +244,77 @@
             this.pictureBox23.TabIndex = 23;
             this.pictureBox23.TabStop = false;
             // 
-            // s_delete
+            // ms_delete
             // 
-            this.s_delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_delete.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_delete.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_delete.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_delete.ForeColor = System.Drawing.Color.White;
-            this.s_delete.Location = new System.Drawing.Point(259, 108);
-            this.s_delete.Name = "s_delete";
-            this.s_delete.Size = new System.Drawing.Size(105, 28);
-            this.s_delete.TabIndex = 44;
-            this.s_delete.TabStop = false;
-            this.s_delete.Text = "    Delete";
-            this.s_delete.UseVisualStyleBackColor = true;
+            this.ms_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ms_delete.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ms_delete.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ms_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ms_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ms_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ms_delete.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_delete.ForeColor = System.Drawing.Color.White;
+            this.ms_delete.Location = new System.Drawing.Point(259, 108);
+            this.ms_delete.Name = "ms_delete";
+            this.ms_delete.Size = new System.Drawing.Size(105, 28);
+            this.ms_delete.TabIndex = 44;
+            this.ms_delete.TabStop = false;
+            this.ms_delete.Text = "    Delete";
+            this.ms_delete.UseVisualStyleBackColor = true;
             // 
-            // s_cancel
+            // ms_cancel
             // 
-            this.s_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_cancel.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_cancel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_cancel.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_cancel.ForeColor = System.Drawing.Color.White;
-            this.s_cancel.Location = new System.Drawing.Point(259, 50);
-            this.s_cancel.Name = "s_cancel";
-            this.s_cancel.Size = new System.Drawing.Size(105, 28);
-            this.s_cancel.TabIndex = 39;
-            this.s_cancel.TabStop = false;
-            this.s_cancel.Text = "     Cancel";
-            this.s_cancel.UseVisualStyleBackColor = true;
+            this.ms_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ms_cancel.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ms_cancel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ms_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ms_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ms_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ms_cancel.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_cancel.ForeColor = System.Drawing.Color.White;
+            this.ms_cancel.Location = new System.Drawing.Point(259, 50);
+            this.ms_cancel.Name = "ms_cancel";
+            this.ms_cancel.Size = new System.Drawing.Size(105, 28);
+            this.ms_cancel.TabIndex = 39;
+            this.ms_cancel.TabStop = false;
+            this.ms_cancel.Text = "     Cancel";
+            this.ms_cancel.UseVisualStyleBackColor = true;
             // 
-            // s_update
+            // ms_update
             // 
-            this.s_update.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_update.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_update.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_update.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_update.ForeColor = System.Drawing.Color.White;
-            this.s_update.Location = new System.Drawing.Point(124, 108);
-            this.s_update.Name = "s_update";
-            this.s_update.Size = new System.Drawing.Size(105, 28);
-            this.s_update.TabIndex = 38;
-            this.s_update.TabStop = false;
-            this.s_update.Text = "     Update";
-            this.s_update.UseVisualStyleBackColor = true;
+            this.ms_update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ms_update.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ms_update.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ms_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ms_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ms_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ms_update.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_update.ForeColor = System.Drawing.Color.White;
+            this.ms_update.Location = new System.Drawing.Point(124, 108);
+            this.ms_update.Name = "ms_update";
+            this.ms_update.Size = new System.Drawing.Size(105, 28);
+            this.ms_update.TabIndex = 38;
+            this.ms_update.TabStop = false;
+            this.ms_update.Text = "     Update";
+            this.ms_update.UseVisualStyleBackColor = true;
             // 
-            // s_save
+            // ms_save
             // 
-            this.s_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.s_save.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.s_save.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.s_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.s_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.s_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.s_save.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_save.ForeColor = System.Drawing.Color.White;
-            this.s_save.Location = new System.Drawing.Point(124, 50);
-            this.s_save.Name = "s_save";
-            this.s_save.Size = new System.Drawing.Size(105, 28);
-            this.s_save.TabIndex = 30;
-            this.s_save.TabStop = false;
-            this.s_save.Text = "   Save";
-            this.s_save.UseVisualStyleBackColor = true;
+            this.ms_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ms_save.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ms_save.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ms_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.ms_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ms_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ms_save.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_save.ForeColor = System.Drawing.Color.White;
+            this.ms_save.Location = new System.Drawing.Point(124, 50);
+            this.ms_save.Name = "ms_save";
+            this.ms_save.Size = new System.Drawing.Size(105, 28);
+            this.ms_save.TabIndex = 30;
+            this.ms_save.TabStop = false;
+            this.ms_save.Text = "   Save";
+            this.ms_save.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -350,7 +350,7 @@
             this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.lbMembership);
             this.groupBox7.Controls.Add(this.panel9);
-            this.groupBox7.Controls.Add(this.s_searchtext);
+            this.groupBox7.Controls.Add(this.ms_searchtext);
             this.groupBox7.Controls.Add(this.pictureBox17);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
@@ -435,17 +435,17 @@
             this.panel17.Size = new System.Drawing.Size(493, 1);
             this.panel17.TabIndex = 45;
             // 
-            // s_searchtext
+            // ms_searchtext
             // 
-            this.s_searchtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_searchtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_searchtext.ForeColor = System.Drawing.Color.Turquoise;
-            this.s_searchtext.Location = new System.Drawing.Point(37, 71);
-            this.s_searchtext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_searchtext.Name = "s_searchtext";
-            this.s_searchtext.Size = new System.Drawing.Size(352, 16);
-            this.s_searchtext.TabIndex = 0;
+            this.ms_searchtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_searchtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_searchtext.ForeColor = System.Drawing.Color.Turquoise;
+            this.ms_searchtext.Location = new System.Drawing.Point(37, 71);
+            this.ms_searchtext.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_searchtext.Name = "ms_searchtext";
+            this.ms_searchtext.Size = new System.Drawing.Size(352, 16);
+            this.ms_searchtext.TabIndex = 0;
             // 
             // pictureBox17
             // 
@@ -782,10 +782,10 @@
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.Button s_delete;
-        private System.Windows.Forms.Button s_cancel;
-        private System.Windows.Forms.Button s_update;
-        private System.Windows.Forms.Button s_save;
+        private System.Windows.Forms.Button ms_delete;
+        private System.Windows.Forms.Button ms_cancel;
+        private System.Windows.Forms.Button ms_update;
+        private System.Windows.Forms.Button ms_save;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.GroupBox groupBox7;
@@ -795,7 +795,7 @@
         private System.Windows.Forms.ListBox lbMembership;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox s_searchtext;
+        private System.Windows.Forms.TextBox ms_searchtext;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
