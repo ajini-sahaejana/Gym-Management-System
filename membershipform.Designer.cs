@@ -116,16 +116,16 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 744);
+            this.panel4.Size = new System.Drawing.Size(5, 763);
             this.panel4.TabIndex = 66;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(50, 744);
+            this.panel5.Location = new System.Drawing.Point(0, 763);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1316, 5);
+            this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 65;
             // 
             // panel1
@@ -162,15 +162,15 @@
             this.goback.Size = new System.Drawing.Size(30, 30);
             this.goback.TabIndex = 74;
             this.goback.UseVisualStyleBackColor = true;
+            this.goback.Click += new System.EventHandler(this.goback_Click);
             // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(50, 749);
+            this.panel18.Size = new System.Drawing.Size(50, 763);
             this.panel18.TabIndex = 73;
             // 
             // pictureBox34
@@ -870,7 +870,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox6);

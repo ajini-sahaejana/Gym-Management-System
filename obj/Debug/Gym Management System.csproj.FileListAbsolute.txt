@@ -13,3 +13,7 @@ C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Managem
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.staffregform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.bodydataform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.memberform.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.membershipform.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.purchaseform.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.sessionform.resources
+C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.trainerform.resources

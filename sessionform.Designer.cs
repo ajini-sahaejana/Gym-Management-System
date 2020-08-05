@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sessionform));
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.goback = new System.Windows.Forms.Button();
@@ -92,6 +91,7 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.s_searchtext = new System.Windows.Forms.TextBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -124,17 +124,8 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 763);
+            this.panel4.Size = new System.Drawing.Size(5, 768);
             this.panel4.TabIndex = 77;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(50, 763);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1316, 5);
-            this.panel5.TabIndex = 76;
             // 
             // label1
             // 
@@ -170,15 +161,15 @@
             this.goback.Size = new System.Drawing.Size(30, 30);
             this.goback.TabIndex = 85;
             this.goback.UseVisualStyleBackColor = true;
+            this.goback.Click += new System.EventHandler(this.goback_Click);
             // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(50, 768);
+            this.panel18.Size = new System.Drawing.Size(50, 763);
             this.panel18.TabIndex = 84;
             // 
             // pictureBox34
@@ -957,14 +948,22 @@
             this.pictureBox20.TabIndex = 41;
             this.pictureBox20.TabStop = false;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 763);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1361, 5);
+            this.panel5.TabIndex = 92;
+            // 
             // sessionform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.pictureBox4);
@@ -974,7 +973,6 @@
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.goback);
             this.Controls.Add(this.panel18);
@@ -1019,7 +1017,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel4;
-        public System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button goback;
@@ -1081,5 +1078,6 @@
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.TextBox s_searchtext;
         private System.Windows.Forms.PictureBox pictureBox20;
+        public System.Windows.Forms.Panel panel5;
     }
 }

@@ -88,9 +88,9 @@
             this.s_searchtext = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.s_hireddatetext = new System.Windows.Forms.DateTimePicker();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -121,16 +121,16 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 744);
+            this.panel4.Size = new System.Drawing.Size(5, 763);
             this.panel4.TabIndex = 66;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(50, 744);
+            this.panel5.Location = new System.Drawing.Point(0, 763);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1316, 5);
+            this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 65;
             // 
             // label3
@@ -845,11 +845,10 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(50, 749);
+            this.panel18.Size = new System.Drawing.Size(50, 763);
             this.panel18.TabIndex = 73;
             // 
             // groupBox2
@@ -901,30 +900,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Personal Details";
             // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox16.Image = global::Gym_Management_System.Properties.Resources.hiredate;
-            this.pictureBox16.Location = new System.Drawing.Point(31, 476);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 43;
-            this.pictureBox16.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label18.Font = new System.Drawing.Font("Arial", 10F);
-            this.label18.ForeColor = System.Drawing.Color.Turquoise;
-            this.label18.Location = new System.Drawing.Point(60, 482);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 16);
-            this.label18.TabIndex = 42;
-            this.label18.Text = "Date Joined:";
-            // 
             // s_hireddatetext
             // 
             this.s_hireddatetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
@@ -943,12 +918,36 @@
             this.s_hireddatetext.TabIndex = 41;
             this.s_hireddatetext.TabStop = false;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label18.Font = new System.Drawing.Font("Arial", 10F);
+            this.label18.ForeColor = System.Drawing.Color.Turquoise;
+            this.label18.Location = new System.Drawing.Point(60, 482);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(87, 16);
+            this.label18.TabIndex = 42;
+            this.label18.Text = "Date Joined:";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox16.Image = global::Gym_Management_System.Properties.Resources.hiredate;
+            this.pictureBox16.Location = new System.Drawing.Point(31, 476);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 43;
+            this.pictureBox16.TabStop = false;
+            // 
             // trainerform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel4);

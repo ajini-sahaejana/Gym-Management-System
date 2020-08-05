@@ -55,14 +55,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1361, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 744);
+            this.panel4.Size = new System.Drawing.Size(5, 763);
             this.panel4.TabIndex = 21;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 744);
+            this.panel5.Location = new System.Drawing.Point(0, 763);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1366, 5);
             this.panel5.TabIndex = 20;
@@ -74,7 +74,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(50, 744);
+            this.panel2.Size = new System.Drawing.Size(50, 763);
             this.panel2.TabIndex = 22;
             // 
             // label1
@@ -276,10 +276,9 @@
             // 
             // mainform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.welcometext);
             this.Controls.Add(this.panel6);
@@ -296,7 +295,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "mainform";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Load += new System.EventHandler(this.mainform_Load);
             this.panel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

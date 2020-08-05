@@ -54,6 +54,8 @@
             this.s_contactnotext = new System.Windows.Forms.TextBox();
             this.s_agetext = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.bodydata = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -93,6 +95,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -100,6 +103,7 @@
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -108,10 +112,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.bodydata = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
@@ -123,6 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -143,7 +144,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox34
@@ -533,6 +533,37 @@
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Personal Details";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::Gym_Management_System.Properties.Resources.account;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox14.Location = new System.Drawing.Point(30, 538);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox14.TabIndex = 55;
+            this.pictureBox14.TabStop = false;
+            // 
+            // bodydata
+            // 
+            this.bodydata.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bodydata.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bodydata.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.bodydata.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
+            this.bodydata.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bodydata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bodydata.Font = new System.Drawing.Font("Arial", 10F);
+            this.bodydata.ForeColor = System.Drawing.Color.White;
+            this.bodydata.Location = new System.Drawing.Point(29, 537);
+            this.bodydata.Name = "bodydata";
+            this.bodydata.Size = new System.Drawing.Size(390, 40);
+            this.bodydata.TabIndex = 54;
+            this.bodydata.TabStop = false;
+            this.bodydata.Text = "   Click Here To Enter Additional Data";
+            this.bodydata.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -1010,6 +1041,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "       Membership Details";
             // 
+            // textBox3
+            // 
+            this.textBox3.AllowDrop = true;
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.textBox3.Font = new System.Drawing.Font("Arial", 10F);
+            this.textBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox3.Location = new System.Drawing.Point(185, 97);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(190, 50);
+            this.textBox3.TabIndex = 56;
+            this.textBox3.TabStop = false;
+            // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
@@ -1107,6 +1152,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "       Training Session Details";
             // 
+            // textBox4
+            // 
+            this.textBox4.AllowDrop = true;
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.textBox4.Font = new System.Drawing.Font("Arial", 10F);
+            this.textBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox4.Location = new System.Drawing.Point(185, 147);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(190, 50);
+            this.textBox4.TabIndex = 57;
+            this.textBox4.TabStop = false;
+            // 
             // comboBox3
             // 
             this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
@@ -1203,68 +1262,9 @@
             this.pictureBox15.TabIndex = 25;
             this.pictureBox15.TabStop = false;
             // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = global::Gym_Management_System.Properties.Resources.account;
-            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox14.Location = new System.Drawing.Point(30, 538);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox14.TabIndex = 55;
-            this.pictureBox14.TabStop = false;
-            // 
-            // bodydata
-            // 
-            this.bodydata.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bodydata.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.bodydata.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.bodydata.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.bodydata.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.bodydata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bodydata.Font = new System.Drawing.Font("Arial", 10F);
-            this.bodydata.ForeColor = System.Drawing.Color.White;
-            this.bodydata.Location = new System.Drawing.Point(29, 537);
-            this.bodydata.Name = "bodydata";
-            this.bodydata.Size = new System.Drawing.Size(390, 40);
-            this.bodydata.TabIndex = 54;
-            this.bodydata.TabStop = false;
-            this.bodydata.Text = "   Click Here To Enter Additional Data";
-            this.bodydata.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.AllowDrop = true;
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.Location = new System.Drawing.Point(185, 97);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 50);
-            this.textBox3.TabIndex = 56;
-            this.textBox3.TabStop = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.AllowDrop = true;
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox4.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.Location = new System.Drawing.Point(185, 147);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 50);
-            this.textBox4.TabIndex = 57;
-            this.textBox4.TabStop = false;
-            // 
             // memberform
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 768);
@@ -1305,6 +1305,7 @@
             this.groupBox7.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1327,7 +1328,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
