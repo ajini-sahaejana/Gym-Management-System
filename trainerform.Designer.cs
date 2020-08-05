@@ -343,7 +343,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1361, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Member Management";
+            this.label1.Text = "Trainer Management";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -828,7 +828,7 @@
             this.groupBox7.Size = new System.Drawing.Size(403, 425);
             this.groupBox7.TabIndex = 70;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "       Member Records";
+            this.groupBox7.Text = "       Trainer Records";
             // 
             // s_searchtext
             // 

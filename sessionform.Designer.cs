@@ -860,7 +860,7 @@
             this.groupBox7.Size = new System.Drawing.Size(450, 425);
             this.groupBox7.TabIndex = 90;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "       Member Records";
+            this.groupBox7.Text = "       Session Records";
             // 
             // searchbyname
             // 

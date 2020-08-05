@@ -135,8 +135,8 @@
             // 
             this.welcometext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.welcometext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.welcometext.Font = new System.Drawing.Font("Arial", 20F);
-            this.welcometext.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.welcometext.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcometext.ForeColor = System.Drawing.Color.White;
             this.welcometext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.welcometext.Location = new System.Drawing.Point(53, 45);
             this.welcometext.Name = "welcometext";
