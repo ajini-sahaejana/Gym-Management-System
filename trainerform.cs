@@ -18,7 +18,6 @@ namespace Gym_Management_System
             InitializeComponent();
             viewsid();
             fillListbox();
-            MinimumSize = new Size(1366, 768);
             Size = new Size(1366, 768);
         }
 

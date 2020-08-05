@@ -340,9 +340,11 @@ namespace Gym_Management_System
                 while (reader.Read())
                 {
                     ts_idtext.Text = reader.GetInt32(0).ToString().Trim();
-                    ts_nametext.Text = reader.GetString(1).Trim();
-                    ts_datetext.Value = reader.GetDateTime(2);
-                    ts_notestext.Text = reader.GetString(3).Trim();
+                    t_namecombo.Text = reader.GetString(1);
+                    ts_nametext.Text = reader.GetString(2).Trim();
+                    ts_datetext.Value = reader.GetDateTime(3);
+                    ts_notestext.Text = reader.GetString(4).Trim();
+                    t_details.Text = reader.GetString(5).Trim();
                 }
 
                 con.Close();
