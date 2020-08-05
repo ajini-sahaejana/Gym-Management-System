@@ -16,5 +16,10 @@ namespace Gym_Management_System
         {
             InitializeComponent();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -61,6 +61,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.close = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -526,12 +527,26 @@
             this.panel5.Size = new System.Drawing.Size(645, 5);
             this.panel5.TabIndex = 56;
             // 
+            // close
+            // 
+            this.close.AutoSize = true;
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.close.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.close.Location = new System.Drawing.Point(621, 9);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(17, 16);
+            this.close.TabIndex = 57;
+            this.close.Text = "X";
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // bodydataform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(650, 400);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox27);
@@ -599,5 +614,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label close;
     }
 }
