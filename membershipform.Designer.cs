@@ -77,6 +77,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.s_fullnametext = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -85,7 +86,6 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -105,9 +105,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -200,7 +200,7 @@
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox6.Location = new System.Drawing.Point(754, 82);
+            this.groupBox6.Location = new System.Drawing.Point(765, 82);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(10);
@@ -347,7 +347,7 @@
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox25.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox25.Image = global::Gym_Management_System.Properties.Resources.view;
-            this.pictureBox25.Location = new System.Drawing.Point(764, 247);
+            this.pictureBox25.Location = new System.Drawing.Point(775, 247);
             this.pictureBox25.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(25, 25);
@@ -368,7 +368,7 @@
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox7.Location = new System.Drawing.Point(754, 252);
+            this.groupBox7.Location = new System.Drawing.Point(765, 252);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(10);
@@ -497,7 +497,7 @@
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox2.Location = new System.Drawing.Point(209, 77);
+            this.groupBox2.Location = new System.Drawing.Point(220, 77);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(10);
@@ -748,7 +748,7 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Location = new System.Drawing.Point(209, 484);
+            this.groupBox1.Location = new System.Drawing.Point(220, 484);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
@@ -756,6 +756,19 @@
             this.groupBox1.TabIndex = 81;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "       Discount Details";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox7.Location = new System.Drawing.Point(10, -3);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox7.TabIndex = 83;
+            this.pictureBox7.TabStop = false;
             // 
             // label5
             // 
@@ -852,19 +865,6 @@
             this.textBox7.TabIndex = 22;
             this.textBox7.TabStop = false;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox7.Location = new System.Drawing.Point(10, -3);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 83;
-            this.pictureBox7.TabStop = false;
-            // 
             // membershipform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -912,9 +912,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
