@@ -33,22 +33,22 @@
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.m_body1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.m_body2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.m_body3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.m_body4 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.s_notestext = new System.Windows.Forms.TextBox();
+            this.m_body5 = new System.Windows.Forms.TextBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
@@ -84,22 +84,22 @@
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.pictureBox11);
             this.groupBox4.Controls.Add(this.panel13);
-            this.groupBox4.Controls.Add(this.textBox6);
+            this.groupBox4.Controls.Add(this.m_body1);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.pictureBox15);
             this.groupBox4.Controls.Add(this.panel14);
-            this.groupBox4.Controls.Add(this.textBox7);
+            this.groupBox4.Controls.Add(this.m_body2);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.pictureBox4);
             this.groupBox4.Controls.Add(this.panel3);
-            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.m_body3);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.pictureBox8);
             this.groupBox4.Controls.Add(this.panel6);
-            this.groupBox4.Controls.Add(this.textBox3);
+            this.groupBox4.Controls.Add(this.m_body4);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.pictureBox18);
-            this.groupBox4.Controls.Add(this.s_notestext);
+            this.groupBox4.Controls.Add(this.m_body5);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -159,19 +159,19 @@
             this.panel13.Size = new System.Drawing.Size(177, 1);
             this.panel13.TabIndex = 56;
             // 
-            // textBox6
+            // m_body1
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(195, 50);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(177, 16);
-            this.textBox6.TabIndex = 54;
-            this.textBox6.TabStop = false;
+            this.m_body1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_body1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.m_body1.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_body1.ForeColor = System.Drawing.Color.White;
+            this.m_body1.Location = new System.Drawing.Point(195, 50);
+            this.m_body1.Margin = new System.Windows.Forms.Padding(0);
+            this.m_body1.Name = "m_body1";
+            this.m_body1.ReadOnly = true;
+            this.m_body1.Size = new System.Drawing.Size(177, 16);
+            this.m_body1.TabIndex = 54;
+            this.m_body1.TabStop = false;
             // 
             // label12
             // 
@@ -207,18 +207,18 @@
             this.panel14.Size = new System.Drawing.Size(177, 1);
             this.panel14.TabIndex = 52;
             // 
-            // textBox7
+            // m_body2
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(195, 100);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(177, 16);
-            this.textBox7.TabIndex = 50;
-            this.textBox7.TabStop = false;
+            this.m_body2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_body2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.m_body2.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_body2.ForeColor = System.Drawing.Color.White;
+            this.m_body2.Location = new System.Drawing.Point(195, 100);
+            this.m_body2.Margin = new System.Windows.Forms.Padding(0);
+            this.m_body2.Name = "m_body2";
+            this.m_body2.Size = new System.Drawing.Size(177, 16);
+            this.m_body2.TabIndex = 50;
+            this.m_body2.TabStop = false;
             // 
             // label3
             // 
@@ -254,19 +254,19 @@
             this.panel3.Size = new System.Drawing.Size(177, 1);
             this.panel3.TabIndex = 40;
             // 
-            // textBox2
+            // m_body3
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(195, 150);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(177, 16);
-            this.textBox2.TabIndex = 38;
-            this.textBox2.TabStop = false;
+            this.m_body3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_body3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.m_body3.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_body3.ForeColor = System.Drawing.Color.White;
+            this.m_body3.Location = new System.Drawing.Point(195, 150);
+            this.m_body3.Margin = new System.Windows.Forms.Padding(0);
+            this.m_body3.Name = "m_body3";
+            this.m_body3.ReadOnly = true;
+            this.m_body3.Size = new System.Drawing.Size(177, 16);
+            this.m_body3.TabIndex = 38;
+            this.m_body3.TabStop = false;
             // 
             // label4
             // 
@@ -302,18 +302,18 @@
             this.panel6.Size = new System.Drawing.Size(177, 1);
             this.panel6.TabIndex = 36;
             // 
-            // textBox3
+            // m_body4
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(195, 200);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(177, 16);
-            this.textBox3.TabIndex = 34;
-            this.textBox3.TabStop = false;
+            this.m_body4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_body4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.m_body4.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_body4.ForeColor = System.Drawing.Color.White;
+            this.m_body4.Location = new System.Drawing.Point(195, 200);
+            this.m_body4.Margin = new System.Windows.Forms.Padding(0);
+            this.m_body4.Name = "m_body4";
+            this.m_body4.Size = new System.Drawing.Size(177, 16);
+            this.m_body4.TabIndex = 34;
+            this.m_body4.TabStop = false;
             // 
             // label17
             // 
@@ -339,19 +339,19 @@
             this.pictureBox18.TabIndex = 25;
             this.pictureBox18.TabStop = false;
             // 
-            // s_notestext
+            // m_body5
             // 
-            this.s_notestext.AllowDrop = true;
-            this.s_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_notestext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.s_notestext.Location = new System.Drawing.Point(195, 255);
-            this.s_notestext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_notestext.Multiline = true;
-            this.s_notestext.Name = "s_notestext";
-            this.s_notestext.Size = new System.Drawing.Size(177, 80);
-            this.s_notestext.TabIndex = 0;
-            this.s_notestext.TabStop = false;
+            this.m_body5.AllowDrop = true;
+            this.m_body5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_body5.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_body5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.m_body5.Location = new System.Drawing.Point(195, 255);
+            this.m_body5.Margin = new System.Windows.Forms.Padding(0);
+            this.m_body5.Multiline = true;
+            this.m_body5.Name = "m_body5";
+            this.m_body5.Size = new System.Drawing.Size(177, 80);
+            this.m_body5.TabIndex = 0;
+            this.m_body5.TabStop = false;
             // 
             // pictureBox27
             // 
@@ -585,22 +585,22 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox m_body1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox m_body2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox m_body3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox m_body4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.TextBox s_notestext;
+        private System.Windows.Forms.TextBox m_body5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.GroupBox groupBox8;
