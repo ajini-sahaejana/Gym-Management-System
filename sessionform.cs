@@ -82,10 +82,10 @@ namespace Gym_Management_System
 
                 while (reader.Read())
                 {
-                    //string id = reader.GetInt32(0).ToString();
+                    string id = reader.GetInt32(0).ToString();
                     string name = reader.GetString(1);
-                    string date = reader.GetDateTime(2).ToString();
-                    lbSession.Items.Add(name + ": " + date);
+                    //string date = reader.GetDateTime(2).ToString();
+                    lbSession.Items.Add(id + ": " + name);
                 }
             }
             catch (Exception e)
@@ -134,10 +134,10 @@ namespace Gym_Management_System
 
                     while (reader.Read())
                     {
-                        //string id = reader.GetInt32(0).ToString();
+                        string id = reader.GetInt32(0).ToString();
                         string name = reader.GetString(1);
-                        string date = reader.GetDateTime(2).ToString();
-                        lbSession.Items.Add(name + ": " + date);
+                        //string date = reader.GetDateTime(2).ToString();
+                        lbSession.Items.Add(id + ": " + name);
                     }
                 }
                 catch (Exception e2)
@@ -164,10 +164,10 @@ namespace Gym_Management_System
 
                     while (reader.Read())
                     {
-                        //string id = reader.GetInt32(0).ToString();
+                        string id = reader.GetInt32(0).ToString();
                         string name = reader.GetString(1);
-                        string date = reader.GetDateTime(2).ToString();
-                        lbSession.Items.Add(name + ": " + date);
+                        //string date = reader.GetDateTime(2).ToString();
+                        lbSession.Items.Add(id + ": " + name);
                     }
                 }
                 catch (Exception e2)

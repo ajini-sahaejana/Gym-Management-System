@@ -357,7 +357,7 @@
             this.t_details.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.t_details.Font = new System.Drawing.Font("Arial", 10F);
             this.t_details.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.t_details.Location = new System.Drawing.Point(185, 80);
+            this.t_details.Location = new System.Drawing.Point(185, 90);
             this.t_details.Margin = new System.Windows.Forms.Padding(0);
             this.t_details.Multiline = true;
             this.t_details.Name = "t_details";
@@ -372,7 +372,7 @@
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("Arial", 10F);
             this.label17.ForeColor = System.Drawing.Color.Turquoise;
-            this.label17.Location = new System.Drawing.Point(60, 87);
+            this.label17.Location = new System.Drawing.Point(60, 97);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(55, 16);
             this.label17.TabIndex = 42;
@@ -382,7 +382,7 @@
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox19.Location = new System.Drawing.Point(31, 80);
+            this.pictureBox19.Location = new System.Drawing.Point(31, 90);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(25, 25);
@@ -397,7 +397,7 @@
             this.t_name.Font = new System.Drawing.Font("Arial", 10F);
             this.t_name.ForeColor = System.Drawing.Color.White;
             this.t_name.FormattingEnabled = true;
-            this.t_name.Location = new System.Drawing.Point(185, 40);
+            this.t_name.Location = new System.Drawing.Point(185, 45);
             this.t_name.Name = "t_name";
             this.t_name.Size = new System.Drawing.Size(235, 24);
             this.t_name.TabIndex = 31;
@@ -408,7 +408,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Arial", 10F);
             this.label5.ForeColor = System.Drawing.Color.Turquoise;
-            this.label5.Location = new System.Drawing.Point(60, 45);
+            this.label5.Location = new System.Drawing.Point(60, 50);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 16);
             this.label5.TabIndex = 29;
@@ -418,7 +418,7 @@
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox11.Location = new System.Drawing.Point(31, 39);
+            this.pictureBox11.Location = new System.Drawing.Point(31, 44);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(25, 25);
