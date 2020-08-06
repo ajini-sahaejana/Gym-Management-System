@@ -122,7 +122,7 @@ namespace Gym_Management_System
                 while (reader.Read())
                 {
                     string id = reader.GetInt32(0).ToString();
-                    string name = reader.GetString(1).Substring(8);
+                    string name = reader.GetString(1).ToString();
 
                     lbPurchase.Items.Add(id + ": " + name);
                 }
@@ -170,7 +170,7 @@ namespace Gym_Management_System
                     {
 
                         string id = reader.GetInt32(0).ToString();
-                        string name = reader.GetString(1).Substring(8);
+                        string name = reader.GetString(1);
 
                         lbPurchase.Items.Add(id + ": " + name);
                     }
@@ -220,8 +220,6 @@ namespace Gym_Management_System
         {
             try
             {
-                string namecombo = m_namecombo.Text;
-
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT * from Purchase";
 
@@ -233,7 +231,7 @@ namespace Gym_Management_System
 
                 //Add new row to database
                 DataRow row = set.Tables["Purchase"].NewRow();
-                row["m_combo"] = namecombo.Trim();
+                row["m_combo"] = this.m_namecombo.Text);
                 row["m_details"] = this.m_details.Text;
                 row["ms_type"] = this.ms_type.Text;
                 row["ms_fee"] = this.ms_fee.Text;
@@ -249,7 +247,7 @@ namespace Gym_Management_System
                 SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
                 adapter.Update(set.Tables["Purchase"]);
 
-                MessageBox.Show("Purchase Account Created Successfully!");
+                MessageBox.Show("Purchased Successfully!");
 
                 con.Close();
 
@@ -277,7 +275,7 @@ namespace Gym_Management_System
 
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "UPDATE Purchase SET " +
-                    "m_combo = '" + this.m_namecombo.Text.Substring(8) + "'," +
+                    "m_combo = '" + this.m_namecombo.Text + "'," +
                     "m_details = '" + this.m_details.Text + "'," +
                     "ms_type = '" + this.ms_type.Text + "', " +
                     "ms_fee = '" + this.ms_fee.Text + "', " +
@@ -293,7 +291,7 @@ namespace Gym_Management_System
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
                 adapter.SelectCommand.ExecuteNonQuery();
 
-                MessageBox.Show("Member Account Updated Successfully!");
+                MessageBox.Show("Purchase Updated Successfully!");
 
                 con.Close();
 
@@ -338,7 +336,7 @@ namespace Gym_Management_System
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             adapter.SelectCommand.ExecuteNonQuery();
 
-            MessageBox.Show("Member Account Deleted Successfully!");
+            MessageBox.Show("Purchase Deleted Successfully!");
 
             con.Close();
 

@@ -668,7 +668,6 @@
             this.ms_type.Location = new System.Drawing.Point(210, 75);
             this.ms_type.Margin = new System.Windows.Forms.Padding(0);
             this.ms_type.Name = "ms_type";
-            this.ms_type.ReadOnly = true;
             this.ms_type.Size = new System.Drawing.Size(230, 16);
             this.ms_type.TabIndex = 48;
             this.ms_type.TabStop = false;
@@ -740,7 +739,6 @@
             this.ms_fee.Location = new System.Drawing.Point(210, 115);
             this.ms_fee.Margin = new System.Windows.Forms.Padding(0);
             this.ms_fee.Name = "ms_fee";
-            this.ms_fee.ReadOnly = true;
             this.ms_fee.Size = new System.Drawing.Size(230, 16);
             this.ms_fee.TabIndex = 44;
             this.ms_fee.TabStop = false;
@@ -946,7 +944,6 @@
             this.p_discounttext.Location = new System.Drawing.Point(210, 40);
             this.p_discounttext.Margin = new System.Windows.Forms.Padding(0);
             this.p_discounttext.Name = "p_discounttext";
-            this.p_discounttext.ReadOnly = true;
             this.p_discounttext.Size = new System.Drawing.Size(230, 16);
             this.p_discounttext.TabIndex = 30;
             this.p_discounttext.TabStop = false;
@@ -1073,7 +1070,6 @@
             this.p_amount.Location = new System.Drawing.Point(200, 50);
             this.p_amount.Margin = new System.Windows.Forms.Padding(0);
             this.p_amount.Name = "p_amount";
-            this.p_amount.ReadOnly = true;
             this.p_amount.Size = new System.Drawing.Size(210, 16);
             this.p_amount.TabIndex = 34;
             this.p_amount.TabStop = false;
