@@ -54,8 +54,15 @@
             this.m_contactnotext = new System.Windows.Forms.TextBox();
             this.m_agetext = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.bodydata = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.m_notestext = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.m_addresstext = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.m_emailtext = new System.Windows.Forms.TextBox();
             this.m_joineddatetext = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -107,15 +114,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.m_emailtext = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.m_addresstext = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.m_notestext = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
@@ -127,7 +125,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -147,8 +146,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox34
@@ -507,8 +504,6 @@
             this.groupBox2.Controls.Add(this.panel14);
             this.groupBox2.Controls.Add(this.pictureBox4);
             this.groupBox2.Controls.Add(this.m_emailtext);
-            this.groupBox2.Controls.Add(this.pictureBox14);
-            this.groupBox2.Controls.Add(this.bodydata);
             this.groupBox2.Controls.Add(this.m_joineddatetext);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.pictureBox16);
@@ -550,37 +545,115 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Personal Details";
             // 
-            // pictureBox14
+            // label17
             // 
-            this.pictureBox14.BackgroundImage = global::Gym_Management_System.Properties.Resources.account;
-            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox14.Location = new System.Drawing.Point(30, 536);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox14.TabIndex = 55;
-            this.pictureBox14.TabStop = false;
+            this.label17.AutoSize = true;
+            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label17.Font = new System.Drawing.Font("Arial", 10F);
+            this.label17.ForeColor = System.Drawing.Color.Turquoise;
+            this.label17.Location = new System.Drawing.Point(57, 459);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(125, 16);
+            this.label17.TabIndex = 64;
+            this.label17.Text = "Additional  Details:";
             // 
-            // bodydata
+            // pictureBox20
             // 
-            this.bodydata.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bodydata.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.bodydata.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.bodydata.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(33)))));
-            this.bodydata.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.bodydata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bodydata.Font = new System.Drawing.Font("Arial", 10F);
-            this.bodydata.ForeColor = System.Drawing.Color.White;
-            this.bodydata.Location = new System.Drawing.Point(29, 535);
-            this.bodydata.Name = "bodydata";
-            this.bodydata.Size = new System.Drawing.Size(390, 40);
-            this.bodydata.TabIndex = 54;
-            this.bodydata.TabStop = false;
-            this.bodydata.Text = "   Click Here To Enter Additional Data";
-            this.bodydata.UseVisualStyleBackColor = true;
-            this.bodydata.Click += new System.EventHandler(this.bodydata_Click_1);
+            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox20.Image = global::Gym_Management_System.Properties.Resources.notes;
+            this.pictureBox20.Location = new System.Drawing.Point(28, 453);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 63;
+            this.pictureBox20.TabStop = false;
+            // 
+            // m_notestext
+            // 
+            this.m_notestext.AllowDrop = true;
+            this.m_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_notestext.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.m_notestext.Location = new System.Drawing.Point(187, 459);
+            this.m_notestext.Margin = new System.Windows.Forms.Padding(0);
+            this.m_notestext.Multiline = true;
+            this.m_notestext.Name = "m_notestext";
+            this.m_notestext.Size = new System.Drawing.Size(230, 121);
+            this.m_notestext.TabIndex = 62;
+            this.m_notestext.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Location = new System.Drawing.Point(189, 318);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(230, 1);
+            this.panel3.TabIndex = 61;
+            // 
+            // m_addresstext
+            // 
+            this.m_addresstext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_addresstext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.m_addresstext.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_addresstext.ForeColor = System.Drawing.Color.White;
+            this.m_addresstext.Location = new System.Drawing.Point(189, 301);
+            this.m_addresstext.Margin = new System.Windows.Forms.Padding(0);
+            this.m_addresstext.Name = "m_addresstext";
+            this.m_addresstext.Size = new System.Drawing.Size(230, 16);
+            this.m_addresstext.TabIndex = 60;
+            this.m_addresstext.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Arial", 10F);
+            this.label12.ForeColor = System.Drawing.Color.Turquoise;
+            this.label12.Location = new System.Drawing.Point(59, 148);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(46, 16);
+            this.label12.TabIndex = 59;
+            this.label12.Text = "Email:";
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Font = new System.Drawing.Font("Arial", 10F);
+            this.panel14.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.panel14.Location = new System.Drawing.Point(189, 165);
+            this.panel14.Margin = new System.Windows.Forms.Padding(0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(230, 1);
+            this.panel14.TabIndex = 58;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.email;
+            this.pictureBox4.Location = new System.Drawing.Point(30, 142);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 57;
+            this.pictureBox4.TabStop = false;
+            // 
+            // m_emailtext
+            // 
+            this.m_emailtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.m_emailtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.m_emailtext.Font = new System.Drawing.Font("Arial", 10F);
+            this.m_emailtext.ForeColor = System.Drawing.Color.White;
+            this.m_emailtext.Location = new System.Drawing.Point(189, 148);
+            this.m_emailtext.Margin = new System.Windows.Forms.Padding(0);
+            this.m_emailtext.Name = "m_emailtext";
+            this.m_emailtext.Size = new System.Drawing.Size(230, 16);
+            this.m_emailtext.TabIndex = 56;
+            this.m_emailtext.TabStop = false;
             // 
             // m_joineddatetext
             // 
@@ -1218,116 +1291,6 @@
             this.pictureBox15.TabIndex = 25;
             this.pictureBox15.TabStop = false;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Font = new System.Drawing.Font("Arial", 10F);
-            this.label12.ForeColor = System.Drawing.Color.Turquoise;
-            this.label12.Location = new System.Drawing.Point(59, 148);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(46, 16);
-            this.label12.TabIndex = 59;
-            this.label12.Text = "Email:";
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel14.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.panel14.Location = new System.Drawing.Point(189, 165);
-            this.panel14.Margin = new System.Windows.Forms.Padding(0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(230, 1);
-            this.panel14.TabIndex = 58;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.email;
-            this.pictureBox4.Location = new System.Drawing.Point(30, 142);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 57;
-            this.pictureBox4.TabStop = false;
-            // 
-            // m_emailtext
-            // 
-            this.m_emailtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.m_emailtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.m_emailtext.Font = new System.Drawing.Font("Arial", 10F);
-            this.m_emailtext.ForeColor = System.Drawing.Color.White;
-            this.m_emailtext.Location = new System.Drawing.Point(189, 148);
-            this.m_emailtext.Margin = new System.Windows.Forms.Padding(0);
-            this.m_emailtext.Name = "m_emailtext";
-            this.m_emailtext.Size = new System.Drawing.Size(230, 16);
-            this.m_emailtext.TabIndex = 56;
-            this.m_emailtext.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Location = new System.Drawing.Point(189, 318);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(230, 1);
-            this.panel3.TabIndex = 61;
-            // 
-            // m_addresstext
-            // 
-            this.m_addresstext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.m_addresstext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.m_addresstext.Font = new System.Drawing.Font("Arial", 10F);
-            this.m_addresstext.ForeColor = System.Drawing.Color.White;
-            this.m_addresstext.Location = new System.Drawing.Point(189, 301);
-            this.m_addresstext.Margin = new System.Windows.Forms.Padding(0);
-            this.m_addresstext.Name = "m_addresstext";
-            this.m_addresstext.Size = new System.Drawing.Size(230, 16);
-            this.m_addresstext.TabIndex = 60;
-            this.m_addresstext.TabStop = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label17.Font = new System.Drawing.Font("Arial", 10F);
-            this.label17.ForeColor = System.Drawing.Color.Turquoise;
-            this.label17.Location = new System.Drawing.Point(57, 459);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 16);
-            this.label17.TabIndex = 64;
-            this.label17.Text = "Notes:";
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox20.Image = global::Gym_Management_System.Properties.Resources.notes;
-            this.pictureBox20.Location = new System.Drawing.Point(28, 453);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 63;
-            this.pictureBox20.TabStop = false;
-            // 
-            // m_notestext
-            // 
-            this.m_notestext.AllowDrop = true;
-            this.m_notestext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.m_notestext.Font = new System.Drawing.Font("Arial", 10F);
-            this.m_notestext.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.m_notestext.Location = new System.Drawing.Point(187, 459);
-            this.m_notestext.Margin = new System.Windows.Forms.Padding(0);
-            this.m_notestext.Multiline = true;
-            this.m_notestext.Name = "m_notestext";
-            this.m_notestext.Size = new System.Drawing.Size(230, 52);
-            this.m_notestext.TabIndex = 62;
-            this.m_notestext.TabStop = false;
-            // 
             // memberform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1371,7 +1334,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1393,8 +1357,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1476,8 +1438,6 @@
         private System.Windows.Forms.ComboBox mb_type;
         private System.Windows.Forms.ComboBox t_session;
         private System.Windows.Forms.ComboBox t_name;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Button bodydata;
         private System.Windows.Forms.TextBox mb_details;
         private System.Windows.Forms.TextBox t_details;
         private System.Windows.Forms.Label label12;
