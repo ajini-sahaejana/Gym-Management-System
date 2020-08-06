@@ -273,8 +273,8 @@ namespace Gym_Management_System
         {
             try
             {
-                string namecombo = mb_typecombo.Text;
-                string stname = t_sessioncombo.Text;
+                string namecombo = mb_typecombo.Text.Substring(8);
+                string stname = t_sessioncombo.Text.Substring(8);
 
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT * from Member";
@@ -333,8 +333,8 @@ namespace Gym_Management_System
         {
             try
             {
-                string onlyname = mb_typecombo.Text;
-                string stname = t_sessioncombo.Text;
+                string onlyname = mb_typecombo.Text.Substring(8);
+                string stname = t_sessioncombo.Text.Substring(8);
 
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "UPDATE Member SET " +

@@ -62,11 +62,17 @@
             this.p_update = new System.Windows.Forms.Button();
             this.p_save = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.m_type = new System.Windows.Forms.TextBox();
+            this.p_datetext = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.p_notes = new System.Windows.Forms.TextBox();
+            this.ms_type = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.m_fee = new System.Windows.Forms.TextBox();
+            this.ms_fee = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -74,7 +80,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.s_fullnametext = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -94,9 +99,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.p_amount = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -111,6 +113,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -124,7 +128,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -262,6 +265,7 @@
             this.lbPurchase.Name = "lbPurchase";
             this.lbPurchase.Size = new System.Drawing.Size(424, 240);
             this.lbPurchase.TabIndex = 48;
+            this.lbPurchase.SelectedIndexChanged += new System.EventHandler(this.lbPurchase_SelectedIndexChanged);
             // 
             // panel9
             // 
@@ -295,6 +299,7 @@
             this.p_searchtext.Name = "p_searchtext";
             this.p_searchtext.Size = new System.Drawing.Size(400, 16);
             this.p_searchtext.TabIndex = 0;
+            this.p_searchtext.TextChanged += new System.EventHandler(this.p_searchtext_TextChanged);
             // 
             // pictureBox20
             // 
@@ -339,6 +344,7 @@
             this.m_details.Margin = new System.Windows.Forms.Padding(0);
             this.m_details.Multiline = true;
             this.m_details.Name = "m_details";
+            this.m_details.ReadOnly = true;
             this.m_details.Size = new System.Drawing.Size(230, 85);
             this.m_details.TabIndex = 43;
             this.m_details.TabStop = false;
@@ -505,6 +511,7 @@
             this.p_delete.TabStop = false;
             this.p_delete.Text = "    Delete";
             this.p_delete.UseVisualStyleBackColor = true;
+            this.p_delete.Click += new System.EventHandler(this.p_delete_Click);
             // 
             // p_cancel
             // 
@@ -523,6 +530,7 @@
             this.p_cancel.TabStop = false;
             this.p_cancel.Text = "     Cancel";
             this.p_cancel.UseVisualStyleBackColor = true;
+            this.p_cancel.Click += new System.EventHandler(this.p_cancel_Click);
             // 
             // p_update
             // 
@@ -541,6 +549,7 @@
             this.p_update.TabStop = false;
             this.p_update.Text = "     Update";
             this.p_update.UseVisualStyleBackColor = true;
+            this.p_update.Click += new System.EventHandler(this.p_update_Click);
             // 
             // p_save
             // 
@@ -559,18 +568,22 @@
             this.p_save.TabStop = false;
             this.p_save.Text = "   Save";
             this.p_save.UseVisualStyleBackColor = true;
+            this.p_save.Click += new System.EventHandler(this.p_save_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.m_type);
+            this.groupBox2.Controls.Add(this.p_datetext);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.pictureBox14);
+            this.groupBox2.Controls.Add(this.p_notes);
+            this.groupBox2.Controls.Add(this.ms_type);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.pictureBox8);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.pictureBox4);
             this.groupBox2.Controls.Add(this.panel3);
-            this.groupBox2.Controls.Add(this.m_fee);
+            this.groupBox2.Controls.Add(this.ms_fee);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.pictureBox5);
             this.groupBox2.Controls.Add(this.panel2);
@@ -578,7 +591,6 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.pictureBox6);
             this.groupBox2.Controls.Add(this.panel11);
-            this.groupBox2.Controls.Add(this.s_fullnametext);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -586,23 +598,104 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox2.Size = new System.Drawing.Size(480, 265);
+            this.groupBox2.Size = new System.Drawing.Size(480, 275);
             this.groupBox2.TabIndex = 97;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "       Purchase Details";
             // 
-            // m_type
+            // p_datetext
             // 
-            this.m_type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.m_type.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.m_type.Font = new System.Drawing.Font("Arial", 10F);
-            this.m_type.ForeColor = System.Drawing.Color.White;
-            this.m_type.Location = new System.Drawing.Point(210, 85);
-            this.m_type.Margin = new System.Windows.Forms.Padding(0);
-            this.m_type.Name = "m_type";
-            this.m_type.Size = new System.Drawing.Size(230, 16);
-            this.m_type.TabIndex = 48;
-            this.m_type.TabStop = false;
+            this.p_datetext.CalendarFont = new System.Drawing.Font("Arial", 10F);
+            this.p_datetext.CalendarForeColor = System.Drawing.Color.White;
+            this.p_datetext.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.p_datetext.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            this.p_datetext.CalendarTitleForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.p_datetext.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.p_datetext.Checked = false;
+            this.p_datetext.CustomFormat = "dd MMMM yyyy";
+            this.p_datetext.Font = new System.Drawing.Font("Arial", 10F);
+            this.p_datetext.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.p_datetext.Location = new System.Drawing.Point(210, 151);
+            this.p_datetext.Name = "p_datetext";
+            this.p_datetext.Size = new System.Drawing.Size(230, 23);
+            this.p_datetext.TabIndex = 54;
+            this.p_datetext.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Arial", 10F);
+            this.label8.ForeColor = System.Drawing.Color.Turquoise;
+            this.label8.Location = new System.Drawing.Point(70, 155);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(106, 16);
+            this.label8.TabIndex = 53;
+            this.label8.Text = "Purchase Date:";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox14.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox14.Location = new System.Drawing.Point(41, 149);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 51;
+            this.pictureBox14.TabStop = false;
+            // 
+            // p_notes
+            // 
+            this.p_notes.AllowDrop = true;
+            this.p_notes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.p_notes.Font = new System.Drawing.Font("Arial", 10F);
+            this.p_notes.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.p_notes.Location = new System.Drawing.Point(210, 200);
+            this.p_notes.Margin = new System.Windows.Forms.Padding(0);
+            this.p_notes.Multiline = true;
+            this.p_notes.Name = "p_notes";
+            this.p_notes.Size = new System.Drawing.Size(230, 55);
+            this.p_notes.TabIndex = 46;
+            this.p_notes.TabStop = false;
+            // 
+            // ms_type
+            // 
+            this.ms_type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_type.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_type.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_type.ForeColor = System.Drawing.Color.White;
+            this.ms_type.Location = new System.Drawing.Point(210, 75);
+            this.ms_type.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_type.Name = "ms_type";
+            this.ms_type.ReadOnly = true;
+            this.ms_type.Size = new System.Drawing.Size(230, 16);
+            this.ms_type.TabIndex = 48;
+            this.ms_type.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Font = new System.Drawing.Font("Arial", 10F);
+            this.label6.ForeColor = System.Drawing.Color.Turquoise;
+            this.label6.Location = new System.Drawing.Point(70, 200);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 16);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "Purchase Details:";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = global::Gym_Management_System.Properties.Resources.address;
+            this.pictureBox8.Location = new System.Drawing.Point(41, 193);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 44;
+            this.pictureBox8.TabStop = false;
             // 
             // label3
             // 
@@ -610,7 +703,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Arial", 10F);
             this.label3.ForeColor = System.Drawing.Color.Turquoise;
-            this.label3.Location = new System.Drawing.Point(70, 125);
+            this.label3.Location = new System.Drawing.Point(70, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 16);
             this.label3.TabIndex = 47;
@@ -620,7 +713,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox4.Location = new System.Drawing.Point(41, 119);
+            this.pictureBox4.Location = new System.Drawing.Point(41, 109);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
@@ -632,24 +725,25 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel3.Location = new System.Drawing.Point(210, 142);
+            this.panel3.Location = new System.Drawing.Point(210, 132);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 1);
             this.panel3.TabIndex = 46;
             // 
-            // m_fee
+            // ms_fee
             // 
-            this.m_fee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.m_fee.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.m_fee.Font = new System.Drawing.Font("Arial", 10F);
-            this.m_fee.ForeColor = System.Drawing.Color.White;
-            this.m_fee.Location = new System.Drawing.Point(210, 125);
-            this.m_fee.Margin = new System.Windows.Forms.Padding(0);
-            this.m_fee.Name = "m_fee";
-            this.m_fee.Size = new System.Drawing.Size(230, 16);
-            this.m_fee.TabIndex = 44;
-            this.m_fee.TabStop = false;
+            this.ms_fee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.ms_fee.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ms_fee.Font = new System.Drawing.Font("Arial", 10F);
+            this.ms_fee.ForeColor = System.Drawing.Color.White;
+            this.ms_fee.Location = new System.Drawing.Point(210, 115);
+            this.ms_fee.Margin = new System.Windows.Forms.Padding(0);
+            this.ms_fee.Name = "ms_fee";
+            this.ms_fee.ReadOnly = true;
+            this.ms_fee.Size = new System.Drawing.Size(230, 16);
+            this.ms_fee.TabIndex = 44;
+            this.ms_fee.TabStop = false;
             // 
             // label2
             // 
@@ -657,7 +751,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Arial", 10F);
             this.label2.ForeColor = System.Drawing.Color.Turquoise;
-            this.label2.Location = new System.Drawing.Point(70, 45);
+            this.label2.Location = new System.Drawing.Point(70, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 16);
             this.label2.TabIndex = 33;
@@ -667,7 +761,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Gym_Management_System.Properties.Resources.id;
-            this.pictureBox5.Location = new System.Drawing.Point(41, 39);
+            this.pictureBox5.Location = new System.Drawing.Point(41, 29);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
@@ -679,7 +773,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel2.Location = new System.Drawing.Point(210, 62);
+            this.panel2.Location = new System.Drawing.Point(210, 52);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 1);
@@ -691,7 +785,7 @@
             this.p_idtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.p_idtext.Font = new System.Drawing.Font("Arial", 10F);
             this.p_idtext.ForeColor = System.Drawing.Color.White;
-            this.p_idtext.Location = new System.Drawing.Point(210, 45);
+            this.p_idtext.Location = new System.Drawing.Point(210, 35);
             this.p_idtext.Margin = new System.Windows.Forms.Padding(0);
             this.p_idtext.Name = "p_idtext";
             this.p_idtext.ReadOnly = true;
@@ -705,7 +799,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Arial", 10F);
             this.label9.ForeColor = System.Drawing.Color.Turquoise;
-            this.label9.Location = new System.Drawing.Point(70, 85);
+            this.label9.Location = new System.Drawing.Point(70, 75);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(124, 16);
             this.label9.TabIndex = 29;
@@ -715,7 +809,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox6.Location = new System.Drawing.Point(41, 79);
+            this.pictureBox6.Location = new System.Drawing.Point(41, 69);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
@@ -727,24 +821,11 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel11.Location = new System.Drawing.Point(210, 102);
+            this.panel11.Location = new System.Drawing.Point(210, 92);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(230, 1);
             this.panel11.TabIndex = 26;
-            // 
-            // s_fullnametext
-            // 
-            this.s_fullnametext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.s_fullnametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.s_fullnametext.Font = new System.Drawing.Font("Arial", 10F);
-            this.s_fullnametext.ForeColor = System.Drawing.Color.White;
-            this.s_fullnametext.Location = new System.Drawing.Point(201, 134);
-            this.s_fullnametext.Margin = new System.Windows.Forms.Padding(0);
-            this.s_fullnametext.Name = "s_fullnametext";
-            this.s_fullnametext.Size = new System.Drawing.Size(230, 16);
-            this.s_fullnametext.TabIndex = 22;
-            this.s_fullnametext.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -800,11 +881,11 @@
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox4.Location = new System.Drawing.Point(200, 575);
+            this.groupBox4.Location = new System.Drawing.Point(200, 585);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox4.Size = new System.Drawing.Size(480, 128);
+            this.groupBox4.Size = new System.Drawing.Size(480, 120);
             this.groupBox4.TabIndex = 103;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "       Discount Details";
@@ -828,7 +909,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Arial", 10F);
             this.label7.ForeColor = System.Drawing.Color.Turquoise;
-            this.label7.Location = new System.Drawing.Point(70, 45);
+            this.label7.Location = new System.Drawing.Point(70, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 16);
             this.label7.TabIndex = 33;
@@ -838,7 +919,7 @@
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox12.Image = global::Gym_Management_System.Properties.Resources.id;
-            this.pictureBox12.Location = new System.Drawing.Point(41, 39);
+            this.pictureBox12.Location = new System.Drawing.Point(41, 34);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(25, 25);
@@ -850,7 +931,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel8.Location = new System.Drawing.Point(210, 62);
+            this.panel8.Location = new System.Drawing.Point(210, 57);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(230, 1);
@@ -862,7 +943,7 @@
             this.p_discounttext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.p_discounttext.Font = new System.Drawing.Font("Arial", 10F);
             this.p_discounttext.ForeColor = System.Drawing.Color.White;
-            this.p_discounttext.Location = new System.Drawing.Point(210, 45);
+            this.p_discounttext.Location = new System.Drawing.Point(210, 40);
             this.p_discounttext.Margin = new System.Windows.Forms.Padding(0);
             this.p_discounttext.Name = "p_discounttext";
             this.p_discounttext.ReadOnly = true;
@@ -876,7 +957,7 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Arial", 10F);
             this.label11.ForeColor = System.Drawing.Color.Turquoise;
-            this.label11.Location = new System.Drawing.Point(70, 85);
+            this.label11.Location = new System.Drawing.Point(70, 80);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(118, 16);
             this.label11.TabIndex = 29;
@@ -886,7 +967,7 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox13.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox13.Location = new System.Drawing.Point(41, 79);
+            this.pictureBox13.Location = new System.Drawing.Point(41, 74);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(25, 25);
@@ -898,7 +979,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.Font = new System.Drawing.Font("Arial", 10F);
-            this.panel12.Location = new System.Drawing.Point(210, 102);
+            this.panel12.Location = new System.Drawing.Point(210, 97);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(230, 1);
@@ -910,7 +991,7 @@
             this.p_discountamounttext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.p_discountamounttext.Font = new System.Drawing.Font("Arial", 10F);
             this.p_discountamounttext.ForeColor = System.Drawing.Color.White;
-            this.p_discountamounttext.Location = new System.Drawing.Point(210, 85);
+            this.p_discountamounttext.Location = new System.Drawing.Point(210, 80);
             this.p_discountamounttext.Margin = new System.Windows.Forms.Padding(0);
             this.p_discountamounttext.Name = "p_discountamounttext";
             this.p_discountamounttext.Size = new System.Drawing.Size(230, 16);
@@ -997,44 +1078,6 @@
             this.p_amount.TabIndex = 34;
             this.p_amount.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(210, 170);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 75);
-            this.textBox1.TabIndex = 46;
-            this.textBox1.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Arial", 10F);
-            this.label6.ForeColor = System.Drawing.Color.Turquoise;
-            this.label6.Location = new System.Drawing.Point(70, 170);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 16);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Member Details:";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox8.Location = new System.Drawing.Point(41, 163);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 44;
-            this.pictureBox8.TabStop = false;
-            // 
             // purchaseform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1081,6 +1124,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1096,7 +1141,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1139,7 +1183,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox m_fee;
+        private System.Windows.Forms.TextBox ms_fee;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel2;
@@ -1147,7 +1191,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox s_fullnametext;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -1161,8 +1204,8 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TextBox p_discountamounttext;
-        private System.Windows.Forms.TextBox m_type;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ms_type;
+        private System.Windows.Forms.TextBox p_notes;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1171,5 +1214,8 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox p_amount;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.DateTimePicker p_datetext;
     }
 }
