@@ -98,7 +98,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.mb_details = new System.Windows.Forms.TextBox();
-            this.mb_type = new System.Windows.Forms.ComboBox();
+            this.mb_typecombo = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -106,8 +106,8 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.t_details = new System.Windows.Forms.TextBox();
-            this.t_session = new System.Windows.Forms.ComboBox();
-            this.t_name = new System.Windows.Forms.ComboBox();
+            this.t_sessioncombo = new System.Windows.Forms.ComboBox();
+            this.t_namecombo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -165,7 +165,7 @@
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox28.Image = global::Gym_Management_System.Properties.Resources.delete;
-            this.pictureBox28.Location = new System.Drawing.Point(220, 95);
+            this.pictureBox28.Location = new System.Drawing.Point(225, 95);
             this.pictureBox28.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(24, 24);
@@ -177,7 +177,7 @@
             // 
             this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox26.Image = global::Gym_Management_System.Properties.Resources.cancel;
-            this.pictureBox26.Location = new System.Drawing.Point(220, 45);
+            this.pictureBox26.Location = new System.Drawing.Point(225, 45);
             this.pictureBox26.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(24, 24);
@@ -270,7 +270,7 @@
             this.m_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_delete.Font = new System.Drawing.Font("Arial", 10F);
             this.m_delete.ForeColor = System.Drawing.Color.White;
-            this.m_delete.Location = new System.Drawing.Point(219, 93);
+            this.m_delete.Location = new System.Drawing.Point(224, 93);
             this.m_delete.Name = "m_delete";
             this.m_delete.Size = new System.Drawing.Size(105, 28);
             this.m_delete.TabIndex = 44;
@@ -289,7 +289,7 @@
             this.m_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_cancel.Font = new System.Drawing.Font("Arial", 10F);
             this.m_cancel.ForeColor = System.Drawing.Color.White;
-            this.m_cancel.Location = new System.Drawing.Point(219, 43);
+            this.m_cancel.Location = new System.Drawing.Point(224, 43);
             this.m_cancel.Name = "m_cancel";
             this.m_cancel.Size = new System.Drawing.Size(105, 28);
             this.m_cancel.TabIndex = 39;
@@ -354,7 +354,7 @@
             this.groupBox6.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox6.Size = new System.Drawing.Size(403, 150);
+            this.groupBox6.Size = new System.Drawing.Size(410, 150);
             this.groupBox6.TabIndex = 54;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "       Manage";
@@ -1053,7 +1053,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.mb_details);
-            this.groupBox1.Controls.Add(this.mb_type);
+            this.groupBox1.Controls.Add(this.mb_typecombo);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.pictureBox9);
@@ -1065,7 +1065,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Size = new System.Drawing.Size(403, 166);
+            this.groupBox1.Size = new System.Drawing.Size(410, 205);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "       Membership Details";
@@ -1076,25 +1076,27 @@
             this.mb_details.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.mb_details.Font = new System.Drawing.Font("Arial", 10F);
             this.mb_details.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.mb_details.Location = new System.Drawing.Point(185, 97);
+            this.mb_details.Location = new System.Drawing.Point(190, 97);
             this.mb_details.Margin = new System.Windows.Forms.Padding(0);
             this.mb_details.Multiline = true;
             this.mb_details.Name = "mb_details";
-            this.mb_details.Size = new System.Drawing.Size(190, 50);
+            this.mb_details.ReadOnly = true;
+            this.mb_details.Size = new System.Drawing.Size(190, 85);
             this.mb_details.TabIndex = 56;
             this.mb_details.TabStop = false;
             // 
-            // mb_type
+            // mb_typecombo
             // 
-            this.mb_type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.mb_type.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mb_type.Font = new System.Drawing.Font("Arial", 10F);
-            this.mb_type.ForeColor = System.Drawing.Color.White;
-            this.mb_type.FormattingEnabled = true;
-            this.mb_type.Location = new System.Drawing.Point(185, 45);
-            this.mb_type.Name = "mb_type";
-            this.mb_type.Size = new System.Drawing.Size(190, 24);
-            this.mb_type.TabIndex = 30;
+            this.mb_typecombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.mb_typecombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mb_typecombo.Font = new System.Drawing.Font("Arial", 10F);
+            this.mb_typecombo.ForeColor = System.Drawing.Color.White;
+            this.mb_typecombo.FormattingEnabled = true;
+            this.mb_typecombo.Location = new System.Drawing.Point(190, 45);
+            this.mb_typecombo.Name = "mb_typecombo";
+            this.mb_typecombo.Size = new System.Drawing.Size(190, 24);
+            this.mb_typecombo.TabIndex = 30;
+            this.mb_typecombo.SelectedIndexChanged += new System.EventHandler(this.mb_typecombo_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -1116,9 +1118,9 @@
             this.label13.ForeColor = System.Drawing.Color.Turquoise;
             this.label13.Location = new System.Drawing.Point(60, 50);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(124, 16);
+            this.label13.Size = new System.Drawing.Size(129, 16);
             this.label13.TabIndex = 29;
-            this.label13.Text = "Membership Type:";
+            this.label13.Text = "Membership Name:";
             // 
             // pictureBox9
             // 
@@ -1149,7 +1151,7 @@
             this.pictureBox10.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox10.Location = new System.Drawing.Point(600, 289);
+            this.pictureBox10.Location = new System.Drawing.Point(600, 310);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 25);
@@ -1161,8 +1163,8 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.t_details);
-            this.groupBox3.Controls.Add(this.t_session);
-            this.groupBox3.Controls.Add(this.t_name);
+            this.groupBox3.Controls.Add(this.t_sessioncombo);
+            this.groupBox3.Controls.Add(this.t_namecombo);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.pictureBox19);
             this.groupBox3.Controls.Add(this.label4);
@@ -1172,11 +1174,11 @@
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox3.Location = new System.Drawing.Point(590, 295);
+            this.groupBox3.Location = new System.Drawing.Point(590, 316);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox3.Size = new System.Drawing.Size(403, 220);
+            this.groupBox3.Size = new System.Drawing.Size(410, 220);
             this.groupBox3.TabIndex = 62;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "       Training Session Details";
@@ -1187,37 +1189,38 @@
             this.t_details.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.t_details.Font = new System.Drawing.Font("Arial", 10F);
             this.t_details.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.t_details.Location = new System.Drawing.Point(185, 147);
+            this.t_details.Location = new System.Drawing.Point(190, 147);
             this.t_details.Margin = new System.Windows.Forms.Padding(0);
             this.t_details.Multiline = true;
             this.t_details.Name = "t_details";
+            this.t_details.ReadOnly = true;
             this.t_details.Size = new System.Drawing.Size(190, 50);
             this.t_details.TabIndex = 57;
             this.t_details.TabStop = false;
             // 
-            // t_session
+            // t_sessioncombo
             // 
-            this.t_session.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.t_session.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.t_session.Font = new System.Drawing.Font("Arial", 10F);
-            this.t_session.ForeColor = System.Drawing.Color.White;
-            this.t_session.FormattingEnabled = true;
-            this.t_session.Location = new System.Drawing.Point(185, 94);
-            this.t_session.Name = "t_session";
-            this.t_session.Size = new System.Drawing.Size(190, 24);
-            this.t_session.TabIndex = 34;
+            this.t_sessioncombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_sessioncombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t_sessioncombo.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_sessioncombo.ForeColor = System.Drawing.Color.White;
+            this.t_sessioncombo.FormattingEnabled = true;
+            this.t_sessioncombo.Location = new System.Drawing.Point(190, 94);
+            this.t_sessioncombo.Name = "t_sessioncombo";
+            this.t_sessioncombo.Size = new System.Drawing.Size(190, 24);
+            this.t_sessioncombo.TabIndex = 34;
             // 
-            // t_name
+            // t_namecombo
             // 
-            this.t_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.t_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.t_name.Font = new System.Drawing.Font("Arial", 10F);
-            this.t_name.ForeColor = System.Drawing.Color.White;
-            this.t_name.FormattingEnabled = true;
-            this.t_name.Location = new System.Drawing.Point(185, 45);
-            this.t_name.Name = "t_name";
-            this.t_name.Size = new System.Drawing.Size(190, 24);
-            this.t_name.TabIndex = 31;
+            this.t_namecombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_namecombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t_namecombo.Font = new System.Drawing.Font("Arial", 10F);
+            this.t_namecombo.ForeColor = System.Drawing.Color.White;
+            this.t_namecombo.FormattingEnabled = true;
+            this.t_namecombo.Location = new System.Drawing.Point(190, 45);
+            this.t_namecombo.Name = "t_namecombo";
+            this.t_namecombo.Size = new System.Drawing.Size(190, 24);
+            this.t_namecombo.TabIndex = 31;
             // 
             // label11
             // 
@@ -1435,9 +1438,9 @@
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.ComboBox mb_type;
-        private System.Windows.Forms.ComboBox t_session;
-        private System.Windows.Forms.ComboBox t_name;
+        private System.Windows.Forms.ComboBox mb_typecombo;
+        private System.Windows.Forms.ComboBox t_sessioncombo;
+        private System.Windows.Forms.ComboBox t_namecombo;
         private System.Windows.Forms.TextBox mb_details;
         private System.Windows.Forms.TextBox t_details;
         private System.Windows.Forms.Label label12;

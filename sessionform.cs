@@ -153,17 +153,16 @@ namespace Gym_Management_System
         {
             if (searchbyid.Checked == true)
             {
-                lbSession.SelectedItems.Clear();
+                try {
+                    lbSession.SelectedItems.Clear();
 
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = " SELECT * FROM Session WHERE ts_id LIKE '%" + values + "%' ";
-                con.Open();
+                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                    string query = " SELECT * FROM Session WHERE ts_id LIKE '%" + values + "%' ";
+                    con.Open();
 
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader reader;
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    SqlDataReader reader;
 
-                try
-                {
                     reader = cmd.ExecuteReader();
 
                     while (reader.Read())
@@ -173,27 +172,27 @@ namespace Gym_Management_System
                         //string date = reader.GetDateTime(2).ToString();
                         lbSession.Items.Add(id + ": " + name);
                     }
+
+                    con.Close();
                 }
                 catch (Exception e2)
                 {
                     MessageBox.Show(e2.Message);
                 }
-
-                con.Close();
             }
             else
             {
-                lbSession.SelectedItems.Clear();
-
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = " SELECT * FROM Session WHERE trainer_name LIKE '%" + values + "%' ";
-                con.Open();
-
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader reader;
-
                 try
                 {
+                    lbSession.SelectedItems.Clear();
+
+                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                    string query = " SELECT * FROM Session WHERE trainer_name LIKE '%" + values + "%' ";
+                    con.Open();
+
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    SqlDataReader reader;
+
                     reader = cmd.ExecuteReader();
 
                     while (reader.Read())
@@ -203,13 +202,13 @@ namespace Gym_Management_System
                         //string date = reader.GetDateTime(2).ToString();
                         lbSession.Items.Add(id + ": " + name);
                     }
+
+                    con.Close();
                 }
                 catch (Exception e2)
                 {
                     MessageBox.Show(e2.Message);
                 }
-
-                con.Close();
             }
         }
 
@@ -266,35 +265,42 @@ namespace Gym_Management_System
 
         private void ts_update_Click(object sender, EventArgs e)
         {
-            string onlyname = t_namecombo.Text.Substring(8);
+            try
+            {
+                string onlyname = t_namecombo.Text.Substring(8);
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "UPDATE Session SET " +
-                "trainer_name = '" + onlyname.Trim() + "'," +
-                "ts_name = '" + ts_nametext.Text.Trim() + "'," + 
-                "ts_date = '" + ts_datetext.Value + "'," +
-                "ts_notes = '" + ts_notestext.Text.Trim() + "'," +
-                "trainer_details = '" + t_details.Text.Trim() + "'" +
-                "WHERE ts_id = '" + ts_idtext.Text.Trim() + "' ";
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "UPDATE Session SET " +
+                    "trainer_name = '" + onlyname.Trim() + "'," +
+                    "ts_name = '" + ts_nametext.Text.Trim() + "'," +
+                    "ts_date = '" + ts_datetext.Value + "'," +
+                    "ts_notes = '" + ts_notestext.Text.Trim() + "'," +
+                    "trainer_details = '" + t_details.Text.Trim() + "'" +
+                    "WHERE ts_id = '" + ts_idtext.Text.Trim() + "' ";
 
-            con.Open();
+                con.Open();
 
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-            adapter.SelectCommand.ExecuteNonQuery();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                adapter.SelectCommand.ExecuteNonQuery();
 
-            MessageBox.Show("Training Session Updated Successfully!");
+                MessageBox.Show("Training Session Updated Successfully!");
 
-            con.Close();
+                con.Close();
 
-            cleartext();
+                cleartext();
 
-            clearListbox();
+                clearListbox();
 
-            fillListbox();
+                fillListbox();
 
-            viewsid();
+                viewsid();
 
-            ts_searchtext.Clear();
+                ts_searchtext.Clear();
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
         }
 
         private void ts_cancel_Click(object sender, EventArgs e)

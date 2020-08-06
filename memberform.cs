@@ -18,6 +18,7 @@ namespace Gym_Management_System
             InitializeComponent();
             fillListbox();
             viewmid();
+            fillcombobox();
             MinimumSize = new Size(1366, 768);
             Size = new Size(1366, 768);
         }
@@ -29,12 +30,6 @@ namespace Gym_Management_System
             {
                 Close();
             }
-        }
-
-        private void bodydata_Click_1(object sender, EventArgs e)
-        {
-            bodydataform bdf1 = new bodydataform();
-            bdf1.Show();
         }
 
         //View Member_id in the form
@@ -65,6 +60,36 @@ namespace Gym_Management_System
                 MessageBox.Show(er.Message);
             }
         }
+
+        //View Membership_Name in the form
+        private void fillcombobox()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from Membership";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string id = reader.GetInt32(0).ToString().Trim();
+                    string name = reader.GetString(1).Trim();
+                    mb_typecombo.Items.Add(id + ": " + name);
+                }
+
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
 
         //Radio Button Selection
         private string radiobuttoncheck()
@@ -98,6 +123,8 @@ namespace Gym_Management_System
             m_contactnotext.Clear();
             m_joineddatetext.Value = DateTime.Now;
             m_notestext.Clear();
+            mb_typecombo.Text = "";
+            mb_details.Clear();
         }
 
         //Fill Listbox
@@ -215,6 +242,8 @@ namespace Gym_Management_System
         {
             try
             {
+                string namecombo = mb_typecombo.Text;
+
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT * from Member";
 
@@ -235,6 +264,8 @@ namespace Gym_Management_System
                 row["m_contactno"] = this.m_contactnotext.Text;
                 row["m_joineddate"] = this.m_joineddatetext.Value;
                 row["m_notes"] = this.m_notestext.Text;
+                row["mb_typecombo"] = namecombo.Trim();
+                row["mb_details"] = this.mb_details.Text.Trim();
 
                 set.Tables["Member"].Rows.Add(row);
 
@@ -258,7 +289,8 @@ namespace Gym_Management_System
             }
             catch (Exception e1)
             {
-                MessageBox.Show(e1.Message);
+                //MessageBox.Show(e1.Message);
+                Console.WriteLine(e1);
             }
         }
 
@@ -267,6 +299,8 @@ namespace Gym_Management_System
         {
             try
             {
+                string onlyname = mb_typecombo.Text;
+
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "UPDATE Member SET " +
                     "m_name = '" + this.m_nametext.Text + "'," +
@@ -277,7 +311,9 @@ namespace Gym_Management_System
                     "m_address = '" + this.m_addresstext.Text + "', " +
                     "m_contactno = '" + this.m_contactnotext.Text + "', " +
                     "m_joineddate = '" + this.m_joineddatetext.Value + "', " +
-                    "m_notes = '" + this.m_notestext.Text + "'" +
+                    "m_notes = '" + this.m_notestext.Text + "'," +
+                    "mb_typecombo = '" + onlyname.Trim() + "'," +
+                    "mb_details = '" + mb_details.Text + "'" +
                     "WHERE m_id = '" + this.m_idtext.Text + "' ";
 
                 con.Open();
@@ -303,6 +339,7 @@ namespace Gym_Management_System
             catch (Exception e1)
             {
                 MessageBox.Show(e1.Message);
+                Console.WriteLine(e1);
             }
         }
 
@@ -382,13 +419,15 @@ namespace Gym_Management_System
                     m_contactnotext.Text = reader.GetString(7).Trim();
                     m_joineddatetext.Value = reader.GetDateTime(8);
                     m_notestext.Text = reader.GetString(9).Trim();
+                    mb_typecombo.Text = reader.GetString(10).Trim();
+                    mb_details.Text = reader.GetString(11);
                 }
 
                 con.Close();
             }
-            catch (Exception er)
+            catch (Exception)
             {
-                MessageBox.Show(er.Message);
+                MessageBox.Show("Please Select A Record");
             }
         }
 
@@ -404,6 +443,37 @@ namespace Gym_Management_System
             {
                 clearListbox();
                 searchmember(values);
+            }
+        }
+
+        private void mb_typecombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string onlyid = mb_typecombo.Text.Substring(0, 6);
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from Membership WHERE ms_id = '" + onlyid + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    mb_details.Text =
+                        reader.GetString(2).Trim() + "\r\n" +
+                        reader.GetString(3).Trim() + "\r\n" +
+                        reader.GetString(4).Trim();
+                }
+
+                con.Close();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.Message);
             }
         }
     }
