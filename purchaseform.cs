@@ -231,7 +231,7 @@ namespace Gym_Management_System
 
                 //Add new row to database
                 DataRow row = set.Tables["Purchase"].NewRow();
-                row["m_combo"] = this.m_namecombo.Text);
+                row["m_combo"] = this.m_namecombo.Text;
                 row["m_details"] = this.m_details.Text;
                 row["ms_type"] = this.ms_type.Text;
                 row["ms_fee"] = this.ms_fee.Text;

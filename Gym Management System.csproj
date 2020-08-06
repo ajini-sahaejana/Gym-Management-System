@@ -358,5 +358,23 @@
   <ItemGroup>
     <None Include="Photos\goback.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\member.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\membership.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\session.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\trainer.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
