@@ -195,6 +195,7 @@
             // 
             this.t_details.AllowDrop = true;
             this.t_details.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_details.Cursor = System.Windows.Forms.Cursors.Default;
             this.t_details.Font = new System.Drawing.Font("Arial", 10F);
             this.t_details.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.t_details.Location = new System.Drawing.Point(185, 90);

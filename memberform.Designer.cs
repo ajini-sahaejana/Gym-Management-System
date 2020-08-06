@@ -107,12 +107,9 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.t_details = new System.Windows.Forms.TextBox();
             this.t_sessioncombo = new System.Windows.Forms.ComboBox();
-            this.t_namecombo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -144,7 +141,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1065,7 +1061,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Size = new System.Drawing.Size(410, 205);
+            this.groupBox1.Size = new System.Drawing.Size(410, 195);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "       Membership Details";
@@ -1074,14 +1070,15 @@
             // 
             this.mb_details.AllowDrop = true;
             this.mb_details.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.mb_details.Cursor = System.Windows.Forms.Cursors.Default;
             this.mb_details.Font = new System.Drawing.Font("Arial", 10F);
             this.mb_details.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.mb_details.Location = new System.Drawing.Point(190, 97);
+            this.mb_details.Location = new System.Drawing.Point(190, 95);
             this.mb_details.Margin = new System.Windows.Forms.Padding(0);
             this.mb_details.Multiline = true;
             this.mb_details.Name = "mb_details";
             this.mb_details.ReadOnly = true;
-            this.mb_details.Size = new System.Drawing.Size(190, 85);
+            this.mb_details.Size = new System.Drawing.Size(190, 80);
             this.mb_details.TabIndex = 56;
             this.mb_details.TabStop = false;
             // 
@@ -1104,7 +1101,7 @@
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Arial", 10F);
             this.label10.ForeColor = System.Drawing.Color.Turquoise;
-            this.label10.Location = new System.Drawing.Point(60, 101);
+            this.label10.Location = new System.Drawing.Point(60, 99);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 16);
             this.label10.TabIndex = 29;
@@ -1138,7 +1135,7 @@
             // 
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox18.Location = new System.Drawing.Point(31, 94);
+            this.pictureBox18.Location = new System.Drawing.Point(31, 92);
             this.pictureBox18.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(25, 25);
@@ -1151,7 +1148,7 @@
             this.pictureBox10.BackgroundImage = global::Gym_Management_System.Properties.Resources.ContactDetails;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox10.Location = new System.Drawing.Point(600, 310);
+            this.pictureBox10.Location = new System.Drawing.Point(600, 305);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 25);
@@ -1164,21 +1161,18 @@
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.t_details);
             this.groupBox3.Controls.Add(this.t_sessioncombo);
-            this.groupBox3.Controls.Add(this.t_namecombo);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.pictureBox19);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.pictureBox11);
             this.groupBox3.Controls.Add(this.pictureBox15);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox3.Location = new System.Drawing.Point(590, 316);
+            this.groupBox3.Location = new System.Drawing.Point(590, 311);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(10);
-            this.groupBox3.Size = new System.Drawing.Size(410, 220);
+            this.groupBox3.Size = new System.Drawing.Size(410, 214);
             this.groupBox3.TabIndex = 62;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "       Training Session Details";
@@ -1187,14 +1181,15 @@
             // 
             this.t_details.AllowDrop = true;
             this.t_details.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.t_details.Cursor = System.Windows.Forms.Cursors.Default;
             this.t_details.Font = new System.Drawing.Font("Arial", 10F);
             this.t_details.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.t_details.Location = new System.Drawing.Point(190, 147);
+            this.t_details.Location = new System.Drawing.Point(190, 95);
             this.t_details.Margin = new System.Windows.Forms.Padding(0);
             this.t_details.Multiline = true;
             this.t_details.Name = "t_details";
             this.t_details.ReadOnly = true;
-            this.t_details.Size = new System.Drawing.Size(190, 50);
+            this.t_details.Size = new System.Drawing.Size(190, 95);
             this.t_details.TabIndex = 57;
             this.t_details.TabStop = false;
             // 
@@ -1205,22 +1200,11 @@
             this.t_sessioncombo.Font = new System.Drawing.Font("Arial", 10F);
             this.t_sessioncombo.ForeColor = System.Drawing.Color.White;
             this.t_sessioncombo.FormattingEnabled = true;
-            this.t_sessioncombo.Location = new System.Drawing.Point(190, 94);
+            this.t_sessioncombo.Location = new System.Drawing.Point(190, 45);
             this.t_sessioncombo.Name = "t_sessioncombo";
             this.t_sessioncombo.Size = new System.Drawing.Size(190, 24);
             this.t_sessioncombo.TabIndex = 34;
-            // 
-            // t_namecombo
-            // 
-            this.t_namecombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.t_namecombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.t_namecombo.Font = new System.Drawing.Font("Arial", 10F);
-            this.t_namecombo.ForeColor = System.Drawing.Color.White;
-            this.t_namecombo.FormattingEnabled = true;
-            this.t_namecombo.Location = new System.Drawing.Point(190, 45);
-            this.t_namecombo.Name = "t_namecombo";
-            this.t_namecombo.Size = new System.Drawing.Size(190, 24);
-            this.t_namecombo.TabIndex = 31;
+            this.t_sessioncombo.SelectedIndexChanged += new System.EventHandler(this.t_sessioncombo_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -1228,7 +1212,7 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Arial", 10F);
             this.label11.ForeColor = System.Drawing.Color.Turquoise;
-            this.label11.Location = new System.Drawing.Point(60, 150);
+            this.label11.Location = new System.Drawing.Point(60, 98);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 16);
             this.label11.TabIndex = 33;
@@ -1238,7 +1222,7 @@
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox19.Location = new System.Drawing.Point(31, 143);
+            this.pictureBox19.Location = new System.Drawing.Point(31, 91);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(25, 25);
@@ -1252,41 +1236,17 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Arial", 10F);
             this.label4.ForeColor = System.Drawing.Color.Turquoise;
-            this.label4.Location = new System.Drawing.Point(60, 100);
+            this.label4.Location = new System.Drawing.Point(60, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 16);
             this.label4.TabIndex = 29;
             this.label4.Text = "Training Session:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Arial", 10F);
-            this.label5.ForeColor = System.Drawing.Color.Turquoise;
-            this.label5.Location = new System.Drawing.Point(60, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 16);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Trainer Name:";
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Image = global::Gym_Management_System.Properties.Resources.name;
-            this.pictureBox11.Location = new System.Drawing.Point(31, 44);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 23;
-            this.pictureBox11.TabStop = false;
-            // 
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox15.Image = global::Gym_Management_System.Properties.Resources.address;
-            this.pictureBox15.Location = new System.Drawing.Point(31, 93);
+            this.pictureBox15.Location = new System.Drawing.Point(31, 44);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(25, 25);
@@ -1358,7 +1318,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1433,14 +1392,11 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.ComboBox mb_typecombo;
         private System.Windows.Forms.ComboBox t_sessioncombo;
-        private System.Windows.Forms.ComboBox t_namecombo;
         private System.Windows.Forms.TextBox mb_details;
         private System.Windows.Forms.TextBox t_details;
         private System.Windows.Forms.Label label12;

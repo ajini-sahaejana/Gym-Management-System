@@ -18,7 +18,8 @@ namespace Gym_Management_System
             InitializeComponent();
             fillListbox();
             viewmid();
-            fillcombobox();
+            fillmembershipcombobox();
+            fillsessioncombobox();
             MinimumSize = new Size(1366, 768);
             Size = new Size(1366, 768);
         }
@@ -62,7 +63,7 @@ namespace Gym_Management_System
         }
 
         //View Membership_Name in the form
-        private void fillcombobox()
+        private void fillmembershipcombobox()
         {
             try
             {
@@ -90,6 +91,34 @@ namespace Gym_Management_System
             }
         }
 
+        //View Membership_Name in the form
+        private void fillsessioncombobox()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from Session";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string id = reader.GetInt32(0).ToString().Trim();
+                    string name = reader.GetString(2).Trim();
+                    t_sessioncombo.Items.Add(id + ": " + name);
+                }
+
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
 
         //Radio Button Selection
         private string radiobuttoncheck()
@@ -125,6 +154,8 @@ namespace Gym_Management_System
             m_notestext.Clear();
             mb_typecombo.Text = "";
             mb_details.Clear();
+            t_sessioncombo.Text = "";
+            t_details.Clear();
         }
 
         //Fill Listbox
@@ -243,6 +274,7 @@ namespace Gym_Management_System
             try
             {
                 string namecombo = mb_typecombo.Text;
+                string stname = t_sessioncombo.Text;
 
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT * from Member";
@@ -266,6 +298,8 @@ namespace Gym_Management_System
                 row["m_notes"] = this.m_notestext.Text;
                 row["mb_typecombo"] = namecombo.Trim();
                 row["mb_details"] = this.mb_details.Text.Trim();
+                row["t_sessioncombo"] = stname.Trim();
+                row["t_details"] = this.t_details.Text.Trim();
 
                 set.Tables["Member"].Rows.Add(row);
 
@@ -300,6 +334,7 @@ namespace Gym_Management_System
             try
             {
                 string onlyname = mb_typecombo.Text;
+                string stname = t_sessioncombo.Text;
 
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "UPDATE Member SET " +
@@ -313,7 +348,9 @@ namespace Gym_Management_System
                     "m_joineddate = '" + this.m_joineddatetext.Value + "', " +
                     "m_notes = '" + this.m_notestext.Text + "'," +
                     "mb_typecombo = '" + onlyname.Trim() + "'," +
-                    "mb_details = '" + mb_details.Text + "'" +
+                    "mb_details = '" + mb_details.Text + "'," +
+                    "t_sessioncombo = '" + stname.Trim() + "'," +
+                    "t_details = '" + t_details.Text + "'" +
                     "WHERE m_id = '" + this.m_idtext.Text + "' ";
 
                 con.Open();
@@ -421,13 +458,15 @@ namespace Gym_Management_System
                     m_notestext.Text = reader.GetString(9).Trim();
                     mb_typecombo.Text = reader.GetString(10).Trim();
                     mb_details.Text = reader.GetString(11);
+                    t_sessioncombo.Text = reader.GetString(12).Trim();
+                    t_details.Text = reader.GetString(13);
                 }
 
                 con.Close();
             }
             catch (Exception)
             {
-                MessageBox.Show("Please Select A Record");
+                //MessageBox.Show(e1.Message);
             }
         }
 
@@ -467,6 +506,39 @@ namespace Gym_Management_System
                         reader.GetString(2).Trim() + "\r\n" +
                         reader.GetString(3).Trim() + "\r\n" +
                         reader.GetString(4).Trim();
+                }
+
+                con.Close();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.Message);
+            }
+        }
+
+
+        private void t_sessioncombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string onlyid = t_sessioncombo.Text.Substring(0, 6);
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from Session WHERE ts_id = '" + onlyid + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    t_details.Text =
+                        reader.GetString(1).Trim() + "\r\n" +
+                        reader.GetDateTime(3).ToShortDateString() + "\r\n" +
+                        reader.GetString(4).Trim() + "\r\n" +
+                        reader.GetString(5).Trim();
                 }
 
                 con.Close();
