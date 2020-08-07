@@ -165,11 +165,11 @@ namespace Gym_Management_System
                 SqlDataAdapter s1 = new SqlDataAdapter(query, con);
                 DataTable dtbl1 = new DataTable();
                 s1.Fill(dtbl1);
+
                 if (dtbl1.Rows.Count == 1)
                 {
-                    viewsname = this.loginusername.Text;
-
-                    mainform mf1 = new mainform();
+                    viewsname = loginusername.Text.Trim();
+                    mainform mf1 = new mainform(); 
                     Hide();
                     ActiveForm.Hide();
                     mf1.Show();

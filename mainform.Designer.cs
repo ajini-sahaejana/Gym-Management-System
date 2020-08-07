@@ -32,13 +32,17 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.logout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.view_current = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.showdate = new System.Windows.Forms.Label();
             this.showtime = new System.Windows.Forms.Label();
-            this.welcometext = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.manageMembership = new System.Windows.Forms.Button();
             this.managePurchase = new System.Windows.Forms.Button();
@@ -46,8 +50,9 @@
             this.manageMember = new System.Windows.Forms.Button();
             this.manageTrainer = new System.Windows.Forms.Button();
             this.manageStaff = new System.Windows.Forms.Button();
+            this.welcometext = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,12 +78,88 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.logout);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(50, 744);
             this.panel2.TabIndex = 22;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.button3.BackgroundImage = global::Gym_Management_System.Properties.Resources.user__2_;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(5, 220);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(40, 40);
+            this.button3.TabIndex = 32;
+            this.button3.TabStop = false;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.button2.BackgroundImage = global::Gym_Management_System.Properties.Resources.phonecall2;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(5, 305);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 40);
+            this.button2.TabIndex = 31;
+            this.button2.TabStop = false;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.button1.BackgroundImage = global::Gym_Management_System.Properties.Resources.settings;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(5, 385);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 40);
+            this.button1.TabIndex = 30;
+            this.button1.TabStop = false;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // logout
+            // 
+            this.logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.logout.FlatAppearance.BorderSize = 0;
+            this.logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout.Image = global::Gym_Management_System.Properties.Resources.logout;
+            this.logout.Location = new System.Drawing.Point(1, 550);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(48, 48);
+            this.logout.TabIndex = 29;
+            this.logout.TabStop = false;
+            this.logout.UseVisualStyleBackColor = false;
+            this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
             // label1
             // 
@@ -97,21 +178,37 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.view_current);
             this.panel3.Location = new System.Drawing.Point(960, 341);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(350, 364);
             this.panel3.TabIndex = 26;
             // 
-            // pictureBox1
+            // label2
             // 
-            this.pictureBox1.Image = global::Gym_Management_System.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 345);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(110, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 18);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Account Details";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // view_current
+            // 
+            this.view_current.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
+            this.view_current.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.view_current.ForeColor = System.Drawing.Color.DarkCyan;
+            this.view_current.Location = new System.Drawing.Point(13, 62);
+            this.view_current.Multiline = true;
+            this.view_current.Name = "view_current";
+            this.view_current.ReadOnly = true;
+            this.view_current.Size = new System.Drawing.Size(327, 287);
+            this.view_current.TabIndex = 28;
+            this.view_current.TabStop = false;
             // 
             // panel6
             // 
@@ -144,20 +241,6 @@
             this.showtime.Size = new System.Drawing.Size(330, 150);
             this.showtime.TabIndex = 0;
             this.showtime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // welcometext
-            // 
-            this.welcometext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.welcometext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.welcometext.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcometext.ForeColor = System.Drawing.Color.White;
-            this.welcometext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.welcometext.Location = new System.Drawing.Point(53, 45);
-            this.welcometext.Name = "welcometext";
-            this.welcometext.Size = new System.Drawing.Size(1262, 58);
-            this.welcometext.TabIndex = 27;
-            this.welcometext.Text = "Welcome";
-            this.welcometext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel1
             // 
@@ -300,13 +383,27 @@
             this.manageStaff.UseVisualStyleBackColor = false;
             this.manageStaff.Click += new System.EventHandler(this.manageStaff_Click_1);
             // 
+            // welcometext
+            // 
+            this.welcometext.BackColor = System.Drawing.Color.Transparent;
+            this.welcometext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.welcometext.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcometext.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.welcometext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.welcometext.Location = new System.Drawing.Point(105, 44);
+            this.welcometext.Name = "welcometext";
+            this.welcometext.Size = new System.Drawing.Size(1205, 58);
+            this.welcometext.TabIndex = 29;
+            this.welcometext.Text = "Welcome";
+            this.welcometext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // mainform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1366, 749);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.welcometext);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -324,8 +421,9 @@
             this.Name = "mainform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Load += new System.EventHandler(this.mainform_Load);
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -339,7 +437,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label welcometext;
         private System.Windows.Forms.Label showtime;
         private System.Windows.Forms.Label showdate;
         private System.Windows.Forms.Panel panel1;
@@ -349,6 +446,12 @@
         private System.Windows.Forms.Button manageSession;
         private System.Windows.Forms.Button manageMember;
         private System.Windows.Forms.Button manageTrainer;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button logout;
+        private System.Windows.Forms.TextBox view_current;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label welcometext;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

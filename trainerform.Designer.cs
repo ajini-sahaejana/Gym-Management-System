@@ -114,6 +114,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox7.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -409,15 +410,14 @@
             // 
             // goback
             // 
-            this.goback.AutoSize = true;
             this.goback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goback.Font = new System.Drawing.Font("Arial", 9F);
-            this.goback.Image = global::Gym_Management_System.Properties.Resources.goback;
-            this.goback.Location = new System.Drawing.Point(53, 28);
+            this.goback.Image = global::Gym_Management_System.Properties.Resources.gobackarrow2;
+            this.goback.Location = new System.Drawing.Point(5, 25);
             this.goback.Name = "goback";
-            this.goback.Size = new System.Drawing.Size(30, 30);
+            this.goback.Size = new System.Drawing.Size(40, 40);
             this.goback.TabIndex = 74;
             this.goback.UseVisualStyleBackColor = true;
             this.goback.Click += new System.EventHandler(this.goback_Click);
@@ -716,7 +716,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox3.Image = global::Gym_Management_System.Properties.Resources.teacher;
             this.pictureBox3.Location = new System.Drawing.Point(31, 104);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox3.Name = "pictureBox3";
@@ -856,6 +856,7 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.panel18.Controls.Add(this.goback);
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
@@ -1006,7 +1007,6 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.goback);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.panel18);
@@ -1041,6 +1041,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.panel18.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();

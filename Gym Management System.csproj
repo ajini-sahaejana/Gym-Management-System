@@ -367,5 +367,47 @@
   <ItemGroup>
     <None Include="Photos\trainer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\gobackarrow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\phonecall2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\membership2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\training2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\training.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\kk\pica\discount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\discount2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\kk\pica\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\kk\pica\money.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

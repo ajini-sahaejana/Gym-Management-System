@@ -100,6 +100,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.p_amount = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
@@ -172,15 +173,14 @@
             // 
             // goback
             // 
-            this.goback.AutoSize = true;
             this.goback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goback.Font = new System.Drawing.Font("Arial", 9F);
-            this.goback.Image = global::Gym_Management_System.Properties.Resources.goback;
-            this.goback.Location = new System.Drawing.Point(53, 28);
+            this.goback.Image = global::Gym_Management_System.Properties.Resources.gobackarrow2;
+            this.goback.Location = new System.Drawing.Point(5, 25);
             this.goback.Name = "goback";
-            this.goback.Size = new System.Drawing.Size(30, 30);
+            this.goback.Size = new System.Drawing.Size(40, 40);
             this.goback.TabIndex = 74;
             this.goback.UseVisualStyleBackColor = true;
             this.goback.Click += new System.EventHandler(this.goback_Click);
@@ -188,6 +188,7 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.panel18.Controls.Add(this.goback);
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
@@ -711,7 +712,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.cash;
             this.pictureBox4.Location = new System.Drawing.Point(41, 109);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox4.Name = "pictureBox4";
@@ -758,7 +759,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::Gym_Management_System.Properties.Resources.id;
+            this.pictureBox5.Image = global::Gym_Management_System.Properties.Resources.purchase1;
             this.pictureBox5.Location = new System.Drawing.Point(41, 29);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox5.Name = "pictureBox5";
@@ -806,7 +807,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.membership2;
             this.pictureBox6.Location = new System.Drawing.Point(41, 69);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox6.Name = "pictureBox6";
@@ -916,7 +917,7 @@
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Image = global::Gym_Management_System.Properties.Resources.id;
+            this.pictureBox12.Image = global::Gym_Management_System.Properties.Resources.discount;
             this.pictureBox12.Location = new System.Drawing.Point(41, 34);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox12.Name = "pictureBox12";
@@ -963,7 +964,7 @@
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox13.Image = global::Gym_Management_System.Properties.Resources.discount2;
             this.pictureBox13.Location = new System.Drawing.Point(41, 74);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox13.Name = "pictureBox13";
@@ -1042,7 +1043,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::Gym_Management_System.Properties.Resources.id;
+            this.pictureBox7.Image = global::Gym_Management_System.Properties.Resources.money;
             this.pictureBox7.Location = new System.Drawing.Point(51, 44);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox7.Name = "pictureBox7";
@@ -1094,7 +1095,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.goback);
             this.Controls.Add(this.panel18);
             this.Font = new System.Drawing.Font("Arial", 12F);
             this.ForeColor = System.Drawing.Color.White;
@@ -1104,6 +1104,7 @@
             this.Name = "purchaseform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.panel1.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.panel9.ResumeLayout(false);

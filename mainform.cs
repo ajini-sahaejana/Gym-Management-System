@@ -18,6 +18,7 @@ namespace Gym_Management_System
             InitializeComponent();
             welcomemsg();
             Size = new Size(1366, 768);
+            viewStaffData();
         }
 
         //View username in the form
@@ -77,6 +78,49 @@ namespace Gym_Management_System
         {
             staffregform srf1 = new staffregform();
             srf1.Show();
+        }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Are you sure you want to exit?", "LogOut", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Close();
+            }
+        }
+
+        private void viewStaffData()
+        {
+            string onlyname = signinform.viewsname;
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "SELECT * from staff WHERE s_name = '" + onlyname + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                SqlDataReader reader;
+
+                con.Open();
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    view_current.Text = "Staff Id: " + reader.GetInt32(0).ToString().Trim() + "\r\n\r\n" +
+                        "Name: " + reader.GetString(5).Trim() + "\r\n\r\n" +
+                        "Email: " + reader.GetString(2).Trim() + "\r\n\r\n" +
+                        "Birth Date: " + reader.GetValue(6).ToString().Trim().Substring(0,10) + "\r\n\r\n" +
+                        "Age: " + reader.GetString(7).Trim() + "\r\n\r\n" +
+                        "Gender: " + reader.GetString(8).Trim() + "\r\n\r\n" +
+                        "Address: " + reader.GetString(9).Trim() + "\r\n\r\n" +
+                        "Contact No: " + reader.GetString(10).Trim();
+                }
+
+                con.Close();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.Message);
+            }
         }
     }
 }

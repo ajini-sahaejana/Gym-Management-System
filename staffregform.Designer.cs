@@ -181,6 +181,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -1652,6 +1653,7 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.panel18.Controls.Add(this.goback);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
@@ -1661,15 +1663,14 @@
             // 
             // goback
             // 
-            this.goback.AutoSize = true;
             this.goback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goback.Font = new System.Drawing.Font("Arial", 9F);
-            this.goback.Image = global::Gym_Management_System.Properties.Resources.goback;
-            this.goback.Location = new System.Drawing.Point(53, 28);
+            this.goback.Image = global::Gym_Management_System.Properties.Resources.gobackarrow2;
+            this.goback.Location = new System.Drawing.Point(5, 25);
             this.goback.Name = "goback";
-            this.goback.Size = new System.Drawing.Size(30, 30);
+            this.goback.Size = new System.Drawing.Size(40, 40);
             this.goback.TabIndex = 42;
             this.goback.UseVisualStyleBackColor = true;
             this.goback.Click += new System.EventHandler(this.goback_Click);
@@ -1680,7 +1681,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 749);
-            this.Controls.Add(this.goback);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.groupBox3);
@@ -1752,6 +1752,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panel18.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

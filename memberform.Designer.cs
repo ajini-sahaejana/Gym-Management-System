@@ -121,6 +121,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.groupBox7.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -379,15 +380,17 @@
             // goback
             // 
             this.goback.AutoSize = true;
+            this.goback.BackgroundImage = global::Gym_Management_System.Properties.Resources.gobackarrow2;
+            this.goback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.goback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goback.Font = new System.Drawing.Font("Arial", 9F);
-            this.goback.Image = global::Gym_Management_System.Properties.Resources.goback;
-            this.goback.Location = new System.Drawing.Point(53, 28);
+            this.goback.Location = new System.Drawing.Point(5, 30);
             this.goback.Name = "goback";
-            this.goback.Size = new System.Drawing.Size(30, 30);
+            this.goback.Size = new System.Drawing.Size(40, 40);
             this.goback.TabIndex = 59;
+            this.goback.TabStop = false;
             this.goback.UseVisualStyleBackColor = true;
             this.goback.Click += new System.EventHandler(this.goback_Click);
             // 
@@ -454,6 +457,7 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.panel18.Controls.Add(this.goback);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
@@ -1122,7 +1126,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox9.Image = global::Gym_Management_System.Properties.Resources.membership2;
             this.pictureBox9.Location = new System.Drawing.Point(31, 44);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox9.Name = "pictureBox9";
@@ -1245,7 +1249,7 @@
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.Image = global::Gym_Management_System.Properties.Resources.address;
+            this.pictureBox15.Image = global::Gym_Management_System.Properties.Resources.training2;
             this.pictureBox15.Location = new System.Drawing.Point(31, 44);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox15.Name = "pictureBox15";
@@ -1267,7 +1271,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.goback);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.panel18);
@@ -1295,6 +1298,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
