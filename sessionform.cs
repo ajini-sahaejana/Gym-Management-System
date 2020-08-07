@@ -149,7 +149,7 @@ namespace Gym_Management_System
             //con.Close();
         }
 
-        //Clear Listbox
+        //Clear Combobpx
         private void clearCombobox()
         {
             try
@@ -395,7 +395,7 @@ namespace Gym_Management_System
             }
             catch (Exception)
             {
-                MessageBox.Show("Please Select A Record");
+                //MessageBox.Show("Please Select A Record");
             }
         }
 

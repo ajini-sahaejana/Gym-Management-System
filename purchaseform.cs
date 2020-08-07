@@ -90,6 +90,19 @@ namespace Gym_Management_System
             }
         }
 
+        //Clear Combobpx
+        private void clearCombobox()
+        {
+            try
+            {
+                m_namecombo.Items.Clear();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            };
+        }
+
         //Clear text after saving
         private void cleartext()
         {
@@ -122,7 +135,7 @@ namespace Gym_Management_System
                 while (reader.Read())
                 {
                     string id = reader.GetInt32(0).ToString();
-                    string name = reader.GetString(1).ToString();
+                    string name = reader.GetString(1).Substring(8);
 
                     lbPurchase.Items.Add(id + ": " + name);
                 }
@@ -170,7 +183,7 @@ namespace Gym_Management_System
                     {
 
                         string id = reader.GetInt32(0).ToString();
-                        string name = reader.GetString(1);
+                        string name = reader.GetString(1).Substring(8);
 
                         lbPurchase.Items.Add(id + ": " + name);
                     }

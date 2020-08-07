@@ -436,7 +436,7 @@ namespace Gym_Management_System
             }
             catch (Exception er)
             {
-                MessageBox.Show(er.Message);
+                //MessageBox.Show(er.Message);
             }
         }
 
