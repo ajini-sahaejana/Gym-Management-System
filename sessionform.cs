@@ -23,6 +23,7 @@ namespace Gym_Management_System
             Size = new Size(1366, 768);
         }
 
+
         private void goback_Click(object sender, EventArgs e)
         {
             DialogResult dialog = MessageBox.Show("Any unsaved changed wont't be saved. Are you sure?", "Go Back to Homepage", MessageBoxButtons.YesNo);
@@ -116,8 +117,8 @@ namespace Gym_Management_System
 
                 while (reader.Read())
                 {
-                    string id = reader.GetInt32(0).ToString();
-                    string name = reader.GetString(1);
+                    string id = reader.GetInt32(0).ToString().Trim();
+                    string name = reader.GetString(1).Substring(8).Trim();
                     //string date = reader.GetDateTime(2).ToString();
                     lbSession.Items.Add(id + ": " + name);
                 }
@@ -148,6 +149,19 @@ namespace Gym_Management_System
             //con.Close();
         }
 
+        //Clear Listbox
+        private void clearCombobox()
+        {
+            try
+            {
+                t_namecombo.Items.Clear();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            };
+        }
+
         //Search Staff
         private void searchsession(string values)
         {
@@ -168,7 +182,7 @@ namespace Gym_Management_System
                     while (reader.Read())
                     {
                         string id = reader.GetInt32(0).ToString();
-                        string name = reader.GetString(1);
+                        string name = reader.GetString(1).Substring(8);
                         //string date = reader.GetDateTime(2).ToString();
                         lbSession.Items.Add(id + ": " + name);
                     }
@@ -198,7 +212,7 @@ namespace Gym_Management_System
                     while (reader.Read())
                     {
                         string id = reader.GetInt32(0).ToString();
-                        string name = reader.GetString(1);
+                        string name = reader.GetString(1).Substring(8);
                         //string date = reader.GetDateTime(2).ToString();
                         lbSession.Items.Add(id + ": " + name);
                     }
@@ -212,14 +226,14 @@ namespace Gym_Management_System
             }
         }
 
+        string name;
+
         //------------------------------------SQL-------------------------------------
 
         private void ts_save_Click(object sender, EventArgs e)
         {
             try
             {
-                string onlyname = t_namecombo.Text.Substring(8);
-
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT * from Session";
 
@@ -231,7 +245,7 @@ namespace Gym_Management_System
 
                 //Add new row to database
                 DataRow row = set.Tables["Session"].NewRow();
-                row["trainer_name"] = onlyname.Trim();
+                row["trainer_name"] = this.t_namecombo.Text.Trim();
                 row["ts_name"] = this.ts_nametext.Text.Trim();
                 row["ts_date"] = this.ts_datetext.Value;
                 row["ts_notes"] = this.ts_notestext.Text.Trim();
@@ -253,6 +267,10 @@ namespace Gym_Management_System
 
                 fillListbox();
 
+                clearCombobox();
+
+                fillcombobox();
+
                 viewsid();
 
                 ts_searchtext.Clear();
@@ -267,11 +285,9 @@ namespace Gym_Management_System
         {
             try
             {
-                string onlyname = t_namecombo.Text.Substring(8);
-
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "UPDATE Session SET " +
-                    "trainer_name = '" + onlyname.Trim() + "'," +
+                    "trainer_name = '" + this.t_namecombo.Text.Trim() + "'," +
                     "ts_name = '" + ts_nametext.Text.Trim() + "'," +
                     "ts_date = '" + ts_datetext.Value + "'," +
                     "ts_notes = '" + ts_notestext.Text.Trim() + "'," +
@@ -293,6 +309,10 @@ namespace Gym_Management_System
 
                 fillListbox();
 
+                clearCombobox();
+
+                fillcombobox();
+
                 viewsid();
 
                 ts_searchtext.Clear();
@@ -310,6 +330,10 @@ namespace Gym_Management_System
             clearListbox();
 
             fillListbox();
+
+            clearCombobox();
+
+            fillcombobox();
 
             viewsid();
 
@@ -336,6 +360,10 @@ namespace Gym_Management_System
 
             fillListbox();
 
+            clearCombobox();
+
+            fillcombobox();
+
             ts_searchtext.Clear();
         }
 
@@ -356,7 +384,7 @@ namespace Gym_Management_System
                 while (reader.Read())
                 {
                     ts_idtext.Text = reader.GetInt32(0).ToString().Trim();
-                    t_namecombo.Text = reader.GetString(1);
+                    t_namecombo.Text = reader.GetString(1).Trim();
                     ts_nametext.Text = reader.GetString(2).Trim();
                     ts_datetext.Value = reader.GetDateTime(3);
                     ts_notestext.Text = reader.GetString(4).Trim();
@@ -365,9 +393,9 @@ namespace Gym_Management_System
 
                 con.Close();
             }
-            catch (Exception er)
+            catch (Exception)
             {
-                MessageBox.Show(er.Message);
+                MessageBox.Show("Please Select A Record");
             }
         }
 
