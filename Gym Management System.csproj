@@ -63,12 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bodydataform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="bodydataform.Designer.cs">
-      <DependentUpon>bodydataform.cs</DependentUpon>
-    </Compile>
     <Compile Include="initform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,9 +124,6 @@
     <Compile Include="trainerform.Designer.cs">
       <DependentUpon>trainerform.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="bodydataform.resx">
-      <DependentUpon>bodydataform.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="initform.resx">
       <DependentUpon>initform.cs</DependentUpon>
     </EmbeddedResource>

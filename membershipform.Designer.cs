@@ -515,7 +515,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.hiredate;
             this.pictureBox4.Location = new System.Drawing.Point(41, 159);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox4.Name = "pictureBox4";
@@ -705,7 +705,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.address;
+            this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.view;
             this.pictureBox6.Location = new System.Drawing.Point(41, 283);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox6.Name = "pictureBox6";

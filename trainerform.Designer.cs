@@ -152,7 +152,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.name;
+            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.email;
             this.pictureBox4.Location = new System.Drawing.Point(31, 154);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox4.Name = "pictureBox4";
