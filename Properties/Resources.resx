@@ -247,9 +247,6 @@
   <data name="management" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="discount" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Photos\kk\pica\discount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="angryimg__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\angryimg (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -324,5 +321,74 @@
   </data>
   <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Photos\kk\pica\money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\cash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\discount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discount21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\discount2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\dollar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dollar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\dollar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goback1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\goback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gobackarrow21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\gobackarrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="membership1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\membership.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="membership22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\membership2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\money2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phonecall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\phonecall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phonecall21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\phonecall2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchase2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\purchase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchase21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\purchase2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\settings2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teacher2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\teacher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trainer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\trainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="training1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\training.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="training21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\training2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\kk\pica\user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
