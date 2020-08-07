@@ -419,6 +419,7 @@
             this.goback.Name = "goback";
             this.goback.Size = new System.Drawing.Size(40, 40);
             this.goback.TabIndex = 74;
+            this.goback.TabStop = false;
             this.goback.UseVisualStyleBackColor = true;
             this.goback.Click += new System.EventHandler(this.goback_Click);
             // 

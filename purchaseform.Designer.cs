@@ -182,6 +182,7 @@
             this.goback.Name = "goback";
             this.goback.Size = new System.Drawing.Size(40, 40);
             this.goback.TabIndex = 74;
+            this.goback.TabStop = false;
             this.goback.UseVisualStyleBackColor = true;
             this.goback.Click += new System.EventHandler(this.goback_Click);
             // 
@@ -669,6 +670,7 @@
             this.ms_type.Location = new System.Drawing.Point(210, 75);
             this.ms_type.Margin = new System.Windows.Forms.Padding(0);
             this.ms_type.Name = "ms_type";
+            this.ms_type.ReadOnly = true;
             this.ms_type.Size = new System.Drawing.Size(230, 16);
             this.ms_type.TabIndex = 48;
             this.ms_type.TabStop = false;
@@ -740,6 +742,7 @@
             this.ms_fee.Location = new System.Drawing.Point(210, 115);
             this.ms_fee.Margin = new System.Windows.Forms.Padding(0);
             this.ms_fee.Name = "ms_fee";
+            this.ms_fee.ReadOnly = true;
             this.ms_fee.Size = new System.Drawing.Size(230, 16);
             this.ms_fee.TabIndex = 44;
             this.ms_fee.TabStop = false;

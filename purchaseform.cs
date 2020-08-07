@@ -434,9 +434,8 @@ namespace Gym_Management_System
                         reader.GetString(2).Trim() + "\r\n" +
                         reader.GetString(6).Trim() + "\r\n" +
                         reader.GetString(7).Trim();
+                    ms_type.Text = reader.GetString(10).Substring(8);
                 }
-
-                con.Close();
             }
             catch (Exception e2)
             {

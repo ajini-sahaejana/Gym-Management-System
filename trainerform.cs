@@ -372,7 +372,7 @@ namespace Gym_Management_System
                     t_notestext.Text = reader.GetString(9).Trim();
                 }
             }
-            catch (Exception er)
+            catch (Exception)
             {
                 //MessageBox.Show(er.Message);
             }
