@@ -16,3 +16,21 @@ C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Managem
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.purchaseform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.sessionform.resources
 C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\obj\Debug\Gym_Management_System.trainerform.resources
+E:\GitHub\Gym-Management-System\bin\Debug\Gym Management System.exe.config
+E:\GitHub\Gym-Management-System\bin\Debug\Gym Management System.exe
+E:\GitHub\Gym-Management-System\bin\Debug\Gym Management System.pdb
+E:\GitHub\Gym-Management-System\obj\Debug\Gym Management System.csprojAssemblyReference.cache
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.initform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.mainform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.memberform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.membershipform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.purchaseform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.sessionform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.signinform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.Properties.Resources.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.staffregform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym_Management_System.trainerform.resources
+E:\GitHub\Gym-Management-System\obj\Debug\Gym Management System.csproj.GenerateResource.cache
+E:\GitHub\Gym-Management-System\obj\Debug\Gym Management System.csproj.CoreCompileInputs.cache
+E:\GitHub\Gym-Management-System\obj\Debug\Gym Management System.exe
+E:\GitHub\Gym-Management-System\obj\Debug\Gym Management System.pdb

@@ -159,7 +159,7 @@ namespace Gym_Management_System
         {
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\GitHub\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT * FROM Staff WHERE s_name = '" + loginusername.Text.Trim() + "' AND s_email='" + loginemail.Text.Trim() + "' AND s_pword='" + loginpword.Text.Trim() + "'";
                 con.Open();
                 SqlDataAdapter s1 = new SqlDataAdapter(query, con);
