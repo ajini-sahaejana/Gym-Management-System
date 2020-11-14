@@ -33,12 +33,12 @@ namespace Gym_Management_System
         private void timerSlide1_Tick(object sender, EventArgs e)
         {
             s1.Left += 10;
-            if (s1.Left > 950)
+            if (s1.Left > 760)
             {
                 timerSlide1.Stop();
             }
             this.Left -= 10;
-            if (this.Left > 950)
+            if (this.Left > 760)
             {
                 timerSlide1.Stop();
             }

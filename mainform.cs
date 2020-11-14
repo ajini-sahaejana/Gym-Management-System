@@ -94,7 +94,7 @@ namespace Gym_Management_System
             string onlyname = signinform.viewsname;
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\GitHub\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT * from staff WHERE s_name = '" + onlyname + "' ";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);

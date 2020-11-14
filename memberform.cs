@@ -38,7 +38,7 @@ namespace Gym_Management_System
         {
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ajini Sahejana\source\repos\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\GitHub\Gym-Management-System\Database\GMS.mdf;Integrated Security=True;Connect Timeout=30");
                 string query = "SELECT m_id FROM Member WHERE m_id = (SELECT MAX(m_id) FROM Member) ";
                 SqlCommand cmd = new SqlCommand(query, con);
 
